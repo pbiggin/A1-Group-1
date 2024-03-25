@@ -1,6 +1,6 @@
 /* homepage css */
 
-body.homepage {
+#homepage {
   background-color: rgb(11, 11, 35);
   max-height: 100%;
 }
