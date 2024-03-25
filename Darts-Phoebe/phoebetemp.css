@@ -84,7 +84,7 @@ footer.homepage {
 /* game 1, phoebe code */
 
 
-body.darts {
+#darts {
     background-color: white; 
     max-height: 100%;
     margin: 0;
