@@ -126,7 +126,7 @@ body.darts {
 /* End of linked nav code */
 
 
-header {
+header.darts {
     display: flex;
     background-image: url('Darts-graphic-01.jpg');
     background-attachment: fixed;
@@ -174,14 +174,11 @@ a.index :hover {
 }
 
 
-section {
+section.dartssubsection {
     padding: 2vw;
     height: 50vw;
 }
 
-section.subSection {
-    background-color: rgb(218, 218, 218);
-}
 
 .botnav {
         background-color: rgb(62, 16, 16);
