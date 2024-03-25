@@ -1,0 +1,109 @@
+body {
+    background-color: white; 
+    max-height: 100%;
+    margin: 0;
+  }
+  
+  /* linked nav code */
+.topnav {
+    background-color: rgb(62, 16, 16);
+    overflow: hidden;
+    font-family: "Rubik", sans-serif;
+    position: fixed;
+    width: 100%;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #9b3128;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #e0473a;
+    color: white;
+  }
+ 
+
+.sidenav {
+    background-color: white
+}
+
+/* End of linked nav code */
+
+header {
+    display: flex;
+    background-image: url('Darts-graphic-01.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    background-size: 100%;
+    flex-direction: row;
+}
+
+div.heroText {
+    height: 50%;
+    margin: 5%;
+    width: 40%;
+    justify-content: center;
+}
+
+.heroText > h1 {
+    color: white;
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+    height: 3.5cm;
+    font-style: normal;
+    font-size: 700%;
+    margin-bottom: 0;
+}
+
+.heroText > p {
+  color: white;
+  font-family: "Almarai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.index {
+   color: white;
+   background-color: #9b3128;
+   padding: 14px 25px;
+   font-family: "Almarai", sans-serif;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+}
+
+a:hover {
+  background-color: #e0473a;
+}
+
+
+section {
+    padding: 2vw;
+    height: 50vw;
+}
+
+section.subSection {
+    background-color: rgb(218, 218, 218);
+}
+
+.botnav {
+        background-color: rgb(62, 16, 16);
+        overflow: hidden;
+        font-family: "Rubik", sans-serif;
+        width: 100%;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+    
+}
