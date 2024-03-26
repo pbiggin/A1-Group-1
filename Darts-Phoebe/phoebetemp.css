@@ -172,7 +172,10 @@ div.heroText {
 .index a:hover {
   background-color: #e0473a;
 }
-
+ 
+h2 {
+  font-family: "Almarai", sans-serif;
+}
 
 section.dsect {
     padding: 2vw;
@@ -183,6 +186,9 @@ section.dsect {
 .botnav {
         background-color: rgb(62, 16, 16);
         overflow: hidden;
+        justify-content: left;
+        display: flex;
+        flex-direction: row;
         font-family: "Rubik", sans-serif;
         width: 100%;
         color: #f2f2f2;
@@ -192,4 +198,24 @@ section.dsect {
     
 }
 
-/* game 1, phoebe code end */
+.topreturn {
+  padding: 2vw;
+        color: #f2f2f2;
+        background-color: #e0473a;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Rubik", sans-serif;
+}
+
+.phoebename {
+  padding-top: 0;
+  padding: 2vw;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        font-family: "Rubik", sans-serif;
+}
+
+/* game 1, phoebe code end /
