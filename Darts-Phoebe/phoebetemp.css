@@ -169,7 +169,7 @@ div.heroText {
    display: inline-block;
 }
 
-a.index :hover {
+.index a:hover {
   background-color: #e0473a;
 }
 
