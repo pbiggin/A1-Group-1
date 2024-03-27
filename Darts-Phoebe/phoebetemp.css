@@ -45,6 +45,7 @@ h3.gametext + p {
   text-align: center;
 }
 
+
 main.home {
   margin: 2vw;
   padding: 2vw;
@@ -146,6 +147,10 @@ div.heroText {
     font-style: normal;
     font-size: 700%;
     margin-bottom: 0;
+}
+
+.dsect > h2 {
+  font-size: 16pt;
 }
 
 .heroText > p {
