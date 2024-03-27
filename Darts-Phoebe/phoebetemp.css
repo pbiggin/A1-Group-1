@@ -1,10 +1,12 @@
 /* homepage css */
+a:-webkit-any-link {
+  cursor: pointer;
+}
 
 #homepage {
   background-color: rgb(11, 11, 35);
   max-height: 100%;
 }
-
 
 /* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 400 to 700 */
@@ -15,7 +17,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 
 header.home {
   margin: 2px;
@@ -41,10 +42,9 @@ h3.gametext {
 h3.gametext + p {
   color: yellow;
   font-size: 12pt;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   text-align: center;
 }
-
 
 main.home {
   margin: 2vw;
@@ -73,7 +73,7 @@ a.gamelink :hover {
 
 a.just-link {
   color: yellowgreen;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 footer.home {
@@ -84,69 +84,66 @@ footer.home {
 /* homepage end */
 /* game 1, phoebe code */
 
-
 #dartspage {
-    background-color: white; 
-    max-height: 100%;
-    margin: 0;
-  }
-  
-  /* linked nav code */
+  background-color: white;
+  max-height: 100%;
+  margin: 0;
+}
+
+/* linked nav code */
 .topnav {
-    background-color: rgb(11, 11, 35);
-    overflow: hidden;
-    font-family: "Rubik", sans-serif;
-    position: fixed;
-    width: 100%;
-  }
+  background-color: rgb(11, 11, 35);
+  overflow: hidden;
+  font-family: "Rubik", sans-serif;
+  position: fixed;
+  width: 100%;
+}
 
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  .topnav a:hover {
-    background-color: #9b3128;
-    color: black;
-  }
+.topnav a:hover {
+  background-color: #9b3128;
+  color: black;
+}
 
-  .topnav a.active {
-    background-color: #e0473a;
-    color: white;
-  }
- 
+.topnav a.active {
+  background-color: #e0473a;
+  color: white;
+}
 
 /* End of linked nav code */
 
-
 header.darts {
-    display: flex;
-    background-image: url('Darts-graphic-01.jpg');
-    background-attachment: fixed;
-    height: 100%;
-    background-size: 100%;
-    flex-direction: row;
+  display: flex;
+  background-image: url("Darts-graphic-01.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  background-size: 100%;
+  flex-direction: row;
 }
 
 div.heroText {
-    height: 50%;
-    margin: 5%;
-    width: 40%;
-    justify-content: center;
+  height: 50%;
+  margin: 5%;
+  width: 40%;
+  justify-content: center;
 }
 
 .heroText > h1 {
-    color: white;
-    font-family: "Almarai", sans-serif;
-    font-weight: 700;
-    height: 3.5cm;
-    font-style: normal;
-    font-size: 700%;
-    margin-bottom: 0;
+  color: white;
+  font-family: "Almarai", sans-serif;
+  font-weight: 700;
+  height: 3.5cm;
+  font-style: normal;
+  font-size: 700%;
+  margin-bottom: 0;
 }
 
 .dsect > h2 {
@@ -155,24 +152,33 @@ div.heroText {
   margin: 0;
 }
 
+
 .heroText > p {
   color: white;
   font-family: "Almarai", sans-serif;
-    font-weight: 300;
-    font-style: normal;
+  font-weight: 300;
+  font-style: normal;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0;
 }
 
 .jump {
-   color: white;
-   background-color: #9b3128;
-   padding: 14px 25px;
-   font-family: "Almarai", sans-serif;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
+  color: white;
+  background-color: #9b3128;
+  margin: 1vw;
+  padding: 14px 25px;
+  font-family: "rubik", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
-a.jump :hover {
+ul a:hover {
   background-color: #e0473a;
 }
 
@@ -181,32 +187,31 @@ h2 {
 }
 
 section.dsect {
-    padding: 2vw;
-    height: 50vw;
+  padding: 2vw;
+  height: 50vw;
 }
 
-
 .botnav {
-        background-color: rgb(11, 11, 35);
-        overflow: hidden;
-        justify-content: left;
-        display: flex;
-        flex-direction: row;  
-        font-family: "Rubik", sans-serif;
-        width: 100%;
-        color: #f2f2f2;
-        text-align: center;
-        text-decoration: none;
+  background-color: rgb(11, 11, 35);
+  overflow: hidden;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
 }
 
 .topReturn {
   padding: 1.5vw;
-        color: #f2f2f2;
-        background-color: #e0473a;
-        text-align: center;
-        text-decoration: none;
-        font-size: 17px;
-        font-family: "Rubik", sans-serif;
+  color: #f2f2f2;
+  background-color: #e0473a;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Rubik", sans-serif;
 }
 
 .botnav > h3 {
