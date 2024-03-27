@@ -93,7 +93,7 @@ footer.home {
   
   /* linked nav code */
 .topnav {
-    background-color: rgb(62, 16, 16);
+    background-color: rgb(11, 11, 35);
     overflow: hidden;
     font-family: "Rubik", sans-serif;
     position: fixed;
@@ -150,7 +150,9 @@ div.heroText {
 }
 
 .dsect > h2 {
-  font-size: 16pt;
+  color: rgb(11, 11, 35);
+  font-size: 30pt;
+  margin: 0;
 }
 
 .heroText > p {
@@ -185,7 +187,7 @@ section.dsect {
 
 
 .botnav {
-        background-color: rgb(62, 16, 16);
+        background-color: rgb(11, 11, 35);
         overflow: hidden;
         justify-content: left;
         display: flex;
