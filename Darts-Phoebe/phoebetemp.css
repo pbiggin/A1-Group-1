@@ -73,13 +73,11 @@ a.gamelink :hover {
 a.just-link {
   color: yellowgreen;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
 }
 
 footer.home {
   margin: 2vh;
   text-align: center;
-  justify-content: center;
 }
 
 /* homepage end */
@@ -201,7 +199,7 @@ section.dsect {
         text-align: center;
         text-decoration: none;
         font-size: 17px;
-        font-family: "Almarai", sans-serif;
+        font-family: "Rubik", sans-serif;
 }
 
 .botnav > h3 {
