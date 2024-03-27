@@ -73,11 +73,13 @@ a.gamelink :hover {
 a.just-link {
   color: yellowgreen;
   font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 footer.home {
   margin: 2vh;
   text-align: center;
+  justify-content: center;
 }
 
 /* homepage end */
