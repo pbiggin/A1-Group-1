@@ -1,0 +1,102 @@
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: gray;
+    overflow: hidden;
+    font-family: monospace, sans-serif;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ba0307;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+/* Set font for the main heading*/
+.plaintext {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Applying a backgrounf colout for the whole page*/
+body {
+    background-color: #fffff6;
+}
+
+/*Size and colour of subheadings and content*/
+h2 {
+    color: maroon;
+    font-size: 30px;
+}
+
+h3 {
+    color: maroon;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+}
+
+/* Setting up the webpage overview */
+.overview {
+    text-align: center;
+    margin: 100px;
+
+
+}
+
+/* Creating a consistent height for all images */
+
+img {
+    height: 80%;
+}
+
+/* Creating a gallery display under the heading */
+.row-a {
+    display: flex;
+}
+
+.column-a {
+    flex: 33.33%;
+    padding: 5px;
+    margin: 0%;
+}
+
+/* Creating a gallery display for game information */
+.column-b {
+    flex: 50%;
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+}
+
+
+/* Creating a footer */
+footer {
+    background-color: #fffff6;
+    color: black;
+    text-align: center;
+    width: 100vw;
+    font-family: 'arial', monospace;
+
+
+}
