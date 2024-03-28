@@ -167,6 +167,21 @@ ul.jumplist {
   padding: 0;
 }
 
+ul.rules {
+  font-family: "rubik", sans-serif;
+}
+
+table.gamemodes {
+  font-family: "rubik", sans-serif;
+  padding: 2cm;
+  padding-left: 0.3cm;
+
+}
+
+td.desc {
+  padding-top: 0.5cm;
+padding-left: 0.3cm;
+}
 .jump {
   color: white;
   background-color: #9b3128;
