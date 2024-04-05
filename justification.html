@@ -1,69 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 1 Justification</title>
 
-    <link rel="stylesheet" type="text/css" href="Darts-Phoebe/phoebetemp.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
-</head>
-<body id="justpage">
-    <h1> Project Justification </h1>
-    <h3> Homepage (Index.html) </h3>
-<p> The homepage is structured to allow for easy navigation across the 5 main pages + The justification page. 
-    This page was designed to emphasise the 5 game pages by using anchor icons (Using
-    <'a'> to connect each html file and "img" embedded within the anchor), and css elements (a:hover + simple size editing) to be the focal
-      point of the page. Each button has its own div (.gamelink), to allow for structuring adequate spacing inside 
-      the main buttons div (.gamebox). The justification link is placed as an hyperlink anchor in a footer to be 
-      viewed last. Names are placed below each icon for context (within the .gamelink div).</p>
-
-    <h2> cross-page choices: </h2>
-    <h3>Navigation Bar (Fixed position)</h3>
-    <p>We chose to include a consistently structured navigation bar across all 5 game pages to allow the user to easily switch between the game, homepage & justification pages. 
-         In CSS, properties of colour, font size, float, text-align and padding were used to format the navigation 
-         bar, using the class selector. The ‘active’ selector was also used to make the specified game button (e.g: 'Game 2') visually 
-         different from other non-active buttons. The :hover selector was also used to make the navigation bar more
-         appealing through changing colours.
+    <link rel="stylesheet" type="text/css" href="/Darts-Phoebe/phoebetemp.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="justpage">
+    <h1>Project Justification</h1>
+    <h3>Homepage (Index.html)</h3>
+    <p>
+      The homepage is structured to allow for easy navigation across the 5 main
+      pages + The justification page. This page was designed to emphasise the 5
+      game pages by using anchor icons (Using <'a'> to connect each html file
+      and "img" embedded within the anchor), and css elements (a:hover + simple
+      size editing) to be the focal point of the page. Each button has its own
+      div (.gamelink), to allow for structuring adequate spacing inside the main
+      buttons div (.gamebox). The justification link is placed as an hyperlink
+      anchor in a footer to be viewed last. Names are placed below each icon for
+      context (within the .gamelink div).
     </p>
-<section class="indivjust"> 
-    <h2> Individual page choices: </h2>
-    <h3> Darts page (phoebe.html) Phoebe </h3>
-    <ul>
-        <li> I used anchors to specific sections across the page to allow the user to more conveniently move between
-             content. The buttons under the ‘darts’ title are connected as an unordered list to allow for a:hover effects. </li> 
-        <li> I used an Iframe at the end of the webpage to allow the user to view other related darts content 
-             (youtube videos) easily within the site. </li>
-        <li> I organised the content of the page through "articles", and then into "sections" to allow a row flex
-             direction of content for the viewer, especially for the rule unordered lists & dart board diagrams. </li>
-        <li> Used a table to showcase game modes through their components to be more easily understood by the viewer.
-            Included a “top” button at the footer to allow users back to the jump segments conveniently. </li>
-    </ul>
 
-    <h3> Cricket Page (cricket.html) Jasleen </h3>
-    <ul> 
-    <li> In the <'header'> element, using a unique class attribute, I’ve added contents of my header which in this case only included the name of the page, ‘cricket’.
-         I have also directly underneath whilst using padding to create space, added a general image of cricket being played to span across the page as a way to separate ‘cricket’ from the rest of the page as well. </li>
-    <li> A <'h2'> tag was used to start the new sections of content for ‘Overview of the Game’ and ‘Rules’, with a distinct font and colour, pushed to the left. </li>
-    <li> Using a <'div'> tag with a class attribute of ‘flex-container’, in CSS the ‘display’ property had a value of ‘flex,’ to have the relevant content and image sit horizontally in order to make each section look more in union. </li>
-    <li> Using an <'img'> tag, pictures were added including alternate (‘alt’) information describing the image in case the image cannot be displayed. </li>
-    <li> To make the ‘Methods of Dismissal’ content more distinctive from the previous sections, 
-         I have used a green background colour and also aligned the heading to be in the centre rather than on the left under a new <'div'> tag. </li>
-    <li> Using another <'div'> tag within, I have also embedded a youtube video using <'iframe'> tag. In CSS, that also includes adding a black border - a new visual element for the page for engagement. </li>
-    <li> Using a <'div'> tag with a class attribute of ‘row’, in CSS the ‘display’ property has a value of ‘flex.’ This allowed for three
-         images to sit horizontally next to each other - adding alt text and individual padding. </li>
-    <li> In order to show the characteristics of the three formats of cricket, I have used the <'table'> tag with 6 sets of <tr> tags including the first defining
-         the three format names using the <'th'> tag. Remaining <'tr'> tag contains one <'th'> tag specifying the type of characteristic, 
-         followed by three <'td'> tags containing the content for each format for that row. In CSS, I have changed the font so the headings 
-         are more bold and clear to the user they are headings in comparison to the <'p'> content.
-        I have added a green border around the table to have the table look more visually separate. </li>
-    <li> I have also added another <'div'> tag that contains a hyperlink to the Australian National Team so the user can get information on the current team players.
-         I have used the :hover selector and once the button is clicked, the background colour of the button is also changed too using the :active and :visited selectors in CSS. </li>
-    <li> Using the <'footer'> tag that is outside of the <'body'> tag, I have included a footer at the bottom of the page. In CSS I have made the background black to be distinctive as well using padding and margin. </li>
-        </ul>
+    <h2>cross-page choices:</h2>
+    <h3>Navigation Bar (Fixed position)</h3>
+    <p>
+      We chose to include a consistently structured navigation bar across all 5
+      game pages to allow the user to easily switch between the game, homepage &
+      justification pages. In CSS, properties of colour, font size, float,
+      text-align and padding were used to format the navigation bar, using the
+      class selector. The ‘active’ selector was also used to make the specified
+      game button (e.g: 'Game 2') visually different from other non-active
+      buttons. The :hover selector was also used to make the navigation bar more
+      appealing through changing colours.
+    </p>
+    <section class="indivjust">
+      <h2>Individual page choices:</h2>
+      <h3>Darts page (phoebe.html) Phoebe</h3>
+      <ul>
+        <li>
+          I used anchors to specific sections across the page to allow the user
+          to more conveniently move between content. The buttons under the
+          ‘darts’ title are connected as an unordered list to allow for a:hover
+          effects.
+        </li>
+        <li>
+          I used an Iframe at the end of the webpage to allow the user to view
+          other related darts content (youtube videos) easily within the site.
+        </li>
+        <li>
+          I organised the content of the page through "articles", and then into
+          "sections" to allow a row flex direction of content for the viewer,
+          especially for the rule unordered lists & dart board diagrams.
+        </li>
+        <li>
+          Used a table to showcase game modes through their components to be
+          more easily understood by the viewer. Included a “top” button at the
+          footer to allow users back to the jump segments conveniently.
+        </li>
+      </ul>
+
+      <h3>Cricket Page (cricket.html) Jasleen</h3>
+      <ul>
+        <li>
+          In the <'header'> element, using a unique class attribute, I’ve added
+          contents of my header which in this case only included the name of the
+          page, ‘cricket’. I have also directly underneath whilst using padding
+          to create space, added a general image of cricket being played to span
+          across the page as a way to separate ‘cricket’ from the rest of the
+          page as well.
+        </li>
+        <li>
+          A <'h2'> tag was used to start the new sections of content for
+          ‘Overview of the Game’ and ‘Rules’, with a distinct font and colour,
+          pushed to the left.
+        </li>
+        <li>
+          Using a <'div'> tag with a class attribute of ‘flex-container’, in CSS
+          the ‘display’ property had a value of ‘flex,’ to have the relevant
+          content and image sit horizontally in order to make each section look
+          more in union.
+        </li>
+        <li>
+          Using an <'img'> tag, pictures were added including alternate (‘alt’)
+          information describing the image in case the image cannot be
+          displayed.
+        </li>
+        <li>
+          To make the ‘Methods of Dismissal’ content more distinctive from the
+          previous sections, I have used a green background colour and also
+          aligned the heading to be in the centre rather than on the left under
+          a new <'div'> tag.
+        </li>
+        <li>
+          Using another <'div'> tag within, I have also embedded a youtube video
+          using <'iframe'> tag. In CSS, that also includes adding a black border
+          - a new visual element for the page for engagement.
+        </li>
+        <li>
+          Using a <'div'> tag with a class attribute of ‘row’, in CSS the
+          ‘display’ property has a value of ‘flex.’ This allowed for three
+          images to sit horizontally next to each other - adding alt text and
+          individual padding.
+        </li>
+        <li>
+          In order to show the characteristics of the three formats of cricket,
+          I have used the <'table'> tag with 6 sets of
+          <tr>
+            tags including the first defining the three format names using the
+            <'th'> tag. Remaining <'tr'> tag contains one <'th'> tag specifying
+            the type of characteristic, followed by three <'td'> tags containing
+            the content for each format for that row. In CSS, I have changed the
+            font so the headings are more bold and clear to the user they are
+            headings in comparison to the <'p'> content. I have added a green
+            border around the table to have the table look more visually
+            separate.
+          </tr>
+        </li>
+
+        <li>
+          I have also added another <'div'> tag that contains a hyperlink to the
+          Australian National Team so the user can get information on the
+          current team players. I have used the :hover selector and once the
+          button is clicked, the background colour of the button is also changed
+          too using the :active and :visited selectors in CSS.
+        </li>
+        <li>
+          Using the <'footer'> tag that is outside of the <'body'> tag, I have
+          included a footer at the bottom of the page. In CSS I have made the
+          background black to be distinctive as well using padding and margin.
+        </li>
+      </ul>
     </section>
-</body>
+  </body>
 </html>
