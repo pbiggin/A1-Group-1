@@ -275,3 +275,18 @@ table.gamemodes {
   padding: 1.5vw;
 }
 /* game 1, phoebe code end */
+
+
+/* Justification */
+
+#justpage  {
+  font-family: "Rubik", sans-serif;
+  margin: 1.5cm;
+}
+
+.indivjust {
+  margin: 1cm;
+  margin-top: 0;
+  padding: 4mm;
+
+}
