@@ -32,17 +32,20 @@
 /* Set font for the main heading*/
 .plaintext {
     color: black;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     font-family: "Luckiest Guy", monospace;
 }
 
 
-/* Applying a background colour for the whole page*/
+/* Applying a backgrounf colout for the whole page*/
 body {
     background-color: white;
     margin: 0%;
 }
+
+/*Size and colour of main heading*/
+
 
 
 /*Size and colour of subheadings and content*/
@@ -76,7 +79,7 @@ li {
 }
 
 /* Centre the first line of the overview */
-intro {
+.intro {
     text-align: justify;
     text-justify: inter-word;
 
@@ -104,14 +107,16 @@ img {
     margin: 0%;
 }
 
-/* Creating a gallery display for game information */
 .row-b {
     display: flex;
     margin: 0%;
     margin-bottom: 0%;
     margin: 5%;
+
+
 }
 
+/* Creating a gallery display for game information */
 .column-b {
     flex: 50%;
     padding: 5px;
@@ -120,8 +125,6 @@ img {
 
 }
 
-
-/* Creating a gallery display for game information */
 .row-c {
     display: flex;
     margin: 0%;
@@ -131,14 +134,16 @@ img {
 
 }
 
-
+/* Creating a gallery display for game information */
 .column-c {
     flex: 50%;
     padding: 5px;
     margin: 5px;
     height: 80%;
+    float: center;
 
 }
+
 
 
 .terminology {
@@ -176,6 +181,7 @@ td {
     padding: 5%;
     padding-top: 2%;
     margin: 0%;
+    float: center;
 }
 
 .video-link h2 {
@@ -183,6 +189,12 @@ td {
     float: center;
     color: whitesmoke;
     background-color: black;
+}
+
+iframe {
+    padding: 10px;
+    border: 100px;
+
 }
 
 
