@@ -32,17 +32,20 @@
 /* Set font for the main heading*/
 .plaintext {
     color: black;
-    font-size: 75px;
+    font-size: 70px;
     text-align: center;
     font-family: "Luckiest Guy", monospace;
 }
 
 
-/* Applying a background colour for the whole page*/
+/* Applying a backgrounf colout for the whole page*/
 body {
     background-color: white;
     margin: 0%;
 }
+
+/*Size and colour of main heading*/
+
 
 
 /*Size and colour of subheadings and content*/
@@ -76,7 +79,7 @@ li {
 }
 
 /* Centre the first line of the overview */
-intro {
+.intro {
     text-align: justify;
     text-justify: inter-word;
 
@@ -137,12 +140,11 @@ img {
     padding: 5px;
     margin: 5px;
     height: 80%;
+    float: center;
 
 }
 
-.column-c img {
-    float: right;
-}
+
 
 .terminology {
     text-align: center;
@@ -177,9 +179,9 @@ td {
     text-align: center;
     background-color: black;
     padding: 5%;
-    width: 100%;
     padding-top: 2%;
     margin: 0%;
+    float: center;
 }
 
 .video-link h2 {
@@ -187,6 +189,12 @@ td {
     float: center;
     color: whitesmoke;
     background-color: black;
+}
+
+iframe {
+    padding: 10px;
+    border: 100px;
+
 }
 
 
