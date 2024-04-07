@@ -32,32 +32,31 @@
 /* Set font for the main heading*/
 .plaintext {
     color: black;
-    font-size: 40px;
+    font-size: 80px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Luckiest Guy", monospace;
 }
+
 
 /* Applying a backgrounf colout for the whole page*/
 body {
     background-color: white;
+    margin: 0%;
 }
 
 /*Size and colour of main heading*/
-h1 {
-    color: black;
-    font-size: 100px;
-}
+
 
 
 /*Size and colour of subheadings and content*/
 h2 {
-    color: maroon;
+    color: black;
     font-size: 30px;
-    font-family: monospace;
+    font-family: monospace, Cambria, serif;
 }
 
 h3 {
-    color: maroon;
+    color: black;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -66,16 +65,26 @@ p,
 li {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Setting up the webpage overview */
 .overview {
     text-align: center;
-    margin: 0%;
-
-
+    padding-bottom: 0%;
+    margin: 10%;
+    margin-bottom: 0%;
+    margin-top: 0%;
 
 }
+
+/* Centre the first line of the overview */
+intro {
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
 
 /* Creating a consistent height for all images */
 
@@ -87,6 +96,9 @@ img {
 /* Creating a gallery display under the heading */
 .row-a {
     display: flex;
+    margin: 0%;
+    margin-bottom: 0%;
+
 }
 
 .column-a {
@@ -95,23 +107,99 @@ img {
     margin: 0%;
 }
 
+.row-b {
+    display: flex;
+    margin: 0%;
+    margin-bottom: 0%;
+    margin: 5%;
+
+
+}
+
 /* Creating a gallery display for game information */
 .column-b {
     flex: 50%;
     padding: 5px;
     margin: 5px;
     height: 80%;
+
+}
+
+.row-c {
+    display: flex;
+    margin: 0%;
+    margin-bottom: 0%;
+    margin: 5%;
+
+
+}
+
+/* Creating a gallery display for game information */
+.column-c {
+    flex: 50%;
+    padding: 5px;
+    margin: 5px;
+    height: 80%;
+
+}
+
+.column-c img {
+    float: right;
+}
+
+.terminology {
+    text-align: center;
+    padding-bottom: 5%;
+    margin: 0%;
+    margin-bottom: 0%;
+    padding-top: 5%;
+    background-color: lightblue;
+    width: 100%;
+
+}
+
+/* Centre the table */
+table {
+    width: 60%;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+/* Embedding a youtube video */
+.video-link {
+    text-align: center;
+    background-color: black;
+    padding: 5%;
+    width: 100%;
+    padding-top: 2%;
+    margin: 0%;
+}
+
+.video-link h2 {
+    text-align: center;
+    float: center;
+    color: whitesmoke;
+    background-color: black;
 }
 
 
 /* Creating a footer */
 footer {
-    background-color: #fffff6;
+    margin-top: 50px;
+    padding-top: 1%;
     color: black;
     text-align: center;
-    width: 100vw;
-    font-family: 'arial', monospace;
+    font-size: 3px;
+    margin: 0%;
 
-
-}
 }
