@@ -82,7 +82,8 @@ footer.home {
 }
 
 /* homepage end */
-/* game 1, phoebe code */
+
+/* game 1, darts page code */
 
 #dartspage {
   background-color: white;
@@ -311,6 +312,10 @@ table.gamemodes {
   margin-top: 0;
   margin: 0;
   font-family: "Rubik", sans-serif;
+}
+
+ul.justpoint > li{
+  margin: 2mm;
 }
 
 .mainjust {
