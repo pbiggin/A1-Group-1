@@ -104,16 +104,14 @@ img {
     margin: 0%;
 }
 
+/* Creating a gallery display for game information */
 .row-b {
     display: flex;
     margin: 0%;
     margin-bottom: 0%;
     margin: 5%;
-
-
 }
 
-/* Creating a gallery display for game information */
 .column-b {
     flex: 50%;
     padding: 5px;
@@ -122,6 +120,8 @@ img {
 
 }
 
+
+/* Creating a gallery display for game information */
 .row-c {
     display: flex;
     margin: 0%;
@@ -131,7 +131,7 @@ img {
 
 }
 
-/* Creating a gallery display for game information */
+
 .column-c {
     flex: 50%;
     padding: 5px;
@@ -140,9 +140,6 @@ img {
 
 }
 
-.column-c img {
-    float: right;
-}
 
 .terminology {
     text-align: center;
@@ -177,7 +174,6 @@ td {
     text-align: center;
     background-color: black;
     padding: 5%;
-    width: 100%;
     padding-top: 2%;
     margin: 0%;
 }
