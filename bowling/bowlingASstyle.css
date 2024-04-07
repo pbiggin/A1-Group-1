@@ -32,20 +32,17 @@
 /* Set font for the main heading*/
 .plaintext {
     color: black;
-    font-size: 80px;
+    font-size: 75px;
     text-align: center;
     font-family: "Luckiest Guy", monospace;
 }
 
 
-/* Applying a backgrounf colout for the whole page*/
+/* Applying a background colour for the whole page*/
 body {
     background-color: white;
     margin: 0%;
 }
-
-/*Size and colour of main heading*/
-
 
 
 /*Size and colour of subheadings and content*/
