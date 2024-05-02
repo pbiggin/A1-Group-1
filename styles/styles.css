@@ -1,0 +1,34 @@
+
+/** Learning page carousel styles **/
+.carousel-container {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative; 
+}
+
+.carousel-item {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-button {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+}
+
+.carousel-button-previous {
+    top: 50%;
+}
+
+.carousel-button-next {
+    right: 0;
+}
