@@ -60,3 +60,23 @@
     width: 100%;
     background-color: rgb(230, 230, 230);
 }
+
+
+.wick2 {
+    position: absolute;
+    right: 0;
+}
+
+/** end module relevant style **/
+
+/** animation styles **/
+.run-container {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background: yellow;
+}
+
+#run-animation {
+    position: absolute 1;
+}

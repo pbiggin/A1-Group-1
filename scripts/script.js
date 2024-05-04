@@ -26,3 +26,6 @@ function previousImage() {
 
 showImage(currentIndex);
 //end of carousel script
+
+//animation script
+
