@@ -17,31 +17,54 @@
         chapter modes.
       </p>
     </header>
-    <div class="moduleAcess"></div>
+    <div class="moduleAccess"></div>
     <p>
       Overview to Games, How they operate on a basic level (Bat, hit, run)
       whatnot. Add some supportive graphics below to create more interest for
       viewers
     </p>
-    <!-- Carousel HTML Code-->
-    <div class="carousel-container">
-      <div class="carousel-item">
-        <img src="../images/Carousel_1.png" alt="image1" />
-      </div>
-      <div class="carousel-item">
-        <img src="../images/Carousel_2.png" alt="image2" />
-      </div>
-      <div class="carousel-item">
-        <img src="../images/Carousel_3.png" alt="image3" />
-      </div>
-      <script src="../scripts/script.js"></script>
-    </div>
-    <!-- carousel buttons-->
+    <!-- Carousel HTML Code, Used for overview breakdown of cricket-->
+    <div class="outer-carousel">
+      <section class="carousel-container">
+        <div class="carousel-item">
+          <img src="../images/Carousel_1.png" alt="image1" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/Carousel_2.png" alt="image2" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/Carousel_3.png" alt="image3" />
+        </div>
+      </section>
+      <!-- carousel buttons-->
       <button class="carousel-button-prev" onclick="previousImage()" id="prev">
         Previous
       </button>
       <button class="carousel-button-next" onclick="nextImage()" id="next">
         Next
       </button>
+    </div>
+    <main>
+      <p>
+        Further elaboration content of the education model, now going how the
+        sections will be divided and learning content. Divide this section into
+        a seperate tonal body?
+      </p>
+    </main>
+    <section id="modulemove">
+      <card class="mod-prev-next">
+        <p>Previous module</p>
+      </card>
+      <card class="mod-prev-next">
+        <p>Progress bar</p>
+      </card>
+      <card class="mod-prev-next">
+        <p>Next module</p>
+      </card>
+    </section>
+    <!-- idk why the script doesnt work if i move it into the head-->
+    <div class="scripts">
+    <script src="../scripts/script.js"></script>
+  </div>
   </body>
 </html>
