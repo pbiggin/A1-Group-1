@@ -92,7 +92,7 @@ body {
 /** end module relevant style **/
 
 /** animation styles **/
-.run-container {
+#run-container {
     display: flex;
     width: 100%;
     position: relative;
@@ -100,5 +100,5 @@ body {
 }
 
 #run-animation {
-    position: absolute 1;
+    position: absolute;
 }
