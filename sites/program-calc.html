@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Calculator</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
+
+
 <body>
-    
+
+  <h1> CRICKET CALCULATOR</h1>
+
+
+  <div class="pageContainer">
+    <div class="container">
+        <div class="tabContainer">
+            <div>
+                <img src="helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
+            </div>
+            <div class="imgButton">
+                <button class="tab" id="battingTab">Batting Average Calculator</button>
+            </div>
+        </div>
+        <div class="tabContainer">
+            <div>
+                <img src="ball.jpg" alt="Ball" width="100px" height="100px"/>
+            </div>
+            <div class="imgButton">
+                <button class="tab" id="bowlingTab">Bowling Average Calculator</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <div class="calculator">
+    <div id="battingCalc" class="calcSection" style="display:none;">
+      <h2>Batting Average Calculator</h2>
+      <div class="input">
+        <label for="battingRuns">Runs:</label>
+        <input type="number" id="battingRuns" min="0" placeholder="Enter runs">
+      </div>
+      <div class="input">
+        <label for="battingAvg">Average:</label>
+        <input type="number" id="battingAvg" min="0" placeholder="Enter average">
+      </div>
+      <div class="input">
+        <label for="battingDismissed">Dismissed:</label>
+        <input type="number" id="battingDismissed" min="0" placeholder="Enter dismissed">
+      </div>
+      <button onclick="calculateBattingAverage()">CALCULATE</button>
+      <div id="battingResult"></div>
+    </div>
+
+
+    <div id="bowlingCalc" class="calcSection" style="display:none;">
+      <h2>Bowling Average Calculator</h2>
+      <div class="input">
+        <label for="bowlingRuns">Runs:</label>
+        <input type="number" id="bowlingRuns" min="0" placeholder="Enter runs">
+      </div>
+      <div class="input">
+        <label for="bowlingWickets">Wickets:</label>
+        <input type="number" id="bowlingWickets" min="0" placeholder="Enter wickets">
+      </div>
+      <div class="input">
+        <label for="bowlingAvg">Average:</label>
+        <input type="number" id="bowlingAvg" min="0" placeholder="Enter average">
+      </div>
+      <button onclick="calculateBowlingAverage()">CALCULATE</button>
+      <div id="bowlingResult"></div>
+    </div>
+
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
