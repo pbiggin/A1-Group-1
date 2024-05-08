@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CRICKET QUIZ</title>
+    <script src="quiz_form.js"></script>
+    <link rel="stylesheet" type="text/css" href="quiz_form_style.css">
+
+</head>
+
+<body>
+    <h1>CRICKET QUIZ</h1>
+
+    <form onsubmit="process()">
+
+        <div id="q1">
+
+            <label for="q1">Question 1:<br /> Name this position of the player show on the following image. </label>
+            <br />
+            <img src="https://im.rediff.com/cricket/2015/nov/18wriddhiman-saha.jpg?w=670&h=900" alt="wicket keeper">
+            <br />
+            <input type="text" id="q1" name="q1" size="20" maxlenght="20" placeholder="Type answer here.">
+            <br />
+            <br />
+        </div>
+
+
+
+        <div id="q2">
+            <label for="q2">Question 2:<br /> What is the best ice cream flavour?</label>
+            <br />
+            <input type="text" id="q2" size="20" maxlenght="40" placeholder="Type answer here.">
+            <br />
+            <br />
+        </div>
+
+
+
+        <div id="q3">
+            <label for="q3">Question 3:<br /> Which one is the correct answer?</label>
+            <br />
+            <select id="q3">
+                <option value="default"> </option>
+                <option value="answer_1">1</option>
+                <option value="answer_2">2</option>
+                <option value="answer_3">3</option>
+                <option value="answer_4">4</option>
+                <option value="answer_5">5</option>
+                <option value="answer_6">6</option>
+                <option value="answer_7">7</option>
+
+            </select>
+            <br />
+            <br />
+        </div>
+
+
+
+        <div id="q4">
+            <label for="q4">Question 4:<br /> Which one is the correct answer?</label>
+            <br />
+
+
+            <br />
+            <div id="ans_row1">
+                <button class="button" onclick="correctAnswer(score)">Answer 1</button>
+                <button class="button">Answer 2</button>
+            </div>
+
+            <br />
+            <div id="ans_row2">
+                <button class="button">Answer 3</button>
+                <button class="button">Answer 4</button>
+            </div>
+            <br />
+            <br />
+        </div>
+
+
+        <div id="q5">
+            <label for="q5">Question 5:<br /> Which one is the correct answer?</label>
+            <br />
+
+
+            <div id="ans_row_1">
+                <button class="button">Answer 1</button>
+                <button class="button" onclick="correctAnswer(score)">Answer 2</button>
+            </div>
+
+            <br />
+            <div id="ans_row2">
+                <button class="button">Answer 3</button>
+                <button class="button">Answer 4</button>
+            </div>
+            <br />
+            <br />
+        </div>
+
+
+        <div id="q6">
+            <label for="q6">Question 6:<br /> Which one is the correct answer?</label>
+            <br />
+            <input type="text" id="q6" size="20" maxlenght="40">
+
+        </div>
+        <br />
+
+
+        <div id="q7">
+            <label for="q7">Question 7:<br /> What is the correct answer?</label>
+            <br />
+            <div id="ans_row_1">
+                <button class="button">Answer 1</button>
+                <button class="button">Answer 2</button>
+            </div>
+
+            <br />
+            <div id="ans_row2">
+                <button class="button">Answer 3</button>
+                <button class="button" onclick="correctAnswer(score)">Answer 4</button>
+            </div>
+            <br />
+            <br />
+        </div>
+
+
+        <div id="q8">
+            <label for="q8">Question 8:<br /> What is the correct answer?</label>
+            <br />
+            <select id="q8">
+                <option value="default"> </option>
+                <option value="answer_1">1</option>
+                <option value="answer_2">2</option>
+                <option value="answer_3">3</option>
+                <option value="answer_4">4</option>
+                <option value="answer_5">5</option>
+                <option value="answer_6">6</option>
+                <option value="answer_7">7</option>
+
+            </select>
+            <br />
+            <br />
+        </div>
+
+
+        <div id="q9">
+            <label for="q9">Question 9:<br /> Which one is the correct answer?</label>
+            <br />
+            <input type="text" id="q9" size="20" maxlenght="40">
+            <br />
+            <br />
+        </div>
+
+
+        <div id="q10">
+            <label for="q10">Question 10:<br /> Which one is the correct answer?</label>
+            <br />
+            <select id="q10">
+                <option value="default"> </option>
+                <option value="answer_1">1</option>
+                <option value="answer_2">2</option>
+                <option value="answer_3">3</option>
+                <option value="answer_4">4</option>
+                <option value="answer_5">5</option>
+                <option value="answer_6">6</option>
+                <option value="answer_7">7</option>
+
+            </select>
+            <br />
+            <br />
+        </div>
+
+
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
