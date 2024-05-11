@@ -49,6 +49,7 @@ function moveRunner() {
 
 
 
+ 
 document.addEventListener('DOMContentLoaded', function() {
   // This section allows for each calculator to appear if their button is clicked
   document.getElementById('battingTab').addEventListener('click', function() {
