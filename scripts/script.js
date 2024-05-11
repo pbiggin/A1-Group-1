@@ -48,6 +48,7 @@ function moveRunner() {
 
 
 
+
 // This section allows for each calculator to appear if their button is clicked
 document.getElementById('battingTab').addEventListener('click', function() {
     document.getElementById('battingCalc').style.display = 'block';
@@ -91,14 +92,14 @@ document.getElementById('battingTab').addEventListener('click', function() {
   
   
     if (runs && avg) {
-      let dismissed = runs / avg;
-      Answer.innerText = "Times dismissed is " + dismissed.toFixed(2);
+      let calcDismissed = runs / avg;
+      Answer.innerText = "Times dismissed is " + calcDismissed.toFixed(2);
     } else if (avg && dismissed) {
-      let runs = avg * dismissed;
-      Answer.innerText = "Total Runs scored is " + runs.toFixed(2);
+      let calcRuns = avg * dismissed;
+      Answer.innerText = "Total Runs scored is " + calcRuns.toFixed(2);
     } else if (runs && dismissed) {
-      let avg = runs / dismissed;
-      Answer.innerText = "Batting Average is " + avg.toFixed(2);
+      let calcAvg = runs / dismissed;
+      Answer.innerText = "Batting Average is " + calcAvg.toFixed(2);
     }
   }
   
@@ -137,14 +138,14 @@ document.getElementById('battingTab').addEventListener('click', function() {
   
  
     if (runs && wickets) {
-      let avg = runs / wickets;
+      let calcAvg = runs / wickets;
       Answer.innerText = "Bowling Average is " + avg.toFixed(2);
     } else if (wickets && avg) {
-      let runs = wickets * avg;
-      Answer.innerText = "Runs against is " + runs.toFixed(2);
+      let calcRuns = wickets * avg;
+      Answer.innerText = "Runs against is " + calcRuns.toFixed(2);
     } else if (runs && avg) {
-      let wickets = runs / avg;
-      Answer.innerText = "Wickets taken is " + wickets.toFixed(2);
+      let calcWickets = runs / avg;
+      Answer.innerText = "Wickets taken is " + calcWickets.toFixed(2);
     }
 
     
