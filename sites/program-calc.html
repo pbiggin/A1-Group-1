@@ -5,114 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cricket Calculator</title>
   <link rel="stylesheet" href="../styles/styles.css">
-  <script>
-    //Jasleen Script for Calc
-// This section allows for each calculator to appear if their button is clicked
-document.getElementById('battingTab').addEventListener('click', function() {
-  document.getElementById('battingCalc').style.display = 'block';
-  document.getElementById('bowlingCalc').style.display = 'none';
-});
-
-document.getElementById('bowlingTab').addEventListener('click', function() {
-  document.getElementById('battingCalc').style.display = 'none';
-  document.getElementById('bowlingCalc').style.display = 'block';
-});
-
-
-
-
-
-
-// This section is for the Batting Calculator
-function calculateBattingAverage() {
-  let runs = parseInt(document.getElementById('battingRuns').value);
-  let avg = parseFloat(document.getElementById('battingAvg').value);
-  let dismissed = parseInt(document.getElementById('battingDismissed').value);
-
- 
-
-  let Answer = document.getElementById('battingResult');
-  
-
-   //Ensures only two fields are entered
-  if ((runs && avg && dismissed)) {
-    Answer.innerText = "Please only enter two values.";
-    return;
-  }
-  if (!runs && !avg && !dismissed) {
-    Answer.innerText = "Please enter two fields.";
-    return;
-  }
-  if ((runs && !avg && !dismissed) || (!runs && avg && !dismissed) || (!runs && !avg && dismissed)) {
-    Answer.innerText = "Please enter exactly two fields.";
-    return;
-  }
-
-
-  if (runs && avg) {
-    let dismissed = runs / avg;
-    Answer.innerText = "Times dismissed is " + dismissed.toFixed(2);
-  } else if (avg && dismissed) {
-    let runs = avg * dismissed;
-    Answer.innerText = "Total Runs scored is " + runs.toFixed(2);
-  } else if (runs && dismissed) {
-    let avg = runs / dismissed;
-    Answer.innerText = "Batting Average is " + avg.toFixed(2);
-  }
-}
-
-
-
-
-
-
-// This section is for the Bowling Calculator
-function calculateBowlingAverage() {
-  let runs = parseInt(document.getElementById('bowlingRuns').value);
-  let wickets = parseInt(document.getElementById('bowlingWickets').value);
-  let avg = parseFloat(document.getElementById('bowlingAvg').value);
-
-
-  let Answer = document.getElementById('bowlingResult');
-
-
-  //Ensures only two fields are entered
-  if ((runs && wickets && avg)) {
-    Answer.innerText = "Please only enter two fields.";
-    return;
-  }
-
-  if (!runs && !wickets && !avg) {
-    Answer.innerText = "Please enter two fields.";
-    return;
-  }
-
-  if ((runs && !wickets && !avg) || (!runs && wickets && !avg) || (!runs && !wickets && avg)) {
-    Answer.innerText = "Please enter exactly two fields.";
-    return;
-  }
-
-
-
-
-  if (runs && wickets) {
-    let avg = runs / wickets;
-    Answer.innerText = "Bowling Average is " + avg.toFixed(2);
-  } else if (wickets && avg) {
-    let runs = wickets * avg;
-    Answer.innerText = "Runs against is " + runs.toFixed(2);
-  } else if (runs && avg) {
-    let wickets = runs / avg;
-    Answer.innerText = "Wickets taken is " + wickets.toFixed(2);
-  }
 
   
 
-
-}
-
-
-  </script>
 </head>
 
 
@@ -181,6 +76,10 @@ function calculateBowlingAverage() {
       </div>
       <button onclick="calculateBowlingAverage()">CALCULATE</button>
       <div id="bowlingResult"></div>
+    </div>
+
+    <div class="scripts">
+      <script src="../scripts/script.js"></script>
     </div>
 
     
