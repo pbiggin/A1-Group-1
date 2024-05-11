@@ -47,19 +47,27 @@ function moveRunner() {
 }
 
 
-
-
- 
 document.addEventListener('DOMContentLoaded', function() {
+
+   function resetInputFields() {
+    document.getElementById('battingRuns').value = '';
+    document.getElementById('battingAvg').value = '';
+    document.getElementById('battingDismissed').value = '';
+    document.getElementById('bowlingRuns').value = '';
+    document.getElementById('bowlingWickets').value = '';
+    document.getElementById('bowlingAvg').value = '';
+}
   // This section allows for each calculator to appear if their button is clicked
   document.getElementById('battingTab').addEventListener('click', function() {
       document.getElementById('battingCalc').style.display = 'block';
       document.getElementById('bowlingCalc').style.display = 'none';
+      resetInputFields();
   });
 
   document.getElementById('bowlingTab').addEventListener('click', function() {
       document.getElementById('battingCalc').style.display = 'none';
       document.getElementById('bowlingCalc').style.display = 'block';
+      resetInputFields();
   });
 });
 
