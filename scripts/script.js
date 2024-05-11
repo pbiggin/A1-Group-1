@@ -139,7 +139,7 @@ document.getElementById('battingTab').addEventListener('click', function() {
  
     if (runs && wickets) {
       let calcAvg = runs / wickets;
-      Answer.innerText = "Bowling Average is " + avg.toFixed(2);
+      Answer.innerText = "Bowling Average is " + calcAvg.toFixed(2);
     } else if (wickets && avg) {
       let calcRuns = wickets * avg;
       Answer.innerText = "Runs against is " + calcRuns.toFixed(2);
