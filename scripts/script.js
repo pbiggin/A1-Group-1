@@ -49,20 +49,20 @@ function moveRunner() {
 
 
 
-// This section allows for each calculator to appear if their button is clicked
-document.getElementById('battingTab').addEventListener('click', function() {
-    document.getElementById('battingCalc').style.display = 'block';
-    document.getElementById('bowlingCalc').style.display = 'none';
+document.addEventListener('DOMContentLoaded', function() {
+  // This section allows for each calculator to appear if their button is clicked
+  document.getElementById('battingTab').addEventListener('click', function() {
+      document.getElementById('battingCalc').style.display = 'block';
+      document.getElementById('bowlingCalc').style.display = 'none';
   });
-  
+
   document.getElementById('bowlingTab').addEventListener('click', function() {
-    document.getElementById('battingCalc').style.display = 'none';
-    document.getElementById('bowlingCalc').style.display = 'block';
+      document.getElementById('battingCalc').style.display = 'none';
+      document.getElementById('bowlingCalc').style.display = 'block';
   });
+});
 
 
-
-  
 
 
   // This section is for the Batting Calculator
