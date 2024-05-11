@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cricket Calculator</title>
-  <link rel="stylesheet" href="../styles/styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 
@@ -18,7 +18,7 @@
     <div class="container">
         <div class="tabContainer">
             <div>
-                <img src="../images/helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
+                <img src="helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
                 <button class="tab" id="battingTab">Batting Average Calculator</button>
@@ -26,7 +26,7 @@
         </div>
         <div class="tabContainer">
             <div>
-                <img src="../images/ball.jpg" alt="Ball" width="100px" height="100px"/>
+                <img src="ball.jpg" alt="Ball" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
                 <button class="tab" id="bowlingTab">Bowling Average Calculator</button>
@@ -38,7 +38,7 @@
 
 
   <div class="calculator">
-    <div id="battingCalc"  style="display:none;">
+    <div id="battingCalc" class="calcSection" style="display:block;">
       <h2>Batting Average Calculator</h2>
       <div class="input">
         <label for="battingRuns">Runs:</label>
@@ -57,7 +57,7 @@
     </div>
 
 
-    <div id="bowlingCalc"  style="display:block;">
+    <div id="bowlingCalc" class="calcSection" style="display:none;">
       <h2>Bowling Average Calculator</h2>
       <div class="input">
         <label for="bowlingRuns">Runs:</label>
@@ -75,10 +75,9 @@
       <div id="bowlingResult"></div>
     </div>
 
-    <div class="scripts">
-      <script src="../scripts/script.js" defer></script>
-    </div>
-  
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
