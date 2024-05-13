@@ -192,7 +192,7 @@ h2{
     border: 1px solid #ccc;
   }
   
-  button {
+  #jas button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -204,7 +204,7 @@ h2{
     font-size: 16px;
   }
   
-  button:hover {
+  #jas button:hover {
     background-color: #4654c4;
   }
   
