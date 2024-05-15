@@ -27,6 +27,7 @@ showImage(currentIndex);
 //end of carousel script
 
 
+//Scroll function for learn nav bar. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
 let pastScroll = window.scrollY;
 window.onscroll = function () {
   let userScroll = window.scrollY;
@@ -39,7 +40,6 @@ window.onscroll = function () {
   pastScroll = userScroll;
 }
 
-//learn run animation script
 
 
 
