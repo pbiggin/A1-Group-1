@@ -1,16 +1,10 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cricket Calculator</title>
   <link rel="stylesheet" href="../styles/styles.css">
-<!-- HEADING STYLE LINK -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
 </head>
 
 
@@ -26,18 +20,19 @@
     <div class="container">
         <div class="tabContainer">
             <div>
-                <img src="../images/helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
+                <img src="helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
                 <button class="tab" id="battingTab">Batting Average Calculator</button>
             </div>
         </div>
+
         <div class="tabContainer">
             <div>
-                <img src="../images/ball.jpg" alt="Ball" width="100px" height="100px"/>
+                <img src="ball.jpg" alt="Ball" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
-                <button class="jas-button" id="bowlingTab">Bowling Average Calculator</button>
+                <button class="tab" id="bowlingTab">Bowling Average Calculator</button>
             </div>
         </div>
     </div>
@@ -48,7 +43,7 @@
   <div class="calculator">
     
     <div id="battingCalc" class="calcSection" style="display:block;">
-      <h2 id="Jas-h2" >Batting Average Calculator</h2>
+      <h2 class="Jas-h2">Batting Average Calculator</h2>
       <div class="input">
         <label for="battingRuns">Runs:</label>
         <input type="number" id="battingRuns" min="0" placeholder="Enter runs">
@@ -61,7 +56,7 @@
         <label for="battingDismissed">Dismissed:</label>
         <input type="number" id="battingDismissed" min="0" placeholder="Enter dismissed">
       </div>
-      <button id="jas-button" onclick="calculateBattingAverage()">CALCULATE</button>
+      <button class="Jas-button" onclick="calculateBattingAverage()">CALCULATE</button>
       <div id="battingResult"></div>
       <div id="battingReq"></div>
 
@@ -82,7 +77,7 @@
         <label for="bowlingAvg">Average:</label>
         <input type="number" id="bowlingAvg" min="0" placeholder="Enter average">
       </div>
-      <button id="jas-button" onclick="calculateBowlingAverage()">CALCULATE</button>
+      <button class="Jas-button" onclick="calculateBowlingAverage()">CALCULATE</button>
       <div id="bowlingResult"></div>
       <div id="bowlingReq"></div>
     </div>
