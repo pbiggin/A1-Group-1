@@ -1,4 +1,5 @@
-<!DOCTYPE html>
+
+  <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,24 +13,26 @@
 <body>
 
   <h1> CRICKET CALCULATOR</h1>
+  <p class="pageDescription"> Welcome to your Cricket Calculator! <br> <br> Use the tabs below to switch between the Batting Average Calculator and Bowling Average Calculator. <br> Simply enter two values into the calculator to compute your batting or bowling stats!</p>
+
 
 
   <div class="pageContainer">
     <div class="container">
         <div class="tabContainer">
             <div>
-                <img src="../images/helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
+                <img src="helmet.jpeg" alt="Helmet" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
-                <button id="jas" class="tab" id="battingTab">Batting Average Calculator</button>
+                <button class="tab" id="battingTab">Batting Average Calculator</button>
             </div>
         </div>
         <div class="tabContainer">
             <div>
-                <img src="../images/ball.jpg" alt="Ball" width="100px" height="100px"/>
+                <img src="ball.jpg" alt="Ball" width="100px" height="100px"/>
             </div>
             <div class="imgButton">
-                <button id="jas" class="tab" id="bowlingTab">Bowling Average Calculator</button>
+                <button class="tab" id="bowlingTab">Bowling Average Calculator</button>
             </div>
         </div>
     </div>
@@ -38,7 +41,8 @@
 
 
   <div class="calculator">
-    <div id="battingCalc"  style="display:block;">
+    
+    <div id="battingCalc" class="calcSection" style="display:block;">
       <h2>Batting Average Calculator</h2>
       <div class="input">
         <label for="battingRuns">Runs:</label>
@@ -52,12 +56,14 @@
         <label for="battingDismissed">Dismissed:</label>
         <input type="number" id="battingDismissed" min="0" placeholder="Enter dismissed">
       </div>
-      <button id="jas" onclick="calculateBattingAverage()">CALCULATE</button>
+      <button onclick="calculateBattingAverage()">CALCULATE</button>
       <div id="battingResult"></div>
+      <div id="battingReq"></div>
+
     </div>
 
 
-    <div id="bowlingCalc"  style="display:none;">
+    <div id="bowlingCalc" class="calcSection" style="display:none;">
       <h2>Bowling Average Calculator</h2>
       <div class="input">
         <label for="bowlingRuns">Runs:</label>
@@ -71,14 +77,14 @@
         <label for="bowlingAvg">Average:</label>
         <input type="number" id="bowlingAvg" min="0" placeholder="Enter average">
       </div>
-      <button id="jas" onclick="calculateBowlingAverage()">CALCULATE</button>
+      <button onclick="calculateBowlingAverage()">CALCULATE</button>
       <div id="bowlingResult"></div>
+      <div id="bowlingReq"></div>
     </div>
 
-    <div class="scripts">
-      <script src="../scripts/script.js" defer></script>
-    </div>
-  
+
+  </div>
+
+  <script src="../scripts/script.js"></script>
 </body>
 </html>
-
