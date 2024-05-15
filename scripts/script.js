@@ -26,25 +26,20 @@ function previousImage() {
 showImage(currentIndex);
 //end of carousel script
 
-//learn run animation script
 
-function moveRunner() {
-  let id = null;
-  const runnerElement = document.getElementById("run-animation");
-  const runDiv = document.getElementById("run-container").offsetWidth;
-  let runnerPos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 5);
+let pastScroll = window.scrollY;
+window.onscroll = function () {
+  let userScroll = window.scrollY;
 
-  function frame() {
-    if (runnerPos == runDiv) {
-      clearInterval(id);
-    } else {
-      runnerPos++;
-      runnerElement.style.left = runnerPos + "px";
-    }
+  if (pastScroll > userScroll) {
+    document.getElementById("learnNav").style.top = "0";
+  } else {
+    document.getElementById("learnNav").style.top = "-100px";
   }
-}
+  pastScroll = userScroll;
+};
+
+//learn run animation script
 
 function resetInputFields() {
   document.getElementById("battingRuns").value = ""; // Empty's all user-inputs when tab is selected

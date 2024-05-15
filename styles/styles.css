@@ -16,14 +16,41 @@ body {
 
 #learnNav {
     position: fixed;
-    z-index:1;
+    top:0;
     width: 100%;
     height: 2cm;
-    background-color: grey;
+    transition: top 0.3s;
+    display: flex;
+    flex-direction: row;
+    z-index:1;
+    background-color: #0f7d3d;
 }
 #learn-hero {
-    transform: translateY(2cm);
+  background-image: url('../images/Learn_Cricket_Backsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
     height: 100vh;
+}
+
+#modulemove {
+  background-color: #0f7d3d;
+}
+
+.learnFoot {
+  height: 2cm;
+  width: 100%;
+  background-color: #0f7d3d; 
+}
+
+.learnFoot > p {
+  font-family: "Inter", sans-serif;
+  color:#D9a679;
+  padding-left: 1cm;
+  margin: 0;
+}
+
+.learnstyles {
+  padding: 2vw;
 }
 
 .hero-text {
@@ -33,6 +60,7 @@ body {
 
 .hero-text {
     font-size: 20pt;
+    transform: translateY(2cm);
 }
 /** Learning page carousel styles **/
 .outer-carousel {

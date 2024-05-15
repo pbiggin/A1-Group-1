@@ -6,16 +6,19 @@
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
     <title>Learn Cricket Hub</title>
 
-  <!-- HEADER FONT METADATA, copy me for HEADER FONT-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-
+    <!-- HEADER FONT METADATA, copy me for HEADER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
     <nav id="learnNav">
-      <p>NAV BAR WHATJAEPGHWEAN[</p>
+      <p>Learn Cricket</p>
+      <p>Hub</p>
     </nav>
     <header id="learn-hero">
       <div class="hero-text">
@@ -30,14 +33,14 @@
       </div>
     </header>
     <div class="moduleAccess"></div>
-    <p>
+    <p class="learnstyles">
       Overview to Games, How they operate on a basic level (Bat, hit, run)
       whatnot. Add some supportive graphics below to create more interest for
       viewers
     </p>
     <!-- Carousel HTML Code, Used for overview breakdown of cricket-->
     <div class="outer-carousel">
-      <h2>Cricket at a Glance</h2>
+      <h2 class="learnstyles">Cricket at a Glance</h2>
       <section class="carousel-container">
         <div class="carousel-item">
           <img src="../images/Carousel_1.png" alt="image1" />
@@ -57,7 +60,7 @@
         Next
       </button>
     </div>
-    <main>
+    <main class="learnstyles">
       <p>
         Further elaboration content of the education model, now going how the
         sections will be divided and learning content. Divide this section into
@@ -77,48 +80,32 @@
           exercitationem at quas aspernatur qui deleniti laboriosam mollitia
           corrupti? Quam, quo!
         </p>
-        <div id="run-container">
-          <img
-            class="wick1"
-            src="../images/Wick_upright.png"
-            alt="wick, upright"
-            height="155cm" width="auto"
-          />
-          <div id="run-animation" />
-          <img src="../images/Runner.png" height="155cm" />
-        </div>
-        <img
-          class="wick2"
-          src="../images/Wick_upright.png"
-          alt="wick, upright"
-          height="155cm"
-        />
-      </div>
-        <button onclick="moveRunner()">run</button>
-      <p>Distance between wicks: blah Score: blah</p>
-      <button>reset</button>
-      <div>
         <h2>Fielding</h2>
         <p>another interactive thing phoebe to put here please & thanks</p>
       </div>
     </main>
-    <h2>View modules</h2>
-    <section id="modulemove">
-      <card class="mod-prev-next">
-        <p>Back to home</p>
-        <a href="../index.html">Hub</a>
-      </card>
-      <card class="mod-progress">
-        <p>Progress bar WIP</p>
-      </card>
-      <card class="mod-prev-next">
-        <p>Next module</p>
-        <a href="../sites/learn-rules.html">Rules</a>
-      </card>
+      <section id="modulemove">
+        <card class="mod-prev-next">
+          <p>Back to home</p>
+          <a href="../index.html">Hub</a>
+        </card>
+        <card class="mod-progress">
+          <p>Progress bar WIP</p>
+        </card>
+        <card class="mod-prev-next">
+          <p>Next module</p>
+          <a href="../sites/learn-rules.html">Rules</a>
+        </card>
+      </section>
     </section>
+    <footer class="learnFoot">
+      <p>Media Computation COMP10003_2024_SM1</p>
+    </footer>
     <!-- idk why the script doesnt work if i move it into the head-->
-    <div class="scripts">
-      <script src="../scripts/script.js"></script>
-    </div>
+    <script
+      language="javascript"
+      type="text/javascript"
+      src="../scripts/script.js"
+    ></script>
   </body>
 </html>
