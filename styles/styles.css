@@ -192,7 +192,7 @@ body {
     border: 1px solid #ccc;
   }
   
-  #jas button {
+  #jas-button {
     display: block;
     width: 100%;
     padding: 10px;
@@ -204,7 +204,7 @@ body {
     font-size: 16px;
   }
   
-  #jas button:hover {
+  #jas-button:hover {
     background-color: #4654c4;
   }
   
