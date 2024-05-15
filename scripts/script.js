@@ -37,7 +37,7 @@ window.onscroll = function () {
     document.getElementById("learnNav").style.top = "-100px";
   }
   pastScroll = userScroll;
-};
+}
 
 //learn run animation script
 
