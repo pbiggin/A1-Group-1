@@ -119,9 +119,25 @@ body {
 
 
 
-/* Jasleen - program-calc */
+  
 
-.Jas-h2{
+
+
+h1{
+    color: #0F7D3D;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .pageDescription{
+    color: #0f7d3d;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+h2{
   text-align: center;
 }
 
@@ -131,8 +147,8 @@ body {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #ffffff;
-    color:#085d08;
+    background-color: #d9c6a3;
+    color:#0F7D3D;
   }
   
   .pageContainer {
@@ -140,9 +156,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 150px;
-    margin-bottom: 80px;
-    
-    
+    margin-bottom: 80px;  
 }
 
 .container {
@@ -158,24 +172,14 @@ body {
     margin: 40px;
 }
 
-.tabContainer img {
+.tabContainer img{
     width: 400px;
     height: auto;
 }
 
-.tabContainer .imgButton {
-  width: 400px; 
-  color: #531305;
+ .imgButton {
+  width: 400px;
 }
-
-
-
-
-
- 
-  
- 
-  
   .input {
     margin-bottom: 10px;
   }
@@ -191,42 +195,35 @@ body {
     border-radius: 3px;
     border: 1px solid #ccc;
   }
-
-.tab {
-   display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #1b0635;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-
-}
   
-  #jas-button {
+  .JasButton {
     display: block;
     width: 100%;
     padding: 10px;
     margin-top: 10px;
-    background-color: #1b0635;
-    color: white;
+    background-color: #4FA84A;
+    color: #FFFF;
     border: none;
     border-radius: 3px;
     font-size: 16px;
   }
   
-  #jas-button:hover {
-    background-color: #4654c4;
+  .JasButton:hover {
+    background-color: #85df8a;
   }
+
   
   #battingResult, #bowlingResult {
     margin-top: 20px;
     font-size: 15px;
     text-align: center;
   }
+
+  #battingReq, #bowlingReq {
+    color: #531305;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    
+}
   
-
-
-
