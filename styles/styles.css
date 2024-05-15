@@ -192,7 +192,7 @@ body {
     border: 1px solid #ccc;
   }
 
-#tab {
+.tab {
    display: block;
     width: 100%;
     padding: 10px;
