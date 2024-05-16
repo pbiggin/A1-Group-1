@@ -51,15 +51,15 @@ body {
 
 #hideaway {
   display: none;
+  transition: right 0.3s;
   flex-direction: row;
   margin: 5mm;
   height: 100%;
   width: 60%;
   padding-left: 6mm;
   background-color:#0a4f27;
-  transition: left 2s;
 }
-/** phoebe ref: last stopped here 16/05 night trying to get transitions to work again in the nav **/
+
 
 #learn-hero {
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
