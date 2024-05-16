@@ -47,8 +47,9 @@ body {
 #learn-hero {
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
 }
 
 
@@ -83,11 +84,12 @@ body {
 .hero-text {
   padding: 4vw;
   width: 50%;
-}
-
-.hero-text {
   font-size: 20pt;
   transform: translateY(2cm);
+}
+
+.hero-text > p {
+  font-size: 20pt;
 }
 /** Learning page carousel styles **/
 .outer-carousel {
