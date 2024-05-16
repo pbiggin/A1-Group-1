@@ -22,7 +22,7 @@
     </nav>
     <header id="learn-hero">
       <div class="hero-text">
-        <h1>Learning cricket</h1>
+        <h1 id="contrast">Learning cricket</h1>
         <p>
           Cricket Introduction, Learning mentioning popularity across age /
           level of play. other information, generally introducing the popularity
@@ -54,10 +54,18 @@
       </section>
       <!-- carousel buttons-->
       <button class="carousel-button-prev" onclick="previousImage()" id="prev">
-        Previous
+        <svg class="arrow" width="75" height="75" viewBox="0 0 16 16">
+          <path
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+          />
+        </svg>
       </button>
       <button class="carousel-button-next" onclick="nextImage()" id="next">
-        Next
+        <svg class="arrow" width="75" height="75" viewBox="0 0 16 16">
+          <path
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
       </button>
     </div>
     <main class="learnstyles">
@@ -71,11 +79,11 @@
       </p>
       <!-- ANOTHER INTERACTIVE FEATURE HERE-->
       <div>
-        <h2>Batting</h2>
+        <h2 class="subheading">Batting</h2>
         <p>
           another interactive thing phoebe to put here please & thanks.
           Introduction of batting element of game Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Aut iusto odit libero? Libero
+          consectetur adipisicing elit. Aut iusto odist libero? Libero
           distinctio, dignissimos cupiditate officiis perspiciatis quaerat
           exercitationem at quas aspernatur qui deleniti laboriosam mollitia
           corrupti? Quam, quo!
@@ -85,26 +93,81 @@
       </div>
     </main>
       <section id="modulemove">
-        <card class="mod-prev-next">
-          <p>Back to home</p>
-          <a href="../index.html">Hub</a>
-        </card>
+        <a id="move" href="../index.html">
+          <card class="mod-prev-next">
+            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+              <path
+                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+              />
+            </svg>
+            <h3 id="contrast">Back to home</h3>
+          </card>
+        </a>
+        <div class="progressBoundary">
+          <h3 class="subheading" id="contrast"> Your current progress: </h3>
         <card class="mod-progress">
-          <p>Progress bar WIP</p>
+          <div class="progressBox" id="currentmod">
+            <!-- COMPLETED CIRCLE mod 1 CURRENT MOD-->
+            <svg
+              class="completemod"
+              width="100"
+              height="100"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+              />
+            </svg>
+            <p id="contrast">Introduction</p>
+          </div>
+          <div class="progressBox">
+            <!-- UNCOMPLETED CIRCLE mod 2-->
+            <svg width="100" height="100" viewBox="0 0 16 16">
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+            </svg>
+            <p>Rules</p>
+          </div>
+          <div class="progressBox">
+            <!-- UNCOMPLETED CIRCLE mod 3-->
+            <svg width="100" height="100" viewBox="0 0 16 16">
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+            </svg>
+            <p>Setup</p>
+          </div>
+          <div class="progressBox">
+            <!-- UNCOMPLETED CIRCLE mod 4-->
+            <svg width="100" height="100" viewBox="0 0 16 16">
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+            </svg>
+            <p>Formats</p>
+          </div>
         </card>
-        <card class="mod-prev-next">
-          <p>Next module</p>
-          <a href="../sites/learn-rules.html">Rules</a>
-        </card>
+      </div>
+        <a id="move" href="../sites/learn-rules.html">
+          <card class="mod-prev-next">
+            <h3 id="contrast">Next module</h3>
+            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </card>
+        </a>
       </section>
-    </section>
     <footer class="learnFoot">
       <p>Media Computation COMP10003_2024_SM1</p>
+      <img src="../images/cricket_ball_tiny.gif" width="40" height="40">
     </footer>
     <!-- idk why the script doesnt work if i move it into the head-->
-    <script
-      type="text/javascript"
-      src="../scripts/script.js"
-    ></script>
+    <script type="text/javascript" src="../scripts/script.js"></script>
   </body>
 </html>

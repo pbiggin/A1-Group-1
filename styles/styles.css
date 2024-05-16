@@ -1,5 +1,5 @@
-/** HEADING FONT **/
-h1 {
+/** FONT RELATED CSS **/
+h1, h2, h3 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -7,6 +7,26 @@ h1 {
   font-variation-settings: "slnt" 0;
   color: #0f7d3d;
 }
+
+h2 {
+  text-align: center;
+}
+
+/** use this class to change text colour from green -> beige when bg is green **/
+#contrast {
+ color: #f5f2e1;
+}
+
+.subheading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color:#0f7d3d;
+}
+
+/** END FONT RELATED CSS **/
 
 body {
   margin: 0;
@@ -31,22 +51,29 @@ body {
   height: 100vh;
 }
 
-#modulemove {
-  background-color: #0f7d3d;
+
+/** FOR SVGS **/
+.arrow {
+  fill: #f5f2e1;
 }
 
 .learnFoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   height: 2cm;
   width: 100%;
-  background-color: #0f7d3d;
+  background-color: #0a4f27;
 }
 
-.learnFoot > p {
+.learnFoot > p , img {
+  padding: 5mm 5mm 0 0;
   font-family: "Inter", sans-serif;
-  color: #d9a679;
-  padding-left: 1cm;
+  color: #0f7d3d;
+  text-align: center;
   margin: 0;
 }
+
 
 .learnstyles {
   padding: 2vw;
@@ -85,21 +112,36 @@ body {
 }
 
 .carousel-button-prev {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
   position: absolute;
   top: 50%;
   left: 0;
 }
 
+.carousel-button-prev:hover {
+  scale: 110%;
+}
+
 .carousel-button-next {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   position: absolute;
   top: 50%;
   right: 0;
 }
 
+.carousel-button-next:hover {
+  scale: 110%;
+}
+
 /** Css for learning module transitons **/
 #modulemove {
+  background-color: #0f7d3d;
   width: 96%;
-  height: 8cm;
+  height: 5cm;
   padding: 2%;
   display: flex;
   flex-direction: row;
@@ -107,17 +149,57 @@ body {
 }
 
 .mod-prev-next {
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mod-prev-next:hover {
+  scale: 110%;
+}
+
+#move {
+  text-decoration: none;
+  align-self: center;
+  display: block;
   width: 8cm;
-  height: 100%;
+  height: 15mm;
+}
+
+.progressBoundary {
+  width: 100%;
+  align-self: center;
+  justify-content: center;
   text-align: center;
-  background-color: rgb(230, 230, 230);
 }
 
 .mod-progress {
+  display: flex;
+  flex-direction: row;
   overflow: hidden;
+  justify-content: center;
+  align-self: center;
+  padding: 0 10mm 0 10mm;
   margin: 0% 2% 0% 2%;
-  width: 100%;
-  background-color: rgb(230, 230, 230);
+}
+
+#currentmod {
+  fill: #f5f2e1;
+}
+.progressBox {
+  margin: 2mm;
+  fill: #4fa84a;
+}
+
+.progressBox > p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color: #4fa84a;
+  text-align: center;
 }
 
 .wick2 {
@@ -128,15 +210,15 @@ body {
 /** end module relevant style **/
 
 /** animation styles **/
-#run-container {
-  display: flex;
-  width: 100%;
-  position: relative;
-  background: yellow;
+.completemod {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
-#run-animation {
-  position: absolute;
+.completemod.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 h1 {
@@ -153,9 +235,6 @@ h1 {
   margin-right: 20%;
 }
 
-h2 {
-  text-align: center;
-}
 
 .calculator {
   width: 360px;
