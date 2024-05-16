@@ -52,7 +52,7 @@ const animateStart = new IntersectionObserver(function (entries, animateStart) {
 
 animateStart.observe(modTick);
 
-//Scroll function for learn nav bar. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
+//Scroll function for learn nav bar placemend. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
 let pastScroll = window.scrollY;
 window.onscroll = function () {
   let userScroll = window.scrollY;
@@ -64,6 +64,16 @@ window.onscroll = function () {
   }
   pastScroll = userScroll;
 };
+
+
+//mouse movements for nav bar learn
+document.getElementById("hideawaybtn").addEventListener('mouseover', function() {
+  document.getElementById("hideaway").style.display = "block";
+});
+
+document.getElementById("hideawaybtn").addEventListener('mouseout', function() {
+  document.getElementById("hideaway").style.display = "none";
+});
 
 function resetInputFields() {
   document.getElementById("battingRuns").value = ""; // Empty's all user-inputs when tab is selected

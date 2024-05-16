@@ -35,6 +35,7 @@ body {
 }
 
 #learnNav {
+  top: 0;
   position: fixed;
   width: 100%;
   height: 2cm;
@@ -48,24 +49,17 @@ body {
   padding-left: 6mm;
 }
 
-
-.moduleMenu > a {
-  font-family: "Inter", sans-serif;
-  font-size: 16pt;
-  color: #d9c6a3;
-  padding: 5mm;
-  text-decoration: none;
+#hideaway {
+  display: none;
+  flex-direction: row;
+  margin: 5mm;
+  height: 100%;
+  width: 60%;
+  padding-left: 6mm;
+  background-color:#0a4f27;
+  transition: left 2s;
 }
-
-.moduleMenu > a:hover {
-  color: #D9a679;
-  font-size: 18pt;
-}
-
-.learnNavHub > a:hover {
-  color: #f5f2e1;
-  font-size: 24pt;
-}
+/** phoebe ref: last stopped here 16/05 night trying to get transitions to work again in the nav **/
 
 #learn-hero {
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
@@ -174,17 +168,30 @@ body {
   justify-content: space-between;
 }
 
-.mod-prev-next {
+.mod-prev {
+  width: 8cm;
   background-color: transparent;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  align-content: center;
 }
 
-.mod-prev-next:hover {
+.mod-next {
+  width: 8cm;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: right;
+}
+
+.mod-prev:hover {
   scale: 110%;
 }
 
+.mod-next:hover {
+  scale: 110%;
+}
 #move {
   text-decoration: none;
   align-self: center;
@@ -228,11 +235,13 @@ body {
   text-align: center;
 }
 
-.wick2 {
-  position: absolute;
-  right: 0;
+.modNewboundary {
+  width: 8cm;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
-
 /** end module relevant style **/
 
 /** animation styles **/

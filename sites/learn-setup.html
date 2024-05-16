@@ -1,29 +1,175 @@
-<!DOCTYPE html>
+\<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="../styles/styles.css" />
-    <title>Document</title>
-</head>
-<body>
-<!-- next module -->
-<section id="modulemove">
-  <card class="mod-prev-next">
-    <p>Previous module</p>
-    <a href="../sites/learn-rules.html">Rules of Cricket</a>
-  </card>
-  <card class="mod-progress">
-    <p>Progress bar</p>
-  </card>
-  <card class="mod-prev-next">
-    <p>Next module</p>
-    <a href="../sites/learn-formats.html">Formats</a>
-  </card> </a>
-</section>
-<!-- idk why the script doesnt work if i move it into the head-->
-<div class="scripts">
-  <script src="../scripts/script.js"></script>
-</div>
-</body>
+    <title>Learn Cricket - Setup</title>
+
+    <!-- HEADER FONT METADATA, copy me for HEADER FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
+    <nav id="learnNav">
+      <h1 id="contrast" class="subheading">Learn Cricket</h1>
+      <card class="learnNavBtn">
+        <div class="moduleMenu">
+          <a href="learn-hub.html"> module 1 </a>
+          <a href="learn-rules.html"> module 2 </a>
+          <a href="learn-setup.html"> module 3 </a>
+          <a href="learn-setup.html"> module 4 </a>
+        </div>
+      </card>
+    </nav>
+    <!-- Carousel HTML Code, Used for overview breakdown of cricket-->
+    <div class="outer-carousel">
+      <h2 class="learnstyles">PLACEHOLDER</h2>
+      <section class="carousel-container">
+        <div class="carousel-item">
+          <img src="../images/Carousel_1.png" alt="image1" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/Carousel_2.png" alt="image2" />
+        </div>
+        <div class="carousel-item">
+          <img src="../images/Carousel_3.png" alt="image3" />
+        </div>
+      </section>
+      <!-- carousel buttons-->
+      <button class="carousel-button-prev" onclick="previousImage()" id="prev">
+        <svg class="arrow" width="75" height="75" viewBox="0 0 16 16">
+          <path
+            d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+          />
+        </svg>
+      </button>
+      <button class="carousel-button-next" onclick="nextImage()" id="next">
+        <svg class="arrow" width="75" height="75" viewBox="0 0 16 16">
+          <path
+            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+          />
+        </svg>
+      </button>
+    </div>
+    <main class="learnstyles">
+      <p>
+        Further elaboration content of the education model, now going how the
+        sections will be divided and learning content. Divide this section into
+        a seperate tonal body? Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Aut iusto odit libero? Libero distinctio, dignissimos
+        cupiditate officiis perspiciatis quaerat exercitationem at quas
+        aspernatur qui deleniti laboriosam mollitia corrupti? Quam, quo!
+      </p>
+      <div>
+        <h2>PLACEHOLDER</h2>
+        <p>
+          another interactive thing phoebe to put here please & thanks.
+          Introduction of batting element of game Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Aut iusto odist libero? Libero
+          distinctio, dignissimos cupiditate officiis perspiciatis quaerat
+          exercitationem at quas aspernatur qui deleniti laboriosam mollitia
+          corrupti? Quam, quo!
+        </p>
+        <h2>PLACEHOLDER</h2>
+        <p>another interactive thing phoebe to put here please & thanks</p>
+      </div>
+    </main>
+    <!-- MODULE MOVE ADD TO ALL PAGES-->
+    <section id="modulemove">
+      <a id="move" href="learn-rules.html">
+        <card class="mod-prev">
+          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+            <path
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+          <h3 id="contrast">Previous Module</h3>
+        </card>
+      </a>
+      <div class="progressBoundary">
+        <h3 class="subheading" id="contrast">Your current progress:</h3>
+        <card class="mod-progress">
+          <div class="progressBox">
+            <!-- COMPLETED CIRCLE mod 1 -->
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+              />
+            </svg>
+            <p>Introduction</p>
+          </div>
+          <div class="progressBox">
+            <!-- COMPLETED CIRCLE mod 2 CURRENT MOD-->
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+              />
+            </svg>
+            <p>Rules</p>
+          </div>
+          <div class="progressBox" id="currentmod">
+            <!-- UNCOMPLETED CIRCLE mod 3-->
+            <svg class="completemod"
+              width="100"
+              height="100"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+              <path
+                d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
+              />
+            </svg>
+            <p id="contrast" >Setup</p>
+          </div>
+          <div class="progressBox">
+            <!-- UNCOMPLETED CIRCLE mod 4-->
+            <svg width="100" height="100" viewBox="0 0 16 16">
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+              />
+            </svg>
+            <p>Formats</p>
+          </div>
+        </card>
+      </div>
+      <a id="move" href="../sites/learn-formats.html">
+        <card class="mod-next">
+          <h3 id="contrast">Next module</h3>
+          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+            <path
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </card>
+      </a>
+    </section>
+    <footer class="learnFoot">
+      <p>Media Computation COMP10003_2024_SM1</p>
+      <img src="../images/cricket_ball_tiny.png" width="35" height="35" />
+    </footer>
+    <!-- idk why the script doesnt work if i move it into the head-->
+    <script type="text/javascript" src="../scripts/script.js"></script>
+  </body>
 </html>
