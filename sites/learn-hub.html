@@ -17,8 +17,15 @@
   <body>
     <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
     <nav id="learnNav">
-      <p>Learn Cricket</p>
-      <p>Hub</p>
+      <h1 id="contrast" class="subheading">Learn Cricket</h1>
+      <card class="learnNavBtn">
+        <div class="moduleMenu">
+        <a href="learn-hub.html"> module 1 </a>
+        <a href="learn-rules.html"> module 2 </a>
+        <a href="learn-setup.html"> module 3 </a>
+        <a href="learn-setup.html"> module 4 </a>
+        </div>
+      </card>
     </nav>
     <header id="learn-hero">
       <div class="hero-text">
@@ -92,19 +99,19 @@
         <p>another interactive thing phoebe to put here please & thanks</p>
       </div>
     </main>
-      <section id="modulemove">
-        <a id="move" href="../index.html">
-          <card class="mod-prev-next">
-            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
-              <path
-                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
-              />
-            </svg>
-            <h3 id="contrast">Back to home</h3>
-          </card>
-        </a>
-        <div class="progressBoundary">
-          <h3 class="subheading" id="contrast"> Your current progress: </h3>
+    <section id="modulemove">
+      <a id="move" href="../index.html">
+        <card class="mod-prev-next">
+          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+            <path
+              d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+          <h3 id="contrast">Back to home</h3>
+        </card>
+      </a>
+      <div class="progressBoundary">
+        <h3 class="subheading" id="contrast">Your current progress:</h3>
         <card class="mod-progress">
           <div class="progressBox" id="currentmod">
             <!-- COMPLETED CIRCLE mod 1 CURRENT MOD-->
@@ -152,20 +159,20 @@
           </div>
         </card>
       </div>
-        <a id="move" href="../sites/learn-rules.html">
-          <card class="mod-prev-next">
-            <h3 id="contrast">Next module</h3>
-            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
-              <path
-                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-              />
-            </svg>
-          </card>
-        </a>
-      </section>
+      <a id="move" href="../sites/learn-rules.html">
+        <card class="mod-prev-next">
+          <h3 id="contrast">Next module</h3>
+          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+            <path
+              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+            />
+          </svg>
+        </card>
+      </a>
+    </section>
     <footer class="learnFoot">
       <p>Media Computation COMP10003_2024_SM1</p>
-      <img src="../images/cricket_ball_tiny.png" width="35" height="35">
+      <img src="../images/cricket_ball_tiny.png" width="35" height="35" />
     </footer>
     <!-- idk why the script doesnt work if i move it into the head-->
     <script type="text/javascript" src="../scripts/script.js"></script>

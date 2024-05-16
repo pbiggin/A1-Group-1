@@ -6,6 +6,7 @@ h1, h2, h3 {
   font-style: normal;
   font-variation-settings: "slnt" 0;
   color: #0f7d3d;
+  text-align: center;
 }
 
 h2 {
@@ -35,7 +36,6 @@ body {
 
 #learnNav {
   position: fixed;
-  top: 0;
   width: 100%;
   height: 2cm;
   transition: top 0.3s;
@@ -43,7 +43,30 @@ body {
   flex-direction: row;
   z-index: 1;
   background-color: #0f7d3d;
+  overflow: hidden;
+  align-items: center;
+  padding-left: 6mm;
 }
+
+
+.moduleMenu > a {
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+  color: #d9c6a3;
+  padding: 5mm;
+  text-decoration: none;
+}
+
+.moduleMenu > a:hover {
+  color: #D9a679;
+  font-size: 18pt;
+}
+
+.learnNavHub > a:hover {
+  color: #f5f2e1;
+  font-size: 24pt;
+}
+
 #learn-hero {
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
   background-repeat: no-repeat;
@@ -222,12 +245,6 @@ body {
 .completemod.show {
   opacity: 1;
   transform: translateY(0);
-}
-
-h1 {
-  color: #0f7d3d;
-  text-align: center;
-  margin-top: 40px;
 }
 
 .pageDescription {
