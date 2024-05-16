@@ -67,10 +67,11 @@ body {
 }
 
 .learnFoot > p , img {
-  padding: 5mm 5mm 0 0;
+  padding: 2mm 10mm 0 0;
   font-family: "Inter", sans-serif;
   color: #0f7d3d;
   text-align: center;
+  align-self: center;
   margin: 0;
 }
 
