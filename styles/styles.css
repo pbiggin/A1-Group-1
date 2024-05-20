@@ -41,6 +41,13 @@ p {
   color:#0f7d3d;
 }
 
+.side {
+  font-size: 11pt;
+  font-family: "Inter", sans-serif;
+  padding-left: 80%;
+  color:#D9A679; 
+
+}
 /** END FONT RELATED CSS **/
 
 body {
@@ -64,11 +71,12 @@ body {
 }
 
 #learn-hero {
+  display: flex;
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 90vh;
+  height: 95vh;
 }
 
 /** FOR SVGS **/
@@ -98,6 +106,18 @@ body {
 .learnstyles {
   padding: 2vw;
 }
+
+.imagesplit {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 10cm;
+  background-image: url(../images/splitter_backsplash_1.jpg);
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 
 .hero-text {
   padding: 4vw;
