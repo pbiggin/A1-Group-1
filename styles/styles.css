@@ -21,6 +21,17 @@ p {
  color: #f5f2e1;
 }
 
+.bold {
+  color:#683a13;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 14pt;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  text-align: center;
+}
+
 .subheading {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -90,13 +101,13 @@ body {
 
 .hero-text {
   padding: 4vw;
-  width: 50%;
+  width: 45%;
   font-size: 20pt;
   transform: translateY(2cm);
 }
 
 .hero-text > p {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 /** Learning page carousel styles **/
 .outer-carousel {
@@ -149,6 +160,10 @@ body {
 
 .hideaway {
   background-color:#4fa84a;
+  color:#f5f2e1;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 14pt;
   cursor: pointer;
   width: 100%;
   border: none;
@@ -156,6 +171,7 @@ body {
   transition: border-radius 0.2s;
   transition-delay: 0.4s;
   outline: none;
+  align-self: center;
   padding: 5mm;
 }
 
@@ -164,13 +180,15 @@ body {
 }
 
 .hideaway:after {
-  content: '\02795'; /* + */
+  scale: 150%;
+  color: white;
+  content: '+';
   float: right;
   margin-left: 5mm;
 }
 
 .active:after {
-  content: "\2796"; 
+  content: "-"; 
 }
 
 .hideContent {
