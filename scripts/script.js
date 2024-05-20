@@ -65,15 +65,27 @@ window.onscroll = function () {
   pastScroll = userScroll;
 };
 
+//dropdown modules
+let hide = document.getElementsByClassName("hideaway");
 
-//mouse movements for nav bar learn
-document.getElementById("hideawaybtn").addEventListener('mouseover', function() {
-  document.getElementById("hideaway").style.display = "block";
-});
-
-document.getElementById("hideawaybtn").addEventListener('mouseout', function() {
-  document.getElementById("hideaway").style.display = "none";
-});
+for (let i = 0; i < hide.length; i++) {
+  hide[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    let hideaway = this
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+      hideaway.style.borderRadius = "30px";
+      hideaway.style.transition = "border-radius 0.2s";
+      hideaway.style.transitionDelay = "0.3s";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      hideaway.style.borderRadius = "30px 30px 0 0";
+      hideaway.style.transition = "none";
+      hideaway.style.transitionDelay = "0.0s";
+    }
+  });
+}
 
 function resetInputFields() {
   document.getElementById("battingRuns").value = ""; // Empty's all user-inputs when tab is selected

@@ -13,6 +13,9 @@ h2 {
   text-align: center;
 }
 
+p {
+  font-size: 16pt;
+}
 /** use this class to change text colour from green -> beige when bg is green **/
 #contrast {
  color: #f5f2e1;
@@ -49,18 +52,6 @@ body {
   padding-left: 6mm;
 }
 
-#hideaway {
-  display: none;
-  transition: right 0.3s;
-  flex-direction: row;
-  margin: 5mm;
-  height: 100%;
-  width: 60%;
-  padding-left: 6mm;
-  background-color:#0a4f27;
-}
-
-
 #learn-hero {
   background-image: url("../images/Learn_Cricket_Backsplash.jpg");
   background-repeat: no-repeat;
@@ -68,7 +59,6 @@ body {
   background-size: cover;
   height: 90vh;
 }
-
 
 /** FOR SVGS **/
 .arrow {
@@ -157,6 +147,42 @@ body {
   scale: 110%;
 }
 
+.hideaway {
+  background-color:#4fa84a;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  transition: border-radius 0.2s;
+  transition-delay: 0.4s;
+  outline: none;
+  padding: 5mm;
+}
+
+.active.hideaway:hover {
+  background-color:#0f7d3d;
+}
+
+.hideaway:after {
+  content: '\02795'; /* + */
+  float: right;
+  margin-left: 5mm;
+}
+
+.active:after {
+  content: "\2796"; 
+}
+
+.hideContent {
+  padding: 0 18px;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  transition-delay: 0.05s;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+  background-color:#d9c6a3;
+}
+
 /** Css for learning module transitons **/
 #modulemove {
   background-color: #0f7d3d;
@@ -169,7 +195,8 @@ body {
 }
 
 .mod-prev {
-  width: 8cm;
+  max-width: 8cm;
+  min-width: 4cm;
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -177,7 +204,8 @@ body {
 }
 
 .mod-next {
-  width: 8cm;
+  max-width: 8cm;
+  min-width: 4cm;
   background-color: transparent;
   display: flex;
   flex-direction: row;
@@ -196,7 +224,8 @@ body {
   text-decoration: none;
   align-self: center;
   display: block;
-  width: 8cm;
+  min-width: 4cm;
+  max-width: 8cm;
   height: 15mm;
 }
 
