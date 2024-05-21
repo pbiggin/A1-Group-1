@@ -323,8 +323,11 @@ body {
   transform: translateY(0);
 }
 
+
+//Calculator Page
+
 .pageDescription {
-  color: ##000000;
+  color: #000000;
   text-align: center ;
   margin-top: 80px;
   margin-left: 16%;
