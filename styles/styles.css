@@ -347,8 +347,8 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color:#683a13;
-  color: #0f7d3d;
+  background-color:#0a4f27;
+  color:#ffffff;  
 }
 
 .pageContainer {
@@ -411,6 +411,10 @@ body {
 
 .JasButton:hover {
   background-color: #85df8a;
+}
+
+.Jas-h2 {
+  color: #ffffff;  
 }
 
 #battingResult,
