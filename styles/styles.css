@@ -326,14 +326,20 @@ body {
 
 //Calculator Page
 
+.pageDescriptionContainer {
+  display: flex;
+  justify-content: center;
+}
+
 .pageDescription {
-  color: #000000;  
+  color: #0f7d3d;
   text-align: center;
   margin-top: 80px;
-  margin-left: 16%;
-  margin-right: 16%;
-  font-size: 16px;  
+  margin-left: 20%;
+  margin-right: 20%;
+  width: 60%; /* Ensure it does not exceed the parent's width */
 }
+
 
 .calculator {
   width: 360px;
