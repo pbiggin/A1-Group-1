@@ -326,99 +326,98 @@ body {
 
 //Calculator Page
 
-  .pageDescription{
-    color: #0f7d3d;
-    text-align: center;
-    margin-top: 80px;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-  
-  .calculator {
-    width: 360px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #d9c6a3;
-    color:#0F7D3D;
-  }
-  
-  .pageContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 150px;
-    margin-bottom: 80px;  
+.pageDescription {
+  color: #000000;  
+  text-align: center;
+  margin-top: 80px;
+  margin-left: 16%;
+  margin-right: 16%;
+  font-size: 16px;  
+}
+
+.calculator {
+  width: 360px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d9c6a3;
+  color: #0f7d3d;
+}
+
+.pageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-bottom: 80px;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .tabContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
 }
 
-.tabContainer img{
-    width: 400px;
-    height: auto;
+.tabContainer img {
+  width: 400px;
+  height: auto;
 }
 
- .imgButton {
+.imgButton {
   width: 400px;
 }
-  .input {
-    margin-bottom: 10px;
-  }
-  
-  .input label {
-    display: inline-block;
-    width: 80px;
-  }
-  
-  .input input {
-    width: calc(100% - 90px);
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
-  }
-  
-  .JasButton {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #4FA84A;
-    color: #FFFF;
-    border: none;
-    border-radius: 3px;
-    font-size: 16px;
-  }
-  
-  .JasButton:hover {
-    background-color: #85df8a;
-  }
 
-  
-  #battingResult, #bowlingResult {
-    margin-top: 20px;
-    font-size: 15px;
-    text-align: center;
-  }
-
-  #battingReq, #bowlingReq {
-    color: #531305;
-    margin-top: 20px;
-    font-size: 15px;
-    text-align: center;
-    
+.input {
+  margin-bottom: 10px;
 }
-  
 
+.input label {
+  display: inline-block;
+  width: 80px;
+}
 
+.input input {
+  width: calc(100% - 90px);
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.JasButton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #4fa84a;
+  color: #ffffff;  
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+.JasButton:hover {
+  background-color: #85df8a;
+}
+
+#battingResult,
+#bowlingResult {
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
+#battingReq,
+#bowlingReq {
+  color: #531305;
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+}
