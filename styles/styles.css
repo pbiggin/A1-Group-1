@@ -332,7 +332,7 @@ body {
   margin-top: 80px;
   margin-left: 16%;
   margin-right: 16%;
-  font: 16px;
+  font-size: 16px;
 }
 
 
@@ -365,15 +365,16 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 40px;
+  width: 400px;
 }
 
 .tabContainer img {
-  width: 400px;
+  width: 100%;
   height: auto;
 }
 
 .imgButton {
-  width: 400px;
+  width: 100%;
 }
 .input {
   margin-bottom: 10px;
@@ -397,7 +398,7 @@ body {
   padding: 10px;
   margin-top: 10px;
   background-color: #4fa84a;
-  color: #ffff;
+  color: #ffffff;
   border: none;
   border-radius: 3px;
   font-size: 16px;
