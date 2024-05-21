@@ -428,6 +428,7 @@ font-family: "Inter", sans-serif;
 
 #battingResult,
 #bowlingResult {
+  font-family: "Inter", sans-serif;
   margin-top: 20px;
   font-size: 15px;
   text-align: center;
@@ -435,6 +436,7 @@ font-family: "Inter", sans-serif;
 
 #battingReq,
 #bowlingReq {
+  font-family: "Inter", sans-serif;
   color: #d13513;
   margin-top: 20px;
   font-size: 15px;
