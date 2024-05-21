@@ -326,6 +326,10 @@ body {
 
 //Calculator Page
 
+label {
+font-family: "Inter", sans-serif;
+}
+
 .pageDescriptionContainer {
   display: flex;
   justify-content: center;
@@ -347,7 +351,7 @@ body {
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color:#0a4f27;
+  background-color:#3e7e3f;
   color:#ffffff;  
 }
 
