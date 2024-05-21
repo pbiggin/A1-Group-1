@@ -87,6 +87,7 @@ for (let i = 0; i < hide.length; i++) {
   });
 }
 
+//Jasleen - Quiz Page
 function resetInputFields() {
   document.getElementById("battingRuns").value = ""; // Empty's all user-inputs when tab is selected
   document.getElementById("battingAvg").value = "";
