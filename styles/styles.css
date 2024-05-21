@@ -1,5 +1,5 @@
 /** FONT RELATED CSS **/
-h1, h2, h3 {
+h1, h2, h3{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -16,6 +16,11 @@ h2{
 p {
   font-size: 16pt;
 }
+
+label {
+  font-family: "Inter", sans-serif;
+}
+  
 /** use this class to change text colour from green -> beige when bg is green **/
 #contrast {
  color: #f5f2e1;
