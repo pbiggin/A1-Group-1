@@ -85,3 +85,21 @@ button:hover {
     padding: 10px;
     text-align: center;
 }
+
+.learnFoot {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 2cm;
+  width: 100%;
+  background-color: #0a4f27;
+}
+
+.learnFoot > p , img {
+  padding: 2mm 10mm 0 0;
+  font-family: "Inter", sans-serif;
+  color: #0f7d3d;
+  text-align: center;
+  align-self: center;
+  margin: 0;
+}
