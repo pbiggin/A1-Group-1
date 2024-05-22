@@ -8,7 +8,11 @@
   flex: 50%;
 }
 
-h1,
+h1 {
+  text-align: center;
+  color: #f5f2e1;
+   font-family: "Inter", sans-serif;
+}
 p {
   text-align: center;
   color: #f5f2e1;
