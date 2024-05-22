@@ -28,6 +28,7 @@ button {
     text-align: center;
     margin: 2%;
     height: 30px;
+    border-radius: 10px;
 }
 
 #submitButton {
