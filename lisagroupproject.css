@@ -1,0 +1,170 @@
+.infoheader { 
+    display: flex;
+    flex-direction: row;
+
+    
+}
+
+.lisa_part h1, h2, h3, p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #0f7d3d;
+  }
+.title h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #0f7d3d;
+
+}
+
+
+
+
+.title p { 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: black
+
+}
+
+.bat_img { 
+    overflow: hidden; /* Ensure the image doesn't overflow its container */
+    width: 150%; /* Set the initial width */
+    transition: width 0.5s ease; /* Apply transition effect on width */
+}
+
+.bat_img:hover {
+    
+        width: 260%; /* Change width on hover to expand */
+ 
+}
+
+.title { 
+    padding: 100px ;
+}
+.hidden {
+    display: none; /* so the text is not visable in the card until the button is clicked*/
+}
+
+.info2 h2, h3 { 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    color: #0f7d3d;
+}
+.games {
+    background-color: #4fa84a;
+}
+
+.card {
+    background-color:  #0f7d3d;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(1, 78, 171, 0.2);
+   
+    
+   }
+   .card h1, h2, p {
+    color: white;
+   }
+   
+   .card:hover {
+    width: 100.002%;
+   }
+
+.btninfo {
+    background-color:  #4fa84a;
+    border: none;
+    color: #fff;
+    padding: .5em .75em;
+    border-radius: .25em;
+    cursor: pointer;
+}
+.card_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    gap: 1rem;
+    align-items: flex-start;
+
+}
+
+
+.card_header.card_image {
+    overflow: hidden;
+}
+.card_header.card_image > img {
+    display: block;
+    width: 100%;
+    max-height: 200px
+    aspect-ratio; 16 / 9;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_grid h2 {
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+table.protective_gear {
+    width: 300%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    align-content: center;
+margin: 50%;
+    
+
+}
+.protective_gear th, td {
+    padding: 50px;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+.protective_gear th {
+    background-color: #0f7d3d;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+.protective_gear td img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.protective_gear tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.protective_gear tr:hover {
+    background-color: rgba(79, 168, 79, 0.3);
+}
+
+.protective_gear img:hover {
+    width: 300%; /* when img hovered on it expands */
+}
+
+.row h2 {
+    color: #0f7d3d;
+}
+
+
+
