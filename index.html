@@ -1,17 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cricket Homepage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  egwagewagwa
-  <a href="/sites/learn-hub.html">learn hub</a>
-  <a href="/sites/content-hub.html">content hub</a>
-  <a href="/sites/content-people.html">content people</a>
-  <a href="/sites/program-quiz.html">quiz</a>
-  <a href="/sites/cricketcalc.html">calc</a>
+    <nav id="mainnavbar">
+        <img onclick="toggleMenu()" id="hamburger" src="hamburger.svg" alt="">
+        <div class="titleheadingcontainer">
+            <h1 id="titleheading" class="titleheading">
+                cricket
+            </h1>
+        </div>    
+        
+        <aside id="interactivenav">
+            <div id="navcontents">
+                <div class="pagelink">
+                    <a href="/sites/learn-hub.html">learning hub</a>
+                </div>
+                <div class="pagelink">
+                    <a href="/sites/content-hub.html">content hub</a>
+                </div>
+                <div class="pagelink">
+                    <a href="/sites/program-quiz.html">quiz yourself</a>
+                </div>
+                <div class="pagelink">
+                    <a href="/sites/cricketcalc.html">calculator</a>
+                </div>
+            </div>
+        </aside>
+    </nav>
 
+    <div id="arrowcircle">
+        <img id="downarrow" src="/images/downarrow.svg" alt="">
+    </div>
+    
+    <section></section>
 
+    <main>
+        <div id="definition">
+            <p>/ˈkrɪkɪt/<br/>
+                noun<br/>
+                <br/>
+                an open-air game played on a large grass field with ball, bats, and two wickets, between teams of eleven players, the object of the game being to score more runs than the opposition.
+            </p>
+        </div>
+        <div id="cardholder">
+            <div class="card">
+                    <p>Learning Hub</p>
+            </div>
+            <div>
+                <div id="leftarrow"></div>
+                <div id="rightarrow"></div>
+            </div>
+        </div>
+       
+    </main>
+
+    <footer>
+        <p>Media Computation 2024</p>
+    </footer>
+</body>
 </html>
