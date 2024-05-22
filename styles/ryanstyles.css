@@ -1,0 +1,157 @@
+/* RYAN */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+#indexbody {
+    height: 200vh;
+}
+
+#mainnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 35vh;
+    background-color: #238c4100;
+    transition: background-color 0.3s, height 0.3s;
+    z-index: 10;
+}
+
+#arrowcircle {
+    position: absolute;
+    bottom: 2vw;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #238c41;
+    padding: 1vw;
+    border-radius: 50%;
+}
+
+#hamburger {
+    position: absolute;
+    top: 50%;
+    left: 5vh;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 10;
+}
+
+#interactivenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 0;
+    background-color: #19672f;
+    z-index: 9;
+    transition: width 1s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navcontents {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 70vh;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.pagelink {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagelink a {
+    color: white;
+}
+
+.titleheadingcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titleheading {
+    font-size: 20vw;
+    font-weight: 900;
+    font-variation-settings:
+        "slnt" -10;
+    line-height: 15vw;
+    color: white;
+    transition: font-size 0.5s;
+}
+
+#mainsection {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/backgroundindex.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#informationindex {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    padding: 2vw;
+    position: sticky;
+    top: 10vh;
+    height: 80vh;
+}
+
+#definition {
+    background-color: #238c41;
+    padding: 2vw;
+    color: white;
+    border-radius: 2vw;
+}
+
+#cardholder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 45vh;
+}
+
+.card {
+    flex: 1;
+    background-color: #238c41;
+    height: 100%;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+
+#indexfooter {
+    height: 10vh;
+    background-color: #19672f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: block;
+    bottom: 0;
+}
