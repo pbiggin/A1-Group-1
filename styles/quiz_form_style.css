@@ -1,92 +1,83 @@
 #ans {
-    background-color: white;
-    border-style: solid;
-    width: 10%;
-    text-align: center;
-    margin: 2%;
-    display: block;
-    flex: 50%;
-
+  background-color: white;
+  border-style: solid;
+  width: 10%;
+  text-align: center;
+  margin: 2%;
+  display: block;
+  flex: 50%;
 }
 
 h1,
 p {
-    text-align: center;
-    color: #F5F2E1;
-
+  text-align: center;
+  color: #f5f2e1;
 }
 
 #quiz-body {
-    background-color: #0F7D3D;
+  background-color: #0f7d3d;
 }
 
-
 button {
-    background-color: #F5F2E1;
-    border: 1px dotted #D9A679;
-    width: 10%;
-    text-align: center;
-    margin: 2%;
-    height: 30px;
-    border-radius: 10px;
+  background-color: #f5f2e1;
+  border: 1px dotted #d9a679;
+  width: 10%;
+  text-align: center;
+  margin: 2%;
+  height: 30px;
+  border-radius: 10px;
 }
 
 #submitButton {
-    background-color: #F5F2E1;
-    border: 1px dotted #D9A679;
-    width: 10%;
-    text-align: center;
-    margin: 2%;
-    height: 30px;
-    border-radius: 10px;
+  background-color: #f5f2e1;
+  border: 1px dotted #d9a679;
+  width: 10%;
+  text-align: center;
+  margin: 2%;
+  height: 30px;
+  border-radius: 10px;
 }
 
 .selected {
-    background-color: green !important;
-    /* Add !important to override other styles */
-
+  background-color: green !important;
+  /* Add !important to override other styles */
 }
 
 #row_1 {
-    display: flex;
+  display: flex;
 }
-
 
 #ans:hover {
-    background-color: green;
+  background-color: green;
 }
-
 
 button:hover {
-    background-color: green;
+  background-color: green;
 }
 
-
 #ans:focus {
-    background-color: green;
+  background-color: green;
 }
 
 .question {
-    text-align: center;
-    border: 1px solid #F5F2E1;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #4FA84A;
-    color: #F5F2E1;
-
-
+  text-align: center;
+  border: 1px solid #f5f2e1;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #4fa84a;
+  color: #f5f2e1;
 }
 
-
 .manoeuvreButtons {
-    /*border: 1px solid black;*/
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
+  /*border: 1px solid black;*/
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .learnFoot {
+  bottom: 0;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -95,7 +86,8 @@ button:hover {
   background-color: #0a4f27;
 }
 
-.learnFoot > p , img {
+.learnFoot > p,
+img {
   padding: 2mm 10mm 0 0;
   font-family: "Inter", sans-serif;
   color: #0f7d3d;
