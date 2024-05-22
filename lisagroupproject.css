@@ -106,8 +106,8 @@
 .card_header.card_image > img {
     display: block;
     width: 100%;
-    max-height: 200px
-    aspect-ratio; 16 / 9;
+    max-height: 200px;
+    aspect-ratio: 16 / 9;
     object-fit: cover;
     object-position: center;
 }
