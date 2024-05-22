@@ -1,5 +1,7 @@
 /** FONT RELATED CSS **/
-h1, h2, h3{
+h1,
+h2,
+h3 {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -9,7 +11,7 @@ h1, h2, h3{
   text-align: center;
 }
 
-h2{
+h2 {
   text-align: center;
 }
 
@@ -20,14 +22,14 @@ p {
 label {
   font-family: "Inter", sans-serif;
 }
-  
+
 /** use this class to change text colour from green -> beige when bg is green **/
 #contrast {
- color: #f5f2e1;
+  color: #f5f2e1;
 }
 
 .bold {
-  color:#683a13;
+  color: #683a13;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -40,18 +42,17 @@ label {
 .subheading {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 900;
   font-style: normal;
-  font-variation-settings: "slnt" 0;
-  color:#0f7d3d;
+  font-variation-settings: "slnt" -10;
+  color: #0f7d3d;
 }
 
 .side {
   font-size: 11pt;
   font-family: "Inter", sans-serif;
   padding-left: 80%;
-  color:#D9A679; 
-
+  color: #d9a679;
 }
 /** END FONT RELATED CSS **/
 
@@ -64,7 +65,7 @@ body {
   top: 0;
   position: fixed;
   width: 100%;
-  height: 2cm;
+  height: 10vh;
   transition: top 0.3s;
   display: flex;
   flex-direction: row;
@@ -89,14 +90,13 @@ body {
   fill: #f5f2e1;
 }
 
-
-/** COPY ME FOR THE FOOTER YAY **/ 
+/** COPY ME FOR THE FOOTER YAY **/
 
 .learnFoot {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 2cm;
+  height: 10vh;
   width: 100%;
   background-color: #0a4f27;
 }
@@ -119,7 +119,6 @@ body {
   margin: 0;
 }
 
-
 .learnstyles {
   padding: 2vw;
 }
@@ -130,11 +129,10 @@ body {
   width: 100%;
   height: 10cm;
   background-image: url(../images/splitter_backsplash_1.jpg);
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-
 
 .hero-text {
   padding: 4vw;
@@ -196,8 +194,8 @@ body {
 }
 
 .hideaway {
-  background-color:#4fa84a;
-  color:#f5f2e1;
+  background-color: #4fa84a;
+  color: #f5f2e1;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-size: 14pt;
@@ -213,19 +211,19 @@ body {
 }
 
 .active.hideaway:hover {
-  background-color:#0f7d3d;
+  background-color: #0f7d3d;
 }
 
 .hideaway:after {
   scale: 150%;
   color: white;
-  content: '+';
+  content: "+";
   float: right;
   margin-left: 5mm;
 }
 
 .active:after {
-  content: "-"; 
+  content: "-";
 }
 
 .hideContent {
@@ -235,7 +233,7 @@ body {
   transition-delay: 0.05s;
   overflow: hidden;
   border-radius: 0 0 30px 30px;
-  background-color:#d9c6a3;
+  background-color: #d9c6a3;
 }
 
 /** Css for learning module transitons **/
@@ -340,11 +338,10 @@ body {
   transform: translateY(0);
 }
 
-
 /**Calculator Page**/
 
 label {
-font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .pageDescriptionContainer {
@@ -358,10 +355,9 @@ font-family: "Inter", sans-serif;
   margin-top: 80px;
   margin-left: 20%;
   margin-right: 20%;
-  width: 60%; 
+  width: 60%;
   font-family: "Inter", sans-serif;
 }
-
 
 .calculator {
   width: 360px;
@@ -370,7 +366,7 @@ font-family: "Inter", sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #0a4f27;
-  color:#ffffff;  
+  color: #ffffff;
 }
 
 .pageContainer {
@@ -425,7 +421,7 @@ font-family: "Inter", sans-serif;
   padding: 10px;
   margin-top: 10px;
   background-color: #4fa84a;
-  color: #ffffff;  
+  color: #ffffff;
   border: none;
   border-radius: 10px;
   font-size: 16px;
@@ -436,7 +432,7 @@ font-family: "Inter", sans-serif;
 }
 
 .Jas-h2 {
-  color: #ffffff;  
+  color: #ffffff;
 }
 
 header p{
@@ -459,8 +455,3 @@ header p{
   font-size: 15px;
   text-align: center;
 }
-
-
-
-
-
