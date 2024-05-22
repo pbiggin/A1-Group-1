@@ -17,15 +17,19 @@
   <body>
     <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
     <nav id="learnNav">
+      <img id="hamburger" onclick="toggleMenu()" src="../images/hamburger.svg" alt="menu">
       <h1 id="contrast" class="subheading titleheading">Learn Cricket</h1>
-      <card class="learnNavBtn">
-        <div class="moduleMenu">
-          <a href="learn-hub.html"> module 1 </a>
-          <a href="learn-rules.html"> module 2 </a>
-          <a href="learn-setup.html"> module 3 </a>
-          <a href="learn-setup.html"> module 4 </a>
-        </div>
-      </card>
+    </nav>
+    <nav id="nav-side">
+      <div class="moduleMenu">
+        <a href="learn-hub.html"> Overview </a>
+        <a href="learn-rules.html"> Rules </a>
+        <a href="learn-setup.html"> Setup </a>
+        <a href="learn-setup.html"> Formats</a>
+      </div>
+      <div class="mirror"> 
+      <img id="hamburger" class="hiding" onclick="toggleMenu()" src="../images/hamburger.svg" alt="menu">
+      </div>
     </nav>
     <header id="learn-hero">
       <div class="hero-text">

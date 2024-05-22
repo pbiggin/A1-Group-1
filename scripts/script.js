@@ -86,3 +86,16 @@ for (let i = 0; i < hide.length; i++) {
     }
   });
 }
+
+/** deviation of Ryan's homepage js to match */
+const HamburgerMenu = document.getElementById("nav-side")
+let menuCounter = 0
+function toggleMenu(){
+    menuCounter += 1
+    if (menuCounter % 2 == 0){
+        HamburgerMenu.style.width = '0'
+    } else {
+        HamburgerMenu.style.width = '100vw'
+    }
+}
+

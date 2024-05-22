@@ -14,6 +14,7 @@ h2{
 }
 
 p {
+  font-family: "Inter", sans-serif;
   font-size: 16pt;
 }
 
@@ -46,6 +47,10 @@ label {
   color:#0f7d3d;
 }
 
+.navLearnBtn{
+  justify-self: right;
+}
+
 .titleheading {
   font-size: 2vw;
   font-weight: 900;
@@ -73,7 +78,7 @@ body {
   top: 0;
   position: fixed;
   width: 100%;
-  height: 2cm;
+  height: 10vh;
   transition: top 0.3s;
   display: flex;
   flex-direction: row;
@@ -81,8 +86,53 @@ body {
   background-color: #0f7d3d;
   overflow: hidden;
   align-items: center;
-  padding-left: 6mm;
+  padding-left: 3mm;
 }
+
+#hamburger {
+  padding-right: 2vw;
+}
+
+#hamburger.hiding {
+  background-color:#19672f;
+}
+
+
+
+.mirror {
+  position:absolute;
+  justify-self: right;
+  right: 0;
+}
+
+#nav-side{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  background-color: #19672f;
+  width: 0;
+  transition: width 1s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.moduleMenu {
+  font-family: "Inter", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+}
+
+.moduleMenu a {
+  color: white;
+  
+}
+
 
 #learn-hero {
   display: flex;
