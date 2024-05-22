@@ -547,7 +547,7 @@ font-family: "Inter", sans-serif;
 #mainsection {
     width: 100vw;
     height: 100vh;
-    background-image: url(background.jpg);
+    background-image: url(../images/backgroundindex.jpg);
     background-size: cover;
     background-position: center;
 }
