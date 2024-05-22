@@ -439,6 +439,10 @@ font-family: "Inter", sans-serif;
   color: #ffffff;  
 }
 
+header p{
+  font-size: 9px;
+}
+
 #battingResult,
 #bowlingResult {
   font-family: "Inter", sans-serif;
