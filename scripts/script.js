@@ -52,6 +52,7 @@ const animateStart = new IntersectionObserver(function (entries, animateStart) {
 
 animateStart.observe(modTick);
 
+// TEAM!!!! - COPY THIS IF YOU ARE COPYING THE NAV BAR CODE. CHARLENE IGNORE SINCE YOUR PAGE DOESN'T SCROLL tysm
 //Scroll function for learn nav bar placemend. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
 let pastScroll = window.scrollY;
 window.onscroll = function () {
@@ -67,7 +68,21 @@ window.onscroll = function () {
   pastScroll = userScroll;
 };
 
-//dropdown modules
+
+/** NAVIGATION BAR CODE COPY THIS THIS IS IMPORTANT TO GET THE SLIDER TO WORK **/
+const HamburgerMenu = document.getElementById("nav-side")
+let menuCounter = 0
+function toggleMenu(){
+    menuCounter += 1
+    if (menuCounter % 2 == 0){
+        HamburgerMenu.style.width = '0'
+    } else {
+        HamburgerMenu.style.width = '100vw'
+    }
+}
+
+
+//QUESTION dropdown modules
 let hide = document.getElementsByClassName("hideaway");
 
 for (let i = 0; i < hide.length; i++) {
@@ -87,17 +102,5 @@ for (let i = 0; i < hide.length; i++) {
       hideaway.style.transitionDelay = "0.0s";
     }
   });
-}
-
-/** deviation of Ryan's homepage js to match */
-const HamburgerMenu = document.getElementById("nav-side")
-let menuCounter = 0
-function toggleMenu(){
-    menuCounter += 1
-    if (menuCounter % 2 == 0){
-        HamburgerMenu.style.width = '0'
-    } else {
-        HamburgerMenu.style.width = '100vw'
-    }
 }
 

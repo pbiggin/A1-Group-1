@@ -22,11 +22,6 @@ label {
   font-family: "Inter", sans-serif;
 }
   
-/** use this class to change text colour from green -> beige when bg is green **/
-#contrast {
- color: #f5f2e1;
-}
-
 .bold {
   color:#683a13;
   font-family: "Inter", sans-serif;
@@ -74,6 +69,11 @@ body {
   background-color: #f5f2e1;
 }
 
+/** COPY THE FOLLOWING FOR CSS FOR NAV BAR **/
+#contrast {
+  color: #f5f2e1;
+ }
+
 #learnNav {
   top: 0;
   position: fixed;
@@ -96,8 +96,6 @@ body {
 #hamburger.hiding {
   background-color:#19672f;
 }
-
-
 
 .mirror {
   position:absolute;
@@ -122,7 +120,7 @@ body {
 
 .moduleMenu {
   font-family: "Inter", sans-serif;
-  color: white;
+  color: #f5f2e1;
   display: flex;
   justify-content: space-around;
   width:50%;
@@ -130,14 +128,15 @@ body {
 }
 
 .moduleMenu a {
-  color: white;
+  color: #f5f2e1;
 }
 
-.moduleMenu > .icon {
-  fill: white;
-  height: 80%;
+.icon {
+  transform: scale(1.8);
+  fill: #f5f2e1;
 }
 
+/** STOP COPYING NAV CODE FROM HERE **/
 
 #learn-hero {
   display: flex;
@@ -523,8 +522,4 @@ header p{
   font-size: 15px;
   text-align: center;
 }
-
-
-
-
 
