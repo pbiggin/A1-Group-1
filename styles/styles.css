@@ -110,7 +110,7 @@ body {
   height: 10vh;
   background-color: #19672f;
   width: 0;
-  transition: top 0.3s, width 1s;
+  transition: top 0.3s, width 1.5s;
   overflow: hidden;
   display: flex;
   justify-content: center;
