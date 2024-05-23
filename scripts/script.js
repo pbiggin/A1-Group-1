@@ -61,8 +61,8 @@ window.onscroll = function () {
     document.getElementById("learnNav").style.top = "0";
     document.getElementById("nav-side").style.top = "0";
   } else {
-    document.getElementById("learnNav").style.top = "-100px";
     document.getElementById("nav-side").style.top = "-100px";
+    document.getElementById("learnNav").style.top = "-100px";
   }
   pastScroll = userScroll;
 };
