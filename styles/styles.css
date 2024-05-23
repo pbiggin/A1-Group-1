@@ -131,7 +131,11 @@ body {
 
 .moduleMenu a {
   color: white;
-  
+}
+
+.moduleMenu > .icon {
+  fill: white;
+  height: 80%;
 }
 
 
