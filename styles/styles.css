@@ -90,6 +90,7 @@ body {
 }
 
 #hamburger {
+  color: #f5f2e1;
   padding-right: 2vw;
 }
 
@@ -281,7 +282,7 @@ body {
 
 .hideaway:after {
   scale: 150%;
-  color: white;
+  color: #f5f2e1;
   content: '+';
   float: right;
   margin-left: 5mm;
