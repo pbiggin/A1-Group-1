@@ -90,7 +90,7 @@ body {
 }
 
 #hamburger {
-  color: #f5f2e1;
+  color:#f5f2e1;
   padding-right: 2vw;
 }
 
@@ -125,7 +125,6 @@ body {
   display: flex;
   justify-content: space-around;
   width:50%;
-  white-space: nowrap;
 }
 
 .moduleMenu a {
@@ -151,6 +150,7 @@ body {
 /** FOR SVGS **/
 .arrow {
   fill: #f5f2e1;
+  
 }
 
 
@@ -340,12 +340,23 @@ body {
   scale: 110%;
 }
 #move {
+  text-overflow: hidden;
   text-decoration: none;
   align-self: center;
   display: block;
   min-width: 4cm;
   max-width: 8cm;
-  height: 15mm;
+  
+}
+
+#move2 {
+  float: right;
+  justify-content: right;
+  text-overflow: hidden;
+  text-decoration: none;
+  align-self: center;
+  display: flex;
+  max-width: 8cm;
 }
 
 .progressBoundary {
