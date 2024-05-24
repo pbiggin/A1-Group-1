@@ -349,16 +349,6 @@ body {
   
 }
 
-#move2 {
-  float: right;
-  justify-content: right;
-  text-overflow: hidden;
-  text-decoration: none;
-  align-self: center;
-  display: flex;
-  max-width: 8cm;
-}
-
 .progressBoundary {
   width: 100%;
   align-self: center;
