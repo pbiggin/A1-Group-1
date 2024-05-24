@@ -56,7 +56,7 @@ label {
 
 
 .side {
-  font-size: 11pt;
+  font-size: 14pt;
   font-family: "Inter", sans-serif;
   padding-left: 80%;
   color:#D9A679; 
@@ -208,7 +208,7 @@ body {
 }
 
 .hero-text > p {
-  font-size: 18pt;
+  font-size: 16pt;
 }
 /** Learning page carousel styles **/
 .outer-carousel {
@@ -493,7 +493,7 @@ font-family: "Inter", sans-serif;
   color: #ffffff;  
   border: none;
   border-radius: 10px;
-  font-size: 16px;
+  font-size: 16pt;
 }
 
 .JasButton:hover {
@@ -512,7 +512,7 @@ header p{
 #bowlingResult {
   font-family: "Inter", sans-serif;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16pt;
   text-align: center;
 }
 
@@ -521,7 +521,7 @@ header p{
   font-family: "Inter", sans-serif;
   color: #d13513;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16pt;
   text-align: center;
 }
 
