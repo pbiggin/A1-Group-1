@@ -13,7 +13,7 @@ h2{
   text-align: center;
 }
 
-p {
+p, ul {
   font-family: "Inter", sans-serif;
   font-size: 16pt;
 }
@@ -153,6 +153,9 @@ body {
   
 }
 
+#space {
+  padding-top: 10vh;
+}
 
 /** COPY ME FOR THE FOOTER YAY **/ 
 
