@@ -65,7 +65,7 @@ function process() {
 
 
 function shortAnswer(response, answer) {
-    if (response.toLowerCase() == answer || response == answer) {
+    if (response.toLowerCase() == answer) {
         return 1;
     }
     else {
