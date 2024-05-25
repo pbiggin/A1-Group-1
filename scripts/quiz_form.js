@@ -76,11 +76,11 @@ function shortAnswer(response, answer) {
 
 let storedAnswer = "";
 
-function storeAnswer(answerId) {
+function storeAnswer(answerId, correctAnswerId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
-    if (answerId === 'answer_1') { // Check if answer 1 is selected
+    if (answerId == correctAnswerId) { // Check if answer 1 is selected
         score += 1; // Increment score by 1
     }
 }
