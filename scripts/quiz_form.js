@@ -18,7 +18,7 @@ function process() {
     //question 4
     const q4Answers = document.getElementsByName('question_4');
     q4Answers.forEach(answer => {
-        if (answer.checked && answer.value == "q4_answer_1") {
+        if (answer.checked && answer.value == "q4_answer_3") {
             score++;
         }
     });
@@ -27,14 +27,14 @@ function process() {
     // question 5
     const q5Answers = document.getElementsByName('question_5');
     q5Answers.forEach(answer => {
-        if (answer.checked && answer.value == "answer_1") {
+        if (answer.checked && answer.value == "answer_2") {
             score++;
         }
     });
 
 
     // question 6
-    score += shortAnswer(document.querySelector('input#q6').value, "burger");
+    score += shortAnswer(document.querySelector('input#q6').value, "batsman");
 
     // question 7
     const q7Answers = document.getElementsByName('question_7');
@@ -46,11 +46,11 @@ function process() {
 
 
     //question 8
-    score += shortAnswer(document.querySelector('select#q8').value, "answer_2");
+    score += shortAnswer(document.querySelector('select#q8').value, "answer_6");
 
 
     // question 9
-    score += shortAnswer(document.querySelector('input#q9').value, "sandwich");
+    score += shortAnswer(document.querySelector('input#q9').value, "strike rate");
 
 
     //question 10
