@@ -1,7 +1,37 @@
+//Nav Bar 
+
+let pastScroll = window.scrollY;
+window.onscroll = function () {
+  let userScroll = window.scrollY;
+
+  if (pastScroll > userScroll) {
+    document.getElementById("learnNav").style.top = "0";
+    document.getElementById("nav-side").style.top = "0";
+  } else {
+    document.getElementById("nav-side").style.top = "-100px";
+    document.getElementById("learnNav").style.top = "-100px";
+  }
+  pastScroll = userScroll;
+};
 
 
+
+const HamburgerMenu = document.getElementById("nav-side")
+let menuCounter = 0
+function toggleMenu(){
+    menuCounter += 1
+    if (menuCounter % 2 == 0){
+        HamburgerMenu.style.width = '0'
+    } else {
+        HamburgerMenu.style.width = '100vw'
+    }
+}
+
+//Nav Bar Ends
+
+ // Empty's all user-inputs when tab is selected
 function resetInputFields() {
-  document.getElementById('battingRuns').value = ''; // Empty's all user-inputs when tab is selected
+  document.getElementById('battingRuns').value = '';
   document.getElementById('battingAvg').value = '';
   document.getElementById('battingDismissed').value = '';
   document.getElementById('battingReq').innerText = '';
@@ -44,7 +74,7 @@ document.getElementById('battingTab').addEventListener('click', function() {
     
     
 
-     //Ensures only two fields are entered and informs user
+     //Ensures only two fields are entered and informs user if fails to do so
     
     if ((runs && avg && dismissed)) {
       Answer.innerText = "";
@@ -100,7 +130,7 @@ document.getElementById('battingTab').addEventListener('click', function() {
    
 
   
-    //Ensures only two fields are entered and informs user
+    //Ensures only two fields are entered and informs user if they fail to do so
     
     if ((runs && wickets && avg)) {
       Answer.innerText = "";
