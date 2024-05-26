@@ -25,6 +25,11 @@ p {
   color: #f5f2e1;
 }
 
+label {
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+}
+
 #quiz-body {
   background-color: #0f7d3d;
 }
