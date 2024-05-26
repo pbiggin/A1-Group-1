@@ -5,6 +5,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    outline: red 1px solid
 }
 
 #indexbody {
@@ -123,19 +124,27 @@
     border-radius: 2vw;
 }
 
-#cardholder {
+.pagesneakpeak {
     display: flex;
     flex-direction: row;
+    gap: 2vw;
+}
+
+#cardholder {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2vw;
     height: 45vh;
+    width: 30%;
 }
 
 .card {
     flex: 1;
     background-color: #238c41;
-    height: 100%;
+    height: 80%;
+    width: 100%;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
@@ -143,7 +152,24 @@
     color: white;
 }
 
+.arrows {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
 
+#leftarrow, #rightarrow {
+    height: 100%;
+    width: 50%;
+    border-radius: 2vw;
+    background-color: #19672f;
+}
+
+.pagepreview {
+    background-color: #19672f;
+}
 
 #indexfooter {
     height: 10vh;
