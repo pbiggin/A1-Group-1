@@ -5,7 +5,10 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    outline: red 1px solid
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #indexbody {
@@ -17,7 +20,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 35vh;
+    height: 30vh;
     background-color: #238c4100;
     transition: background-color 0.3s, height 0.3s;
     z-index: 10;
@@ -25,12 +28,21 @@
 
 #arrowcircle {
     position: absolute;
-    bottom: 2vw;
+    bottom: 0vw;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #238c41;
-    padding: 1vw;
+    background-color: white;
     border-radius: 50%;
+    height: 5vw;
+    width: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#downarrow {
+    height: 2vw;
+    width: 2vw;
 }
 
 #hamburger {
@@ -87,16 +99,27 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 100%;
 }
 
 .titleheading {
-    font-size: 20vw;
+    font-size: 15vw;
     font-weight: 900;
     font-variation-settings:
         "slnt" -10;
     line-height: 15vw;
     color: white;
-    transition: font-size 0.5s;
+    transition: font-size 0.5s, line-height 0.5s;
+}
+
+#credits {
+    font-size: 1.125vw;
+    color: white;
+    font-variation-settings:
+        "slnt" -10;
+    font-weight: 700;
+    opacity: 100%;
+    transition: opacity 0.5s, font-size 0.5s;
 }
 
 #mainsection {
@@ -111,10 +134,10 @@
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    padding: 2vw;
+    margin: 2vw;
     position: sticky;
-    top: 10vh;
-    height: 80vh;
+    top: calc(10vh + 2vw);
+    height: calc(80vh - 4vw);
 }
 
 #definition {
@@ -122,12 +145,15 @@
     padding: 2vw;
     color: white;
     border-radius: 2vw;
+    font-size: 1.5vw;
+    flex: 1;
 }
 
 .pagesneakpeak {
     display: flex;
     flex-direction: row;
     gap: 2vw;
+    flex: 1;
 }
 
 #cardholder {
@@ -150,6 +176,15 @@
     justify-content: center;
     align-items: center;
     color: white;
+    font-weight: 800;
+    font-size: 4vw;
+}
+
+.card p {
+    width: 70%;
+    text-align: center;
+    font-variation-settings:
+        "slnt" -10;
 }
 
 .arrows {
@@ -169,6 +204,15 @@
 
 .pagepreview {
     background-color: #19672f;
+    width: 70%;
+    border-radius: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    padding: 2vw;
+}
+
+.pagepreview a {
+    color: white;
 }
 
 #indexfooter {
