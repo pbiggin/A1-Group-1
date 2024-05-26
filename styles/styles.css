@@ -13,7 +13,8 @@ h2{
   text-align: center;
 }
 
-p {
+p, ul {
+  font-family: "Inter", sans-serif;
   font-size: 16pt;
 }
 
@@ -21,11 +22,6 @@ label {
   font-family: "Inter", sans-serif;
 }
   
-/** use this class to change text colour from green -> beige when bg is green **/
-#contrast {
- color: #f5f2e1;
-}
-
 .bold {
   color:#683a13;
   font-family: "Inter", sans-serif;
@@ -46,8 +42,21 @@ label {
   color:#0f7d3d;
 }
 
+.navLearnBtn{
+  justify-self: right;
+}
+
+.titleheading {
+  font-size: 2vw;
+  font-weight: 900;
+  font-variation-settings:
+      "slnt" -10;
+  line-height: 15vw;
+}
+
+
 .side {
-  font-size: 11pt;
+  font-size: 14pt;
   font-family: "Inter", sans-serif;
   padding-left: 80%;
   color:#D9A679; 
@@ -60,11 +69,16 @@ body {
   background-color: #f5f2e1;
 }
 
+/** COPY THE FOLLOWING FOR CSS FOR NAV BAR **/
+#contrast {
+  color: #f5f2e1;
+ }
+
 #learnNav {
   top: 0;
   position: fixed;
   width: 100%;
-  height: 2cm;
+  height: 10vh;
   transition: top 0.3s;
   display: flex;
   flex-direction: row;
@@ -72,8 +86,57 @@ body {
   background-color: #0f7d3d;
   overflow: hidden;
   align-items: center;
-  padding-left: 6mm;
+  padding-left: 3mm;
 }
+
+#hamburger {
+  color:#f5f2e1;
+  padding-right: 2vw;
+}
+
+#hamburger.hiding {
+  background-color:#19672f;
+}
+
+.mirror {
+  position:absolute;
+  justify-self: right;
+  right: 0;
+}
+
+#nav-side{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 10vh;
+  background-color: #19672f;
+  width: 0;
+  transition: top 0.3s, width 1.5s;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.moduleMenu {
+  font-family: "Inter", sans-serif;
+  color: #f5f2e1;
+  display: flex;
+  justify-content: space-around;
+  width:50%;
+}
+
+.moduleMenu a {
+  color: #f5f2e1;
+}
+
+.icon {
+  transform: scale(1.8);
+  fill: #f5f2e1;
+}
+
+/** STOP COPYING NAV CODE FROM HERE **/
 
 #learn-hero {
   display: flex;
@@ -87,8 +150,12 @@ body {
 /** FOR SVGS **/
 .arrow {
   fill: #f5f2e1;
+  
 }
 
+#space {
+  padding-top: 10vh;
+}
 
 /** COPY ME FOR THE FOOTER YAY **/ 
 
@@ -144,7 +211,7 @@ body {
 }
 
 .hero-text > p {
-  font-size: 18pt;
+  font-size: 16pt;
 }
 /** Learning page carousel styles **/
 .outer-carousel {
@@ -218,7 +285,7 @@ body {
 
 .hideaway:after {
   scale: 150%;
-  color: white;
+  color: #f5f2e1;
   content: '+';
   float: right;
   margin-left: 5mm;
@@ -276,12 +343,13 @@ body {
   scale: 110%;
 }
 #move {
+  text-overflow: hidden;
   text-decoration: none;
   align-self: center;
   display: block;
   min-width: 4cm;
   max-width: 8cm;
-  height: 15mm;
+  
 }
 
 .progressBoundary {
@@ -427,8 +495,8 @@ font-family: "Inter", sans-serif;
   background-color: #4fa84a;
   color: #ffffff;  
   border: none;
-  border-radius: 3px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 16pt;
 }
 
 .JasButton:hover {
@@ -439,11 +507,15 @@ font-family: "Inter", sans-serif;
   color: #ffffff;  
 }
 
+header p{
+  font-size: 9px;
+}
+
 #battingResult,
 #bowlingResult {
   font-family: "Inter", sans-serif;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16pt;
   text-align: center;
 }
 
@@ -452,11 +524,7 @@ font-family: "Inter", sans-serif;
   font-family: "Inter", sans-serif;
   color: #d13513;
   margin-top: 20px;
-  font-size: 15px;
+  font-size: 16pt;
   text-align: center;
 }
-
-
-
-
 

@@ -1,4 +1,4 @@
-\<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,26 +10,83 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
     <nav id="learnNav">
-      <h1 id="contrast" class="subheading">Learn Cricket</h1>
-      <card class="learnNavBtn">
-        <div class="moduleMenu">
-          <a href="learn-hub.html"> module 1 </a>
-          <a href="learn-rules.html"> module 2 </a>
-          <a href="learn-setup.html"> module 3 </a>
-          <a href="learn-setup.html"> module 4 </a>
-        </div>
-      </card>
+      <img
+        id="hamburger"
+        onclick="toggleMenu()"
+        src="../images/hamburger.svg"
+        alt="menu"
+      />
+      <h1 id="contrast" class="subheading titleheading">Learn Cricket</h1>
     </nav>
+    <nav id="nav-side">
+      <div class="moduleMenu">
+        <a href="../index.html">
+          <svg height="16px" class="icon" viewBox="0 0 16 16" width="16px">
+            <path
+              d="M15.45,7L14,5.551V2c0-0.55-0.45-1-1-1h-1c-0.55,0-1,0.45-1,1v0.553L9,0.555C8.727,0.297,8.477,0,8,0S7.273,0.297,7,0.555  L0.55,7C0.238,7.325,0,7.562,0,8c0,0.563,0.432,1,1,1h1v6c0,0.55,0.45,1,1,1h3v-5c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v5h3  c0.55,0,1-0.45,1-1V9h1c0.568,0,1-0.437,1-1C16,7.562,15.762,7.325,15.45,7z"
+            />
+          </svg>
+        </a>
+        <a href="../sites/content-hub.html"> Content Hub </a>
+        <a href="../sites/program-quiz.html"> Quiz Yourself </a>
+        <a href="../sites/cricketcalc.html"> Calculator </a>
+      </div>
+      <div class="mirror">
+        <img
+          id="hamburger"
+          class="hiding"
+          onclick="toggleMenu()"
+          src="../images/hamburger.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+    <div></div>
+    <main  id="space" class="learnstyles">
+      <h2>Formats of Cricket</h2>
+      <p>
+        Cricket, as a sport is multi-faceted in how it can be played. Depending
+        on the level of compeition, formality, available time and standard of
+        play, different formats can be used to suit the needs of the game.
+      </p>
+      <h2>Types of Formats</h2>
+      <p>
+        At the international Level of cricket, there are 3 main formats: Test
+        Matches, One-Day Internationals and Twenty20 Internationals.
+      </p>
+
+      <h2>Test Matches</h2>
+      <p>
+        The Traditional form of cricket. Test Cricket is a 5-day format which
+        has two innings per day, the longest period of time for all three
+        formats. Teams in test cricket are challenged on their endurance,
+        temperment and techniques in different conditions to succeed.
+      </p>
+      <h2>One Day internationals</h2>
+      <p>
+        Started in 1971, One Day internationals are one inning matches of 50
+        overs per side, which teams are challenged to use their speed,
+        coordination and skill to succeed.
+      </p>
+
+      <h2>Twenty20 internationals</h2>
+      <p>
+        The newest format of cricket (Originated in 2005), Twenty20
+        internationals are a format of 20 overs per side copleted in 3 hours.
+        Twenty20 internationals are the shortest and fastest form of the game,
+        and often leads to huge hits, intense bowling and stratergy to gain
+        points in the short time span available.
+      </p>
+    </main>
     <!-- Carousel HTML Code, Used for overview breakdown of cricket-->
     <div class="outer-carousel">
-      <h2 class="learnstyles">PLACEHOLDER</h2>
       <section class="carousel-container">
         <div class="carousel-item">
           <img src="../images/Carousel_1.png" alt="image1" />
@@ -58,28 +115,26 @@
       </button>
     </div>
     <main class="learnstyles">
+    <p class="bold">
+      Question: How many pitches would be thrown in the One Day International Format?
+    </p>
+    <button class="hideaway">Click to reveal answer</button>
+    <div class="hideContent">
       <p>
-        Further elaboration content of the education model, now going how the
-        sections will be divided and learning content. Divide this section into
-        a seperate tonal body? Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Aut iusto odit libero? Libero distinctio, dignissimos
-        cupiditate officiis perspiciatis quaerat exercitationem at quas
-        aspernatur qui deleniti laboriosam mollitia corrupti? Quam, quo!
+        Answer: 300 Pitches!
+
+        A pitch is counted no matter if the ball was hit or not by the batting team, so to achieve 50 overs during the One Day International format,
+        players will have to tatically plan their players and stratergies to endure the length of the game. 
       </p>
-      <div>
-        <h2>PLACEHOLDER</h2>
-        <p>
-          another interactive thing phoebe to put here please & thanks.
-          Introduction of batting element of game Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Aut iusto odist libero? Libero
-          distinctio, dignissimos cupiditate officiis perspiciatis quaerat
-          exercitationem at quas aspernatur qui deleniti laboriosam mollitia
-          corrupti? Quam, quo!
-        </p>
-        <h2>PLACEHOLDER</h2>
-        <p>another interactive thing phoebe to put here please & thanks</p>
-      </div>
-    </main>
+    </div>
+
+    <p>
+      And thats the end of the Learning Modules! Congratulations. Interested in
+      more? See our content page for more information on Australian Cricket,
+      Players and more. Otherwise, visit our Calculator to score gameplay
+      averages or test your knowledge with the Cricket Quiz.
+    </p>
+  </main>
     <!-- MODULE MOVE ADD TO ALL PAGES-->
     <section id="modulemove">
       <a id="move" href="learn-setup.html">
@@ -92,16 +147,14 @@
           <h3 id="contrast">Previous Module</h3>
         </card>
       </a>
-      <div class="progressBoundary">
+
+      <article class="progressBoundary">
         <h3 class="subheading" id="contrast">Your current progress:</h3>
+
         <card class="mod-progress">
           <div class="progressBox">
             <!-- COMPLETED CIRCLE mod 1 -->
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 16 16"
-            >
+            <svg width="100" height="100" viewBox="0 0 16 16">
               <path
                 d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
               />
@@ -111,13 +164,10 @@
             </svg>
             <p>Introduction</p>
           </div>
+
           <div class="progressBox">
             <!-- COMPLETED CIRCLE mod 2-->
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 16 16"
-            >
+            <svg width="100" height="100" viewBox="0 0 16 16">
               <path
                 d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
               />
@@ -127,13 +177,10 @@
             </svg>
             <p>Rules</p>
           </div>
+
           <div class="progressBox">
             <!-- UNCOMPLETED CIRCLE mod 3-->
-            <svg
-              width="100"
-              height="100"
-              viewBox="0 0 16 16"
-            >
+            <svg width="100" height="100" viewBox="0 0 16 16">
               <path
                 d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
               />
@@ -143,9 +190,11 @@
             </svg>
             <p>Setup</p>
           </div>
+
           <div class="progressBox" id="currentmod">
             <!-- UNCOMPLETED CIRCLE mod 4  CURRENT MOD-->
-            <svg class="completemod"
+            <svg
+              class="completemod"
               width="100"
               height="100"
               viewBox="0 0 16 16"
@@ -157,51 +206,50 @@
                 d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"
               />
             </svg>
-            <p id="contrast" >Formats</p>
+            <p id="contrast">Formats</p>
           </div>
         </card>
-      </div>
-      <card class="modNewboundary">
-      <!-- link to content-->
-      <a id="move" href="../sites/content-hub.html">
-        <card class="mod-next">
-          <h3 id="contrast">More content</h3>
-          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
-            <path
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-            />
-          </svg>
-        </card>
-      </a>
-      <!-- Link to Quiz-->
-      <a id="move" href="../sites/program-quiz.html">
-        <card class="mod-next">
-          <h3 id="contrast">Cricket Quiz</h3>
-          <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
-            <path
-              d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
-            />
-          </svg>
-        </card>
-        </a>
-        <!-- calc-->
-        <a id="move" href="../sites/program-calc.html">
+      </article>
+      <article class="modNewboundary">
+        <!-- link to content-->
+        <a id="move" href="../sites/content-hub.html">
           <card class="mod-next">
-            <h3 id="contrast">Match Average Calculator</h3>
+            <h3 id="contrast">More content</h3>
             <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
               <path
                 d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
               />
             </svg>
           </card>
-          </a>
-          </div>
+        </a>
+        <!-- Link to Quiz-->
+        <a id="move" href="../sites/program-quiz.html">
+          <card class="mod-next">
+            <h3 id="contrast">Cricket Quiz</h3>
+            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </card>
+        </a>
+        <!-- calc-->
+        <a id="move" href="../sites/cricketcalc.html">
+          <card class="mod-next">
+            <h3 id="contrast">Calculator</h3>
+            <svg class="arrow" width="55" height="55" viewBox="0 0 16 16">
+              <path
+                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+              />
+            </svg>
+          </card>
+        </a>
+      </article>
     </section>
     <footer class="learnFoot">
       <p>Media Computation COMP10003_2024_SM1</p>
       <img src="../images/cricket_ball_tiny.png" width="35" height="35" />
     </footer>
-    <!-- idk why the script doesnt work if i move it into the head-->
     <script type="text/javascript" src="../scripts/script.js"></script>
   </body>
 </html>

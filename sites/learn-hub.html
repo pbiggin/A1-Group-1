@@ -10,23 +10,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
+    <!-- NAV CODE STARTS HERE -->
     <nav id="learnNav">
-      <h1 id="contrast" class="subheading">Learn Cricket</h1>
-      <card class="learnNavBtn">
-        <div class="moduleMenu">
-          <a href="learn-hub.html"> module 1 </a>
-          <a href="learn-rules.html"> module 2 </a>
-          <a href="learn-setup.html"> module 3 </a>
-          <a href="learn-setup.html"> module 4 </a>
-        </div>
-      </card>
+      <img
+        id="hamburger"
+        onclick="toggleMenu()"
+        src="../images/hamburger.svg"
+        alt="menu"
+      />
+      <h1 id="contrast" class="subheading titleheading">Learn Cricket</h1>
     </nav>
+    <nav id="nav-side">
+      <div class="moduleMenu">
+        <a href="../index.html">
+          <svg height="16px" class="icon" viewBox="0 0 16 16" width="16px">
+            <path
+              d="M15.45,7L14,5.551V2c0-0.55-0.45-1-1-1h-1c-0.55,0-1,0.45-1,1v0.553L9,0.555C8.727,0.297,8.477,0,8,0S7.273,0.297,7,0.555  L0.55,7C0.238,7.325,0,7.562,0,8c0,0.563,0.432,1,1,1h1v6c0,0.55,0.45,1,1,1h3v-5c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v5h3  c0.55,0,1-0.45,1-1V9h1c0.568,0,1-0.437,1-1C16,7.562,15.762,7.325,15.45,7z"
+            />
+          </svg>
+        </a>
+        <a href="../sites/content-hub.html"> Content Hub </a>
+        <a href="../sites/program-quiz.html"> Quiz Yourself </a>
+        <a href="../sites/cricketcalc.html"> Calculator </a>
+      </div>
+      <div class="mirror">
+        <img
+          id="hamburger"
+          class="hiding"
+          onclick="toggleMenu()"
+          src="../images/hamburger.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+    <!-- NAV CODE ENDS  HERE -->
     <header id="learn-hero">
       <div class="hero-text">
         <h1 id="contrast">Learning cricket</h1>
@@ -81,10 +103,10 @@
     <main class="learnstyles">
       <p>
         High levels of the game are typically played on an oval including a
-        rectangular strip in the middle of the oval, the pitch, approximately 20
-        metres by 3 metres wide. The wickets, two sets of three long sticks in
-        the ground, are set at each end of the pitch. They also have horizontal
-        small sticks laying on top of the wickets known as the bails.
+        rectangular strip in the middle of the oval called the pitch. The
+        wickets, two sets of three long sticks in the ground, are set at each
+        end of the pitch. They also have horizontal small sticks laying on top
+        of the wickets known as the bails.
       </p>
       <h2>Batting</h2>
       <p>
@@ -104,11 +126,18 @@
       </p>
 
       <p class="bold">
-        Question: How many awjipgwjgwejewa waehpweipwghpiwageh?
+        Question: How many players from the batting team are on the field at any
+        time?
       </p>
       <button class="hideaway">Click to reveal answer</button>
       <div class="hideContent">
-        <p>YADAFIEHafegwewagweaawegwaeWGPIWGA</p>
+        <p>
+          Answer: Two! 
+          The batting team will always have two batters on the
+          field at any time, leading to a total of 13 players on the field
+          across both teams. The rest of the batting team when not in play will
+          remain off field, and change over after innings & runs.
+        </p>
       </div>
 
       <h2>Fielding</h2>
@@ -126,11 +155,16 @@
         ball back to the pitch.
       </p>
       <p class="bold">
-        Question: How many awjipgwjgwejewa waehpweipwghpiwageh?
+        Question: What is the main goal of the Pitchers during a match?
       </p>
       <button class="hideaway">Click to reveal answer</button>
       <div class="hideContent">
-        <p>YADAFIEHafegwewagkkgweaawegwaeWGPIWGA</p>
+        <p>
+          Answer: To prevent the opposing team from scoring points. 
+          This can be achieved by either: Hitting the wicket and knocking the bails off with
+          their pitch or through their team delivering the ball after being hit to knock
+          the bails of.
+        </p>
       </div>
     </main>
     <!-- MODULE MOVE ADD TO ALL PAGES-->

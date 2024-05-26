@@ -10,26 +10,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <!-- NAV BAR GOES IN HERE, SPECIFICALLY FOR LEARNING PAGES PERHAPS-->
     <nav id="learnNav">
-      <h1 id="contrast" class="subheading">Learn Cricket</h1>
-      <card class="learnNavBtn">
-        <div class="moduleMenu">
-          <a href="learn-hub.html"> module 1 </a>
-          <a href="learn-rules.html"> module 2 </a>
-          <a href="learn-setup.html"> module 3 </a>
-          <a href="learn-setup.html"> module 4 </a>
-        </div>
-      </card>
+      <img
+        id="hamburger"
+        onclick="toggleMenu()"
+        src="../images/hamburger.svg"
+        alt="menu"
+      />
+      <h1 id="contrast" class="subheading titleheading">Learn Cricket</h1>
     </nav>
-    <main class="learnstyles">
+    <nav id="nav-side">
+      <div class="moduleMenu">
+        <a href="../index.html">
+          <svg height="16px" class="icon" viewBox="0 0 16 16" width="16px">
+            <path
+              d="M15.45,7L14,5.551V2c0-0.55-0.45-1-1-1h-1c-0.55,0-1,0.45-1,1v0.553L9,0.555C8.727,0.297,8.477,0,8,0S7.273,0.297,7,0.555  L0.55,7C0.238,7.325,0,7.562,0,8c0,0.563,0.432,1,1,1h1v6c0,0.55,0.45,1,1,1h3v-5c0-0.55,0.45-1,1-1h2c0.55,0,1,0.45,1,1v5h3  c0.55,0,1-0.45,1-1V9h1c0.568,0,1-0.437,1-1C16,7.562,15.762,7.325,15.45,7z"
+            />
+          </svg>
+        </a>
+        <a href="../sites/content-hub.html"> Content Hub </a>
+        <a href="../sites/program-quiz.html"> Quiz Yourself </a>
+        <a href="../sites/cricketcalc.html"> Calculator </a>
+      </div>
+      <div class="mirror">
+        <img
+          id="hamburger"
+          class="hiding"
+          onclick="toggleMenu()"
+          src="../images/hamburger.svg"
+          alt="menu"
+        />
+      </div>
+    </nav>
+    <main id="space" class="learnstyles">
       <div class="moduleAccess"></div>
       <h2>Learning the Rules</h2>
+      <p>
+        When playing or watching cricket, there are a few basic rules that teams
+        should follow to ensure safe, fair and fun gameplay.
+      </p>
       <p>the rules, in short:</p>
       <ul>
         <li>Teams should consist of 11 players</li>
@@ -67,16 +92,16 @@
         decisions about appeals, and checks if the bowler has bowled a legal
         delivery.
       </p>
-      <h2>Outs</h2>
-      <p>
-        During the game, batsmen can be declared out, upon which they must leave
-        the field and be replaced by a teammate. If a fielding team scores 10 outs in an inning, the inning is over as there are no more batsmen to fill the second spot in the pitch.
-        
-      </p>
+      <h2>Batsmen Outs</h2>
+    <p>
+      During the game, batsmen can be declared out, upon which they must leave
+      the field and be replaced by a teammate. There are a range of ways a
+      batsman can be declared out.
+    </p>
     </main>
     <!-- Carousel HTML Code, Used for overview breakdown of cricket-->
+  
     <div class="outer-carousel">
-      <h2 class="learnstyles">Batsmen Outs</h2>
       <section class="carousel-container">
         <div class="carousel-item">
           <img src="../images/Carousel_1.png" alt="image1" />
@@ -104,6 +129,18 @@
         </svg>
       </button>
     </div>
+    <p class="bold">Question: How many outs are required to end an inning?</p>
+    <button class="hideaway">Click to reveal answer</button>
+    <div class="hideContent">
+      <p>
+        Answer: 10 Outs can be accumulated before the inning is declared over.
+        As there are only 11 players on a team, If a fielding team scores 10
+        outs in an inning, the inning is over as there are no more batsmen on
+        the batting team to fill the both batter postions in the pitch. You can
+        calculate your own and other players averages here at our
+        <a href="cricketcalc.html"> Calculator </a>.
+      </p>
+    </div>
     <main class="learnstyles">
       <h2>Wicket keepers</h2>
       <p>
@@ -127,7 +164,7 @@
             no balls (Illegal deliveries).
           </li>
           <li>
-            Boundaries (see batting). Boundary scoring adds a unique factor for
+            Boundaries (see batting). Boundasry scoring adds a unique factor for
             the game, allowing for scoring to change quickly.
           </li>
           <li>
@@ -138,6 +175,22 @@
             defenisve & accumulative approach.
           </li>
         </ul>
+      </div>
+      <p class="bold">
+        Question: Why do teams / broadcasters of cricket matches calculate their
+        Gameplay averages?
+      </p>
+      <button class="hideaway">Click to reveal answer</button>
+      <div class="hideContent">
+        <p>
+          Answer: To add more interest & allow analysis of gameplay! Cricket is
+          a widely enjoyed game, but includes alot of tatics, skill and
+          technique to play at a high level. Statistics provide insight on how
+          well a player plays, their improvement and their typical batting and
+          fielding styles (Defensive or Offensive). You can calculate your own
+          and other players averages here at our
+          <a href="cricketcalc.html"> Calculator </a>.
+        </p>
       </div>
     </main>
     <!-- MODULE MOVE ADD TO ALL PAGES-->

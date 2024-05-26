@@ -4,7 +4,10 @@
 <head>
     <title>CRICKET </title>
     <script src="../scripts/quiz_form.js"> </script>
-    <link rel="stylesheet" type="text/css" href="../styles/quiz_form_styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/quiz_form_style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
    
 
 </head>
@@ -21,7 +24,7 @@
             <br />
             <img src="https://im.rediff.com/cricket/2015/nov/18wriddhiman-saha.jpg?w=670&h=900" alt="wicket keeper">
             <br />
-            <input type="text" id="q1" name="q1" size="20" maxlenght="20" placeholder="Type answer here.">
+            <input type="text" id="q1" name="q1" size="20" maxlength="20" placeholder="Type answer here.">
             <br />
             <br />
         </div>
@@ -32,7 +35,7 @@
             <label for="q2">Question 2:<br /> What position is responsible for preventing/limitng the opposing tema from
                 gaining runs? </label>
             <br />
-            <input type="text" id="q2" size="20" maxlenght="40" placeholder="Type answer here.">
+            <input type="text" id="q2" size="20" maxlength="40" placeholder="Type answer here.">
             <br />
             <br />
         </div>
@@ -56,23 +59,21 @@
 
 
         <div class="question" id="q4">
-            <label for="q4">Question 4:<br /> Which one is the correct answer?</label>
+            <label for="q4">Question 4:<br />How many players are in a cricket team?</label>
             <br />
             <br />
             <div class="answer-buttons">
                 <div id="ans_row_1">
-                    <button id="q4_answer_1" type="button" class="button" onclick="storeAnswer('q4_answer_1')">Answer
-                        1</button>
-                    <button id="q4_answer_2" type="button" class="button" onclick="storeAnswer('q4_answer_2')">Answer
-                        2</button>
+                    <button id="q4_answer_1" type="button" class="button" onclick="storeAnswer('q4_answer_1')">9</button>
+                    <button id="q4_answer_2" type="button" class="button" onclick="storeAnswer('q4_answer_2')">10</button>
                 </div>
 
                 <br />
                 <div id="ans_row2">
-                    <button id="q4_answer_3" type="button" class="button" onclick="storeAnswer('q4_answer_3')">Answer
-                        3</button>
-                    <button id="q4_answer_4" type="button" class="button" onclick="storeAnswer('q4_answer_4')">Answer
-                        4</button>
+                    <button id="q4_answer_3" type="button" class="button" onclick="storeAnswer('q4_answer_3','q4_answer_3')">
+                    11</button>
+                    <button id="q4_answer_4" type="button" class="button" onclick="storeAnswer('q4_answer_4')">
+                    12</button>
                 </div>
             </div>
             <br />
@@ -81,22 +82,19 @@
 
 
         <div class="question" id="q5">
-            <label for="q5">Question 5:<br /> Which one is the correct answer?</label>
+            <label for="q5">Question 5:<br />The pitch should be divided into areas called 'Creases'. Which of the following is not
+            a type of Crease?</label>
             <br />
             <div class="answer-buttons">
                 <div id="ans_row_1">
-                    <button id="answer_1" type="button" class="button" onclick="storeAnswer('answer_1')">Answer
-                        1</button>
-                    <button id="answer_2" type="button" class="button" onclick="storeAnswer('answer_2')">Answer
-                        2</button>
+                    <button id="q5_answer_1" type="button" class="button" onclick="storeAnswer('q5_answer_1')">popping</button>
+                    <button id="q5_answer_2" type="button" class="button" onclick="storeAnswer('q5_answer_2', 'q5_answer_2')">stumping</button>
                 </div>
 
                 <br />
                 <div id="ans_row2">
-                    <button id="answer_3" type="button" class="button" onclick="storeAnswer('answer_3')">Answer
-                        3</button>
-                    <button id="answer_4" type="button" class="button" onclick="storeAnswer('answer_4')">Answer
-                        4</button>
+                    <button id="q5_answer_3" type="button" class="button" onclick="storeAnswer('q5_answer_3')">return</button>
+                    <button id="q5_answer_4" type="button" class="button" onclick="storeAnswer('q5_answer_4')">bowling</button>
                 </div>
             </div>
             <br />
@@ -105,9 +103,9 @@
 
 
         <div class="question" id="q6">
-            <label for="q6">Question 6:<br /> Which one is the correct answer?</label>
+            <label for="q6">Question 6:<br />Which player position is the only one required to wear thigh guards?</label>
             <br />
-            <input type="text" id="q6" size="20" maxlenght="40">
+            <input type="text" id="q6" size="20" maxlength="40">
 
         </div>
         <br />
@@ -115,18 +113,18 @@
 
 
         <div class="question" id="q7">
-            <label for="q7">Question 7:<br /> Which one is the correct answer?</label>
+            <label for="q7">Question 7:<br />Which of the four main competitions is considered the domestic first-class competition of Australia? </label>
             <br />
             <div class="answer-buttons">
                 <div id="ans_row_1">
-                    <button type="button" class="button" onclick="storeAnswer('answer_1')">Answer 1</button>
-                    <button type="button" class="button" onclick="storeAnswer('answer_2')">Answer 2</button>
+                    <button id="q7_answer_1" type="button" class="button" onclick="storeAnswer('q7_answer_1', 'q7_answer_1')">Sheffield Shield</button>
+                    <button id="q7_answer_2" type="button" class="button" onclick="storeAnswer('q7_answer_2')">One-Day Cup</button>
                 </div>
 
                 <br />
                 <div id="ans_row2">
-                    <button type="button" class="button" onclick="storeAnswer('answer_3')">Answer 3</button>
-                    <button type="button" class="button" onclick="storeAnswer('answer_4')">Answer 4</button>
+                    <button id="q7_answer_3" type="button" class="button" onclick="storeAnswer('q7_answer_3')">Big Bash Leaugue</button>
+                    <button id="q7_answer_4" type="button" class="button" onclick="storeAnswer('q7_answer_4')">WNCL</button>
                 </div>
             </div>
             <br />
@@ -135,7 +133,7 @@
 
 
         <div class="question" id="q8">
-            <label for="q8">Question 8:<br /> What is the correct answer?</label>
+            <label for="q8">Question 8:<br />How many deliveries must a bowlwer bowl in order to complete an over?</label>
             <br />
             <select id="q8">
                 <option value="default"> </option>
@@ -154,16 +152,16 @@
 
 
         <div class="question" id="q9">
-            <label for="q9">Question 9:<br /> Which one is the correct answer?</label>
+            <label for="q9">Question 9:<br />What measurement is used to represent the batsman's scoring speed?</label>
             <br />
-            <input type="text" id="q9" size="20" maxlenght="40">
+            <input type="text" id="q9" size="20" maxlength="40">
             <br />
             <br />
         </div>
 
 
         <div class="question" id="q10">
-            <label for="q10">Question 10:<br /> Which one is the correct answer?</label>
+            <label for="q10">Question 10:<br />How many umpires are required to oversee each game?</label>
             <br />
             <select id="q10">
                 <option value="default"> </option>
@@ -171,9 +169,6 @@
                 <option value="answer_2">2</option>
                 <option value="answer_3">3</option>
                 <option value="answer_4">4</option>
-                <option value="answer_5">5</option>
-                <option value="answer_6">6</option>
-                <option value="answer_7">7</option>
 
             </select>
             <br />
@@ -189,9 +184,5 @@
 
 </body>
     
-  <footer class="learnFoot">
-      <p>Media Computation COMP10003_2024_SM1</p>
-      <img src="../images/cricket_ball_tiny.png" width="auto" height="50%" />
-    </footer>
 
 </html>
