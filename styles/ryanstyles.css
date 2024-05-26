@@ -219,11 +219,12 @@ body {
 
 #indexfooter {
     height: 10vh;
+    width: 100vw;
     background-color: #19672f;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    position: sticky;
-    bottom: 0;
+    position: absolute;
+    bottom: -100vh;
 }
