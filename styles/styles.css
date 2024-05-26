@@ -508,14 +508,14 @@ font-family: "Inter", sans-serif;
 }
 
 header p{
-  font-size: 9px;
+  font-size: 16px;
 }
 
 #battingResult,
 #bowlingResult {
   font-family: "Inter", sans-serif;
   margin-top: 20px;
-  font-size: 16pt;
+  font-size: 12pt;
   text-align: center;
 }
 
@@ -524,7 +524,7 @@ header p{
   font-family: "Inter", sans-serif;
   color: #d13513;
   margin-top: 20px;
-  font-size: 16pt;
+  font-size: 12pt;
   text-align: center;
 }
 
