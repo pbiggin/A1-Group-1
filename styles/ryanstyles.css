@@ -13,6 +13,7 @@ html {
 
 #indexbody {
     height: 200vh;
+    width: 100vw;
 }
 
 #mainnavbar {
@@ -28,21 +29,21 @@ html {
 
 #arrowcircle {
     position: absolute;
-    bottom: 0vw;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -100%);
     background-color: white;
     border-radius: 50%;
-    height: 5vw;
-    width: 5vw;
+    height: 3vw;
+    width: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #downarrow {
-    height: 2vw;
-    width: 2vw;
+    height: 1vw;
+    width: 1vw;
 }
 
 #hamburger {
