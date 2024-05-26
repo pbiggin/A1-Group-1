@@ -11,7 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#indexbody {
+body {
     height: 200vh;
     width: 100vw;
     overflow-x: hidden;
