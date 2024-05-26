@@ -66,6 +66,7 @@ label {
 
 body {
   margin: 0;
+  padding: 0
   background-color: #f5f2e1;
 }
 
@@ -455,6 +456,7 @@ font-family: "Inter", sans-serif;
   flex-direction: row;
   align-items: center;
   background-color: #0f7d3d;
+  width: 100%;
 }
 
 .tabContainer {
