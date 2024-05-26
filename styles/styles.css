@@ -454,6 +454,7 @@ font-family: "Inter", sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
+  background-color: #0f7d3d;
 }
 
 .tabContainer {
