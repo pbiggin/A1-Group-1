@@ -224,6 +224,6 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    position: block;
+    position: sticky;
     bottom: 0;
 }
