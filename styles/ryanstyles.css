@@ -12,7 +12,7 @@ html {
 }
 
 body {
-    height: 200vh;
+    height: 190vh;
     width: 100vw;
     overflow-x: hidden;
 }
@@ -225,6 +225,4 @@ body {
     align-items: center;
     justify-content: center;
     color: white;
-    position: absolute;
-    bottom: -100vh;
 }
