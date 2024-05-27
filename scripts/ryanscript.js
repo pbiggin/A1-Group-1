@@ -40,7 +40,9 @@ function toggleMenu(){
 }
 
 
-const sitePages = ["Content Hub", "Quiz yourself", "calculator"]
+const sitePages = ["Learning Hub", "Content Hub", "Quiz yourself", "Calculator"]
+const pageTaglines = ["Explore the fundamentals of cricket with our comprehensive guide!", "Dive into different aspects of the game, from the different competitions and essential equipment!", "Test your knowledge with our interactive quiz, covering all the content we have taught you!", "Utilise our calculators to evaluate the performance of a game!"]
+const pageInfo = ["Learn the rules of cricket, the setup of the game, and the different formats available. This section provides all the essential information that you need in order to get started with the game.", "Here, you can discover detailed descriptions and insights into the various competitions held around Australia, as well as a comprehensive guide to the must buy gear in order to enjoy the game safely.", "Challenge yourself to see how much you have learnt, and identify areas for improvement. This section is perfect for reinforcing your knowledge of the game, and getting yourself game-ready.", "Measure a batsman’s or bowler’s performance on the field with this handy tool. Simply input your values into any of two boxes and our calculators will give you the missing value. Keep tabs on your progress with the data provided, in order to improve your game."]
 
 function nextPagePreview() {}
 

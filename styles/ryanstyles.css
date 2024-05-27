@@ -155,6 +155,7 @@ body {
     border-radius: 2vw;
     font-size: 1.5vw;
     flex: 1;
+    border: solid 5px rgba(0, 0, 0, 0.3);
 }
 
 .pagesneakpeak {
@@ -186,6 +187,7 @@ body {
     color: white;
     font-weight: 800;
     font-size: 4vw;
+    border: solid 5px rgba(0, 0, 0, 0.3);
 }
 
 .card p {
@@ -208,6 +210,13 @@ body {
     width: 50%;
     border-radius: 2vw;
     background-color: #19672f;
+    border: solid 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 3vw;
+}
+
+#leftarrow:hover, #rightarrow:hover {
+    border: solid 5px rgba(255, 255, 255, 0.3);
 }
 
 .pagepreview {
@@ -217,6 +226,7 @@ body {
     font-size: 1.5vw;
     color: white;
     padding: 2vw;
+    border: solid 5px rgba(0, 0, 0, 0.3);
 }
 
 .pagepreview a {
