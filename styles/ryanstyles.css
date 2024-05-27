@@ -137,9 +137,6 @@ body {
     flex-direction: column;
     gap: 2vw;
     margin: 2vw;
-    position: sticky;
-    top: calc(10vh + 2vw);
-    height: calc(80vh - 4vw);
 }
 
 #definition {
