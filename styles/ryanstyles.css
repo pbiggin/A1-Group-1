@@ -144,6 +144,7 @@ body {
     flex-direction: column;
     gap: 2vw;
     padding: 2vw;
+    padding-bottom: 2vw;
     height: 80vh;
 }
 
