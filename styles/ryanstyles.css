@@ -124,6 +124,7 @@ body {
     transition: opacity 0.5s, font-size 0.5s;
 }
 
+
 #mainsection {
     width: 100vw;
     height: 100vh;
@@ -132,11 +133,18 @@ body {
     background-position: center;
 }
 
+#bottomhalfindex {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+}
+
 #informationindex {
     display: flex;
     flex-direction: column;
     gap: 2vw;
-    margin: 2vw;
+    padding: 2vw;
+    height: 80vh;
 }
 
 #definition {
