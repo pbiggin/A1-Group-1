@@ -492,7 +492,7 @@ font-family: "Inter", sans-serif;
 }
 
 .pageDescription {
-  color: #000000;
+  color:#f5f2e1;  
   text-align: center;
   margin-top: 150px;
   margin-left: 20%;
@@ -500,6 +500,8 @@ font-family: "Inter", sans-serif;
   width: 60%; 
   font-family: "Inter", sans-serif;
   font-size: 16px
+  font-variation-settings: "slnt" -10;
+  
 }
 
 
@@ -510,7 +512,7 @@ font-family: "Inter", sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #0a4f27;
-  color:#f5f2e1;;  
+  color:#f5f2e1;  
 }
 
 .pageContainer {
