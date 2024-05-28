@@ -1,4 +1,11 @@
-/* RYAN */
+:root {
+    --darkestgreen: #0a4f27;
+    --darkgreen: #0F7D3D;
+    --darkergreen: #0D6632;
+    --green: #4FA84A;
+    --offwhite: #F5F2E1;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,6 +22,7 @@ body {
     height: 190vh;
     width: 100vw;
     overflow-x: hidden;
+    background-color: var(--offwhite);
 }
 
 #mainnavbar {
@@ -33,7 +41,7 @@ body {
     bottom: 0;
     left: 50%;
     transform: translate(-50%, -100%);
-    background-color: white;
+    background-color: var(--offwhite);
     border-radius: 50%;
     height: 3vw;
     width: 3vw;
@@ -62,7 +70,7 @@ body {
     left: 0;
     height: 100vh;
     width: 0;
-    background-color: #19672f;
+    background-color: var(--darkgreen);
     z-index: 9;
     transition: width 1s;
     overflow: hidden;
@@ -89,7 +97,7 @@ body {
 }
 
 .pagelink a {
-    color: white;
+    color: var(--offwhite);
 }
 
 .titleheadingcontainer {
@@ -110,13 +118,13 @@ body {
     font-variation-settings:
         "slnt" -10;
     line-height: 15vw;
-    color: white;
+    color: var(--offwhite);
     transition: font-size 0.5s, line-height 0.5s;
 }
 
 #credits {
     font-size: 1.125vw;
-    color: white;
+    color: var(--offwhite);
     font-variation-settings:
         "slnt" -10;
     font-weight: 700;
@@ -149,13 +157,12 @@ body {
 }
 
 #definition {
-    background-color: #238c41;
+    background-color: var(--darkestgreen);
     padding: 2vw;
-    color: white;
+    color: var(--offwhite);
     border-radius: 2vw;
     font-size: 1.5vw;
     flex: 1;
-    border: solid 5px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,14 +187,14 @@ body {
 
 .card {
     flex: 1;
-    background-color: #238c41;
+    background-color: var(--darkgreen);
     height: 80%;
     width: 100%;
     border-radius: 2vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: var(--offwhite);
     font-weight: 800;
     font-size: 4vw;
 }
@@ -211,22 +218,23 @@ body {
     height: 100%;
     width: 50%;
     border-radius: 2vw;
-    background-color: #19672f;
-    color: white;
+    background-color: var(--green);
+    color: var(--offwhite);
     font-size: 3vw;
+    border: none;
 }
 
 #leftarrow:hover, #rightarrow:hover {
     cursor: pointer;
-    background-color: #19672fb0;
+    background-color: #4fa84a90;
 }
 
 .pagepreview {
-    background-color: #19672f;
+    background-color: var(--darkergreen);
     width: 70%;
     border-radius: 2vw;
     font-size: 1.5vw;
-    color: white;
+    color: var(--offwhite);
     padding: 2vw;
     display: flex;
     flex-direction: column;
@@ -243,7 +251,7 @@ body {
 
 }
 .pagepreview a {
-    color: white;
+    color: var(--offwhite);
 }
 
 .pagepreview a:hover {
@@ -253,9 +261,19 @@ body {
 #indexfooter {
     height: 10vh;
     width: 100vw;
-    background-color: #19672f;
+    background-color: var(--darkestgreen);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: var(--offwhite);
+    gap: 1vw;
+}
+
+#indexfooter p {
+    color: var(--darkgreen);
+}
+
+#indexfooter img {
+    width: 2vw;
+    height: 2vw;
 }
