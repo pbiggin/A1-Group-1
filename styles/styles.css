@@ -5,7 +5,7 @@ h1, h2, h3{
   font-weight: 400;
   font-style: normal;
   font-variation-settings: "slnt" 0;
-  color: #0f7d3d;
+  color: #0f7d3d;;
   text-align: center;
 }
 
@@ -16,6 +16,7 @@ h2{
 p, ul {
   font-family: "Inter", sans-serif;
   font-size: 16pt;
+  color:#2e1a08;
 }
 
 label {
@@ -27,12 +28,21 @@ label {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
-  font-size: 14pt;
+  font-size: 16pt;
   font-style: normal;
-  font-variation-settings: "slnt" 0;
+  font-variation-settings: "slnt" ;
   text-align: center;
 }
 
+
+.spanbold {
+  color: #0f7d3d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" -10;
+}
 .subheading {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -60,6 +70,7 @@ label {
   font-family: "Inter", sans-serif;
   padding-left: 80%;
   color:#D9A679; 
+  white-space: nowrap;
 
 }
 /** END FONT RELATED CSS **/
@@ -148,6 +159,17 @@ body {
   height: 95vh;
 }
 
+
+
+#learn-end {
+  display: flex;
+  background-image: url("../images/learn-end.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 60vh;
+}
+
 /** FOR SVGS **/
 .arrow {
   fill: #f5f2e1;
@@ -203,12 +225,29 @@ body {
   background-repeat: no-repeat;
 }
 
+.imgCenter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.imgCenter > img {
+  padding: 1vw;
+  border-radius:30px;
+
+}
 
 .hero-text {
   padding: 4vw;
   width: 45%;
   font-size: 20pt;
   transform: translateY(2cm);
+}
+
+.end-text{
+margin: auto;
+  font-size: 20pt;
 }
 
 .hero-text > p {
