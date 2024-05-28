@@ -538,6 +538,7 @@ font-family: "Inter", sans-serif;
 .tabContainer img {
   width: 400px;
   height: auto;
+  border-radius:30px;
 }
 
 .imgButton {
