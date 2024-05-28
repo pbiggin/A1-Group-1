@@ -492,12 +492,9 @@ font-family: "Inter", sans-serif;
 }
 
 .pageDescription {
-  color:#4fa84a;
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "slnt" -10;
+  font-size: 16pt;
+  color:#2e1a08;
 }
 
 
