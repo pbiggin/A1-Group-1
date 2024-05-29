@@ -1,3 +1,31 @@
+/** FONT RELATED CSS **/
+h1, h2, h3{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" -10;
+  color: #0f7d3d;;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  color: #f5f2e1;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+}
+
+
 /** COPY THE FOLLOWING FOR CSS FOR NAV BAR **/
 #contrast {
   color: #f5f2e1;
@@ -67,31 +95,7 @@
 
 /* end of nav */
 
-/** FONT RELATED CSS **/
-h1, h2, h3{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: "slnt" -10;
-  color: #0f7d3d;;
-  text-align: center;
-}
 
-h2{
-  text-align: center;
-}
-
-p, ul {
-  font-family: "Inter", sans-serif;
-  font-size: 16pt;
-  text-align: center;
-  color: #f5f2e1;
-}
-
-label {
-  font-family: "Inter", sans-serif;
-}
 
 #ans {
   background-color: white;
@@ -103,11 +107,6 @@ label {
   flex: 50%;
 }
 
-
-label {
-  font-family: "Inter", sans-serif;
-  font-size: 16pt;
-}
 
 #quiz-body {
   background-color: #F5F2E1;
