@@ -1,21 +1,5 @@
 // Nav Bar 
 
-let pastScroll = window.scrollY;
-window.onscroll = function () {
-  let userScroll = window.scrollY;
-
-  if (pastScroll > userScroll) {
-    document.getElementById("learnNav").style.top = "0";
-    document.getElementById("nav-side").style.top = "0";
-  } else {
-    document.getElementById("nav-side").style.top = "-100px";
-    document.getElementById("learnNav").style.top = "-100px";
-  }
-  pastScroll = userScroll;
-};
-
-
-
 const HamburgerMenu = document.getElementById("nav-side")
 let menuCounter = 0
 function toggleMenu(){
