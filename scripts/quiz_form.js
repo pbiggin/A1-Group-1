@@ -1,3 +1,17 @@
+/** NAVIGATION BAR CODE COPY THIS THIS IS IMPORTANT TO GET THE SLIDER TO WORK **/
+const HamburgerMenu = document.getElementById("nav-side")
+let menuCounter = 0
+function toggleMenu(){
+    menuCounter += 1
+    if (menuCounter % 2 == 0){
+        HamburgerMenu.style.width = '0'
+    } else {
+        HamburgerMenu.style.width = '100vw'
+    }
+}
+
+/* Form function used to process the user's selected answers and add points for correct answers */
+
 let score = 0;
 
 function process() {
