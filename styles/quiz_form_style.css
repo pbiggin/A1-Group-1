@@ -67,6 +67,32 @@
 
 /* end of nav */
 
+/** FONT RELATED CSS **/
+h1, h2, h3{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" -10;
+  color: #0f7d3d;;
+  text-align: center;
+}
+
+h2{
+  text-align: center;
+}
+
+p, ul {
+  font-family: "Inter", sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  color: #f5f2e1;
+}
+
+label {
+  font-family: "Inter", sans-serif;
+}
+
 #ans {
   background-color: white;
   border-style: solid;
@@ -77,13 +103,6 @@
   flex: 50%;
 }
 
-
-
-p {
-  font-family: "Inter", sans-serif;
-  text-align: center;
-  color: #f5f2e1;
-}
 
 label {
   font-family: "Inter", sans-serif;
