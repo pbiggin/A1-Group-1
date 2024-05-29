@@ -499,7 +499,7 @@ font-family: "Inter", sans-serif;
   margin-right: 20%;
   width: 60%; 
   font-family: "Inter", sans-serif;
-  font-size: 16px
+  font-size: 17px;
 }
 
 
@@ -510,7 +510,7 @@ font-family: "Inter", sans-serif;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #0a4f27;
-  color:#f5f2e1;;  
+  color:#f5f2e1;  
 }
 
 .pageContainer {
@@ -538,6 +538,7 @@ font-family: "Inter", sans-serif;
 .tabContainer img {
   width: 400px;
   height: auto;
+  border-radius:30px;
 }
 
 .imgButton {

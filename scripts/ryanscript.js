@@ -6,7 +6,7 @@ const credits = this.document.getElementById('credits')
 
 function updateNav(scrollPosition) {
     if (scrollPosition > 50){
-        navBar.style.backgroundColor = "#238c41"
+        navBar.style.backgroundColor = "#0F7D3D"
         cricketHeading.style.fontSize = '3vw'
         cricketHeading.style.lineHeight = "10vh"
         navBar.style.height = '10vh'
