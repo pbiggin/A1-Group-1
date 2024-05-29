@@ -212,10 +212,11 @@ button:hover {
 
 .question {
   text-align: center;
-  border: 1px solid #0F7D3D;
+  border: 5px solid #0F7D3D;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
   background-color: #4fa84a;
   height: 40vw;
   color: #f5f2e1;
