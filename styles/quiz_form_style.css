@@ -22,8 +22,64 @@ p {
 
 label {
   font-family: "Inter", sans-serif;
-  font-size: 16pt;
 }
+  
+.summary {
+  text-align: center;
+  font-size: 18pt;
+  padding: 2vw;
+}
+.bold {
+  color:#683a13;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 16pt;
+  font-style: normal;
+  font-variation-settings: "slnt" ;
+  text-align: center;
+}
+
+
+.spanbold {
+  color: #0f7d3d;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings: "slnt" -10;
+}
+.subheading {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  color:#0f7d3d;
+}
+
+.navLearnBtn{
+  justify-self: right;
+}
+
+.titleheading {
+  font-size: 2vw;
+  font-weight: 900;
+  font-variation-settings:
+      "slnt" -10;
+  line-height: 15vw;
+}
+
+
+.side {
+  font-size: 14pt;
+  font-family: "Inter", sans-serif;
+  padding-left: 80%;
+  color:#D9A679; 
+  white-space: nowrap;
+
+}
+/** END FONT RELATED CSS **/
 
 
 /** COPY THE FOLLOWING FOR CSS FOR NAV BAR **/
