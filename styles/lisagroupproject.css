@@ -17,10 +17,12 @@
 
 }
 
-.infoheader {
+.infoheader { 
     display: flex;
-}
+    flex-direction: row;
 
+    
+}
 
 .title p { 
     font-family: "Inter", sans-serif;
