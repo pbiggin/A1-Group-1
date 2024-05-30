@@ -101,6 +101,9 @@ function storeAnswer(answerId, correctAnswerId) {
     }
 }
 
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const questions = document.querySelectorAll('.question');
     let currentQuestionIndex = 0;
@@ -142,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault(); // Prevent form submission
         process(); // Process the form
     });
-})
+}) 
 
 
 
