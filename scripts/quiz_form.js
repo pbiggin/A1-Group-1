@@ -119,7 +119,8 @@ function storeAnswer(answerId, correctAnswerId) {
 function removeFocus(questionId) {
     const questionButtons = document.querySelectorAll(`#${questionId} .button`);
     questionButtons.forEach(button => {
-        if (!button.classList.contains('selected')) {
+         if (button.classList.contains('selected')) {
+            button.classList.remove('selected');
             button.classList.add('not-selected');
         }
     });
