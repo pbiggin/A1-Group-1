@@ -153,7 +153,7 @@ label {
 
 #wicket-keeper {
   width: 50%;
-  padding-left: 0;
+  padding-right: 0;
 }
 
 body {
@@ -224,7 +224,6 @@ button:hover {
   border: 5px solid #0F7D3D;
   border-radius: 10px;
   padding-top: 10px;
-  /* margin-bottom: 10px; */
   margin-top: 50px;
   margin-left: 15%;
   background-color: #4fa84a;
