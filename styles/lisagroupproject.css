@@ -109,6 +109,7 @@
     overflow: hidden; /* Ensure the image doesn't overflow its container */
     width: 150%; /* Set the initial width */
     transition: width 0.5s ease; /* Apply transition effect on width */
+    padding-top: 100px; 
 }
 
 .bat_img:hover {
