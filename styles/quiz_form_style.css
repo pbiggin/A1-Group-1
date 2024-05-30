@@ -159,9 +159,9 @@ body {
   margin-left: 0;
 }
 
-form {
+/*form {
   margin-left: 15%;
-}
+}*/
 
 
 #ans {
@@ -225,10 +225,10 @@ button:hover {
   text-align: center;
   border: 5px solid #0F7D3D;
   border-radius: 10px;
-  padding: 20px;
-  padding-left:40px;
+  padding-top: 10px;
   /* margin-bottom: 10px; */
   margin-top: 50px;
+  margin-left: 15%;
   background-color: #4fa84a;
   height: 35vw;
   color: #f5f2e1;
