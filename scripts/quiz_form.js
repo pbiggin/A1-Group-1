@@ -107,7 +107,7 @@ function shortAnswer(response, answer) {
 
 let storedAnswer = "";
 
-function storeAnswer(questionId, answerId, correctAnswerId) {
+function storeAnswer(answerId, correctAnswerId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
