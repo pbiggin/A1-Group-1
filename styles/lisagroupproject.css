@@ -4,6 +4,75 @@
 
     
 }
+/** COPY THE FOLLOWING FOR CSS FOR NAV BAR **/
+#contrast {
+    color: #f5f2e1;
+   }
+  
+  #learnNav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    transition: top 0.3s;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    background-color: #0f7d3d;
+    overflow: hidden;
+    align-items: center;
+    padding-left: 3mm;
+  }
+  
+  #hamburger {
+    color:#f5f2e1;
+    padding-right: 2vw;
+  }
+  
+  #hamburger.hiding {
+    background-color:#19672f;
+  }
+  
+  .mirror {
+    position:absolute;
+    justify-self: right;
+    right: 0;
+  }
+  
+  #nav-side{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    background-color: #19672f;
+    width: 0;
+    transition: top 0.3s, width 1.5s;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+  }
+  
+  .moduleMenu {
+    font-family: "Inter", sans-serif;
+    color: #f5f2e1;
+    display: flex;
+    justify-content: space-around;
+    width:50%;
+  }
+  
+  .moduleMenu a {
+    color: #f5f2e1;
+  }
+  
+  .icon {
+    transform: scale(1.8);
+    fill: #f5f2e1;
+  }
+  
+  /* end of nav */
+  
 
 .lisa_part h1, h2, h3, p {
     font-family: "Inter", sans-serif;
@@ -22,7 +91,6 @@
     color: #0f7d3d;
 
 }
-
 
 
 
@@ -106,8 +174,8 @@
 .card_header.card_image > img {
     display: block;
     width: 100%;
-    max-height: 200px;
-    aspect-ratio: 16 / 9;
+    max-height: 200px
+    aspect-ratio; 16 / 9;
     object-fit: cover;
     object-position: center;
 }
@@ -126,10 +194,12 @@ table.protective_gear {
     border-radius: 10px;
     overflow: hidden;
     align-content: center;
-margin: 50%;
+margin: 2%;
     
 
 }
+
+
 .protective_gear th, td {
     padding: 50px;
     text-align: left;
