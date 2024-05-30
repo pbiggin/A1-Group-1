@@ -154,7 +154,9 @@ label {
 .question-image {
   width: 50%;
   padding-right: 0;
-  border: 3px solid #f5f2e1;
+  pading-top: 0;
+  border: 1px solid #f5f2e1;
+  border-radius: 10px;
 }
 
 body {
