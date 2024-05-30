@@ -159,6 +159,10 @@ body {
   margin-left: 0;
 }
 
+form {
+  margin-left: 10vw;
+}
+
 
 #ans {
   background-color: white;
