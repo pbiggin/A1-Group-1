@@ -155,6 +155,9 @@ label {
   width: 50%;
 }
 
+body {
+  margin-left: 0;
+}
 
 
 #ans {
