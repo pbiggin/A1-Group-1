@@ -104,7 +104,6 @@ function shortAnswer(response, answer) {
 }
 
 /* Determines if correct answer button was pressed and awards point if so */
-
 let storedAnswer = "";
 
 function storeAnswer(answerId, correctAnswerId) {
@@ -114,4 +113,14 @@ function storeAnswer(answerId, correctAnswerId) {
     if (answerId == correctAnswerId) { // Check if correct answer is selected
         score += 1; // Increment score by 1
     }
+}
+
+/* Removes "selected" colour from a preciously selected button once a different one is clicked */
+function removeFocus(questionId) {
+    const questionButtons = document.querySelectorAll(`#${questionId} .button`);
+    questionButtons.forEach(button => {
+        if (!button.classList.contains('selected')) {
+            button.classList.add('not-selected');
+        }
+    });
 }
