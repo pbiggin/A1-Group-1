@@ -23,7 +23,7 @@ p {
 label {
   font-family: "Inter", sans-serif;
 }
-  
+  /*
 .summary {
   text-align: center;
   font-size: 18pt;
@@ -48,7 +48,8 @@ label {
   font-weight: 800;
   font-style: normal;
   font-variation-settings: "slnt" -10;
-}
+} */
+
 .subheading {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
