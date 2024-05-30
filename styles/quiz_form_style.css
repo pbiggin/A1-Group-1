@@ -9,12 +9,12 @@ h1, h2, h3{
   text-align: center;
 }
 
-.question > h2{
+.question h2{
   text-align: center;
   color: #f5f2e1;;
 }
 
-.question > p {
+.question p {
   font-family: "Inter", sans-serif;
   font-size: 16pt;
   text-align: center;
