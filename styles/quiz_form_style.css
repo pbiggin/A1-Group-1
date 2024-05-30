@@ -153,15 +153,13 @@ label {
 
 #wicket-keeper {
   width: 50%;
+  padding-left: 0;
 }
 
 body {
   margin-left: 0;
 }
 
-/*form {
-  margin-left: 15%;
-}*/
 
 
 #ans {
