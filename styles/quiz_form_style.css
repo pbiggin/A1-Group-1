@@ -188,11 +188,11 @@ button {
   margin: 2%;
   height: 30px;
   border-radius: 10px;
-  font-size: 8pt;
+  font-size: 10pt;
   
 }
 
-#submitButton {
+#rightSideButton {
   background-color: #f5f2e1;
   border: 1px dotted #d9a679;
   width: 10%;
