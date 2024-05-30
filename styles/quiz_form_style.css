@@ -216,6 +216,14 @@ button {
   /* Add !important to override other styles */
 }
 
+.not-selected {
+  background-color: #f5f2e1 !important;
+}
+
+.answer-buttons {
+  size: 30%;
+}
+
 #row_1 {
   display: flex;
 }
