@@ -72,6 +72,8 @@ function process() {
     //question 10
     score += shortAnswer(document.querySelector('select#q10').value, "answer_2");
 
+    // A comment about the player's score is added for encouragement
+
     let endMessage = ' ';
 
     if (score >= 8) {
@@ -90,7 +92,7 @@ function process() {
 
 }
 
-
+/* Determines the score awarded for each input answer */
 
 function shortAnswer(response, answer) {
     if (response.toLowerCase() == answer) {
@@ -101,14 +103,15 @@ function shortAnswer(response, answer) {
     }
 }
 
+/* Determines if correct answer button was pressed and awards point if so */
 
 let storedAnswer = "";
 
-function storeAnswer(answerId, correctAnswerId) {
+function storeAnswer(questionId, answerId, correctAnswerId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
-    if (answerId == correctAnswerId) { // Check if answer 1 is selected
+    if (answerId == correctAnswerId) { // Check if correct answer is selected
         score += 1; // Increment score by 1
     }
 }
