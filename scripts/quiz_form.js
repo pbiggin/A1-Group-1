@@ -72,8 +72,17 @@ function process() {
     //question 10
     score += shortAnswer(document.querySelector('select#q10').value, "answer_2");
 
+    if (score >= 8) {
+    alert('Your score is: ' + score + '. Well done, you are ready to get started!');
+    }
 
-    alert('Your score is: ' + score);
+    if (score < 8 && score >= 6) {
+    alert('Your score is: ' + score + '. Almost there, just need to brush up on a few topics!');
+    }
+
+    if (score < 6) {
+    alert('Your score is: ' + score + '. Good effort but maybe you should review the Learning Hub and Content Hub...');
+    }
 
 
 }
