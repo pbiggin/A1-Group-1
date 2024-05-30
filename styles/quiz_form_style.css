@@ -206,7 +206,7 @@ button {
   background-color: #0f7d3d;
 }
 
-button:hover {
+#submitBotton:hover, button:hover {
   background-color: #0f7d3d;
 }
 
@@ -231,9 +231,7 @@ button:hover {
 
 }
 
-.manoeuvreButtons {
-  text-align: center;
-}
+
 
 .learnFoot {
 position: fixed;
