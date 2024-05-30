@@ -72,18 +72,21 @@ function process() {
     //question 10
     score += shortAnswer(document.querySelector('select#q10').value, "answer_2");
 
+    let endMessage = ' ';
+
     if (score >= 8) {
-    alert('Your score is: ' + score + '. Well done, you are ready to get started!');
+     endMessage = 'Well done, you are ready to get started!';
     }
 
     if (score < 8 && score >= 6) {
-    alert('Your score is: ' + score + '. Almost there, just need to brush up on a few topics!');
+    endMessage = 'Almost there, just need to brush up on a few topics!');
     }
 
     if (score < 6) {
-    alert('Your score is: ' + score + '. Good effort but maybe you should review the Learning Hub and Content Hub...');
+    endMessage = 'Good effort but maybe you should review the Learning Hub and Content Hub...');
     }
-
+    
+    alert('Your score is: ' + score + '. ' + endMessage);
 
 }
 
