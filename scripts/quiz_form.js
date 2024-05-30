@@ -113,9 +113,9 @@ function storeAnswer(answerId, correctAnswerId) {
     }
 }
 
+/* The "DOMContentLoaded" event is  */
 
-
-
+/*
 document.addEventListener("DOMContentLoaded", function () {
     const questions = document.querySelectorAll('.question');
     let currentQuestionIndex = 0;
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", function () {
         process(); // Process the form
     });
 }) 
-
+*/
 
 
 
