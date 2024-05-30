@@ -206,7 +206,11 @@ button {
   background-color: #0f7d3d;
 }
 
-#submitBottom:hover, button:hover {
+button:hover {
+  background-color: #0f7d3d;
+}
+
+#submitBottom:hover {
   background-color: #0f7d3d;
 }
 
