@@ -25,7 +25,7 @@ function process() {
     score += shortAnswer(document.querySelector('input#q1').value, "wicket keeper");
 
     // question 2
-    score += shortAnswer(document.querySelector('input#q2').value, "bowler");
+    score += shortAnswer(document.querySelector('input#q2').value, "wicket");
 
 
     //question 3
