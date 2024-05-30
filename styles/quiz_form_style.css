@@ -154,6 +154,7 @@ label {
 .question-image {
   width: 50%;
   padding-right: 0;
+  border: 3px solid #f5f2e1;
 }
 
 body {
@@ -174,12 +175,12 @@ body {
 
 
 #quiz-body {
-  background-color: #F5F2E1;
+  background-color: #f5f2e1;
 }
 
 button {
   background-color: #f5f2e1;
-  border: 1px dotted #d9a679;
+  border: 1px solid #d9a679;
   width: 10%;
   text-align: center;
   margin: 2%;
