@@ -79,11 +79,11 @@ function process() {
     }
 
     if (score < 8 && score >= 6) {
-    endMessage = 'Almost there, just need to brush up on a few topics!');
+    endMessage = 'Almost there, just need to brush up on a few topics!';
     }
 
     if (score < 6) {
-    endMessage = 'Good effort but maybe you should review the Learning Hub and Content Hub...');
+    endMessage = 'Good effort but maybe you should review the Learning Hub and Content Hub...';
     }
     
     alert('Your score is: ' + score + '. ' + endMessage);
