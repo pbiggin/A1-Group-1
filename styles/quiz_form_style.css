@@ -224,6 +224,8 @@ button:hover {
   background-color: #4fa84a;
   height: 40vw;
   color: #f5f2e1;
+  width: 70%;
+  justify-self: center;
   
 
 }
