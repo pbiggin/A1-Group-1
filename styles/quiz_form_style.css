@@ -188,7 +188,7 @@ button {
   margin: 2%;
   height: 30px;
   border-radius: 10px;
-  font-size: 12pt;
+  font-size: 2pt;
   
 }
 
@@ -241,8 +241,6 @@ button:hover {
 }
 
 .manoeuvreButtons {
-  /* margin-top: 20px;
-  padding: 10px; */
   text-align: center;
 }
 
