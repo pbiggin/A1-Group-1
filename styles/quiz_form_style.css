@@ -220,8 +220,8 @@ button:hover {
   border-radius: 10px;
   padding: 20px;
   padding-left:40px;
-  margin-bottom: 10px;
-  margin-top: 100px;
+  /* margin-bottom: 10px; */
+  margin-top: 50px;
   background-color: #4fa84a;
   height: 40vw;
   color: #f5f2e1;
@@ -232,8 +232,8 @@ button:hover {
 }
 
 .manoeuvreButtons {
-  margin-top: 20px;
-  padding: 10px;
+  /* margin-top: 20px;
+  padding: 10px; */
   text-align: center;
 }
 
