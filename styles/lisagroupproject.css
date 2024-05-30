@@ -196,7 +196,9 @@ table.protective_gear {
     border-radius: 10px;
     overflow: hidden;
     align-content: center;
-margin: 2%;
+  margin-left: auto;
+    margin-right: auto;
+
     
 
 }
