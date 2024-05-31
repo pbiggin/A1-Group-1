@@ -139,7 +139,7 @@ function storeAnswer(answerId, correctAnswerId) {
 
      //Decrease score by 1 if the user clicks another option after having previously selected the correct answer
     if ((questionScores[correctAnswerId]) && (!button.classList.contains("selected"))) {
-        questionScores[correctAnswerId] = true; 
+        questionScores[correctAnswerId] = false; 
         score -= 1; 
     }
 
