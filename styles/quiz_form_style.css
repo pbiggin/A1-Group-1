@@ -143,9 +143,11 @@ label {
 }
 
 body {
+  margin-top: 20%;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
+  background-color: #f5f2e1;
 }
 
 
@@ -161,9 +163,9 @@ body {
 }
 
 
-#quiz-body {
+/*#quiz-body {
   background-color: #f5f2e1;
-}
+}*/
 
 button {
   background-color: #f5f2e1;
