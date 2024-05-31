@@ -109,6 +109,8 @@ let storedAnswer = "";
 /* Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
 Ensures that the user cannot gain extra points by simply pressing the right answer button multiple times. */
 
+/* BEST ONE SO FAR DON'T TOUCH ----------------------------
+
 let questionScores = {
     q4: false,
     q5: false,
@@ -143,37 +145,42 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
 
     
 } 
+---------------------------------------------- */
+let questionScores = {
+    q4: false,
+    q5: false,
+    q7: false
+};
 
-/*
 
-function storeAnswer(answerId, correctAnswerId) {
+function storeAnswer(answerId, correctAnswerId, questionId) {
     let button = document.getElementById(answerId);
     button.classList.add("selected");
 
     // Check if the question has already been answered correctly
     if (!questionScores[correctAnswerId]) {
         // Mark the question as answered correctly
-        if (answerId === correctAnswerId && button.classList.contains("selected")) {
+        if (answerId == correctAnswerId && button.classList.contains("selected")) {
             questionScores[correctAnswerId] = true;
             // Increment score by 1
             score += 1;
         } else {
             // If the answer is incorrect, remove the score
-            if (questionScores[correctAnswerId]) {
+            if (answerId != correctAnswerId && button.classList.contains("selected")) {
                 score -= 1;
                 questionScores[correctAnswerId] = false;
             }
         }
     }
 
-    // Remove selected color from all buttons in the same question group
-    const questionButtons = document.querySelectorAll(".question#" + 4 + " button");
+     // Remove selected color from all buttons in the same question group
+    const questionButtons = document.querySelectorAll("#" + questionId + " button");
     questionButtons.forEach(button => {
-        if (button.id !== answerId) {
+        if (button.id != answerId) {
             button.classList.remove("selected");
         }
     });
 }
-*/
+
 
 
