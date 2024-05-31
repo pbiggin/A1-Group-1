@@ -119,11 +119,20 @@ function storeAnswer(answerId, correctAnswerId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
-    
+
+    // Mark the question as answered correctly
     if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (button.classList.contains("selected"))) {
-        questionScores[correctAnswerId] = true; // Mark the question as answered correctly
-        score += 1; // Increment score by 1
+        questionScores[correctAnswerId] = true; 
+        // Increment score by 1
+        score += 1; 
     }
+
+    //Decrease score by 1 if the user clicks another option after having previously selected the correct answer
+    if ((questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (!button.classList.contains("selected"))) {
+        score -= 1; 
+    }
+
+    
      // Remove selected color from all buttons in the same question group
     const questionButtons = document.querySelectorAll("button");
     questionButtons.forEach(button => {
