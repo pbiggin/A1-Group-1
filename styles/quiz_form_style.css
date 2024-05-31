@@ -211,7 +211,11 @@ button:hover {
   background-color: #0f7d3d;
 }
 
-#submitBottom:hover {
+.manoeuvreButton:hover {
+  background-color: #0f7d3d;
+}
+
+.manoeuvreButton:focus {
   background-color: #0f7d3d;
 }
 
