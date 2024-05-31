@@ -115,7 +115,7 @@ let questionScores = {
     q7: false
 };
 
-function storeAnswer(answerId, correctAnswerId) {
+/* function storeAnswer(answerId, correctAnswerId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
@@ -144,5 +144,34 @@ function storeAnswer(answerId, correctAnswerId) {
     }
 
     
+} */
+
+function storeAnswer(answerId, correctAnswerId) {
+    storedAnswer = answerId;
+    let button = document.getElementById(answerId);
+    button.classList.add("selected");
+    
+    // Remove selected color from all buttons in the same question group
+    const questionButtons = document.querySelectorAll(`#${correctAnswerId} .button`);
+    questionButtons.forEach(button => {
+        if (button.id !== answerId) {
+            button.classList.remove("selected");
+        }
+    });
+
+    // Check if the clicked button is the correct answer
+    if (answerId === correctAnswerId) {
+        // If it is, add the point if it hasn't been added before
+        if (!questionScores[correctAnswerId]) {
+            questionScores[correctAnswerId] = true; // Mark the question as answered correctly
+            score += 1; // Increment score by 1
+        }
+    } else {
+        // If it's not the correct answer, remove the point if it has been added before
+        if (questionScores[correctAnswerId]) {
+            questionScores[correctAnswerId] = false; // Mark the question as not answered correctly
+            score -= 1; // Decrement score by 1
+        }
+    }
 }
 
