@@ -28,10 +28,10 @@ function process() {
     score += shortAnswer(document.querySelector('input#q2').value, "extra");
 
 
-    //question 3
+    // question 3
     score += shortAnswer(document.querySelector('select#q3').value, "answer_2");
 
-    //question 4
+    // question 4
     const q4Answers = document.getElementsByName('question_4');
     q4Answers.forEach(answer => {
         if (answer.checked && answer.value == "q4_answer_3") {
@@ -106,29 +106,8 @@ function shortAnswer(response, answer) {
 /* Determines if correct answer button was pressed and awards point if so */
 let storedAnswer = "";
 
-/*function storeAnswer(answerId, correctAnswerId) {
-    storedAnswer = answerId;
-    let button = document.getElementById(answerId);
-    button.classList.add("selected");
-    if (answerId == correctAnswerId) { // Check if correct answer is selected
-        score += 1; // Increment score by 1
-    }
-}
-
-function storeAnswer(answerId, correctAnswerId) {
-    storedAnswer = answerId;
-    let button = document.getElementById(answerId);
-    let point = 0;
-    button.classList.add("selected");
-    if (answerId == correctAnswerId) { // Check if correct answer is selected
-       point += 1;
-    }
-    //Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
-    This ensures that the user cannot gain extra points by simply pressing the right answer button multiple times.
-    if (point<=1) {
-     score += point; 
-    }
-}*/
+/* Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
+Ensures that the user cannot gain extra points by simply pressing the right answer button multiple times. */
 
 let questionScores = {
     q4: false,
