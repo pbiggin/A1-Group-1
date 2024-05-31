@@ -137,7 +137,7 @@ let questionScores = {
 };
 
 function storeAnswer(answerId, correctAnswerId) {
-    if (!questionScores[correctAnswerId]) {
+    if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId)) {
         questionScores[correctAnswerId] = true; // Mark the question as answered correctly
         score += 1; // Increment score by 1
     }
