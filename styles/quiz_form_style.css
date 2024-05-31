@@ -212,8 +212,12 @@ button:hover {
 }
 
 #submitButton:hover {
-  background-color: #0f7d3d;
+  background-color: #d9a679;
   color: white; /* Change text color to improve visibility */
+}
+
+input:hover {
+   background-color: #0f7d3d;
 }
 
 .manoeuvreButton:hover {
