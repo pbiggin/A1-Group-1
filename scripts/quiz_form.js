@@ -120,7 +120,7 @@ function storeAnswer(answerId, correctAnswerId) {
     let button = document.getElementById(answerId);
     button.classList.add("selected");
     
-    if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId)) {
+    if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (button.classList.contains("selected"))) {
         questionScores[correctAnswerId] = true; // Mark the question as answered correctly
         score += 1; // Increment score by 1
     }
@@ -134,13 +134,3 @@ function storeAnswer(answerId, correctAnswerId) {
     
 }
 
-/* Removes "selected" colour from a preciously selected button once a different one is clicked 
-function removeFocus(questionId) {
-    const questionButtons = document.querySelectorAll(`#${questionId} .button`);
-    questionButtons.forEach(button => {
-         if (button.classList.contains('selected')) {
-            button.classList.remove('selected');
-            button.classList.add('not-selected');
-        }
-    });
-}*/
