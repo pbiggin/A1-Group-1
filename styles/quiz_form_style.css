@@ -143,7 +143,7 @@ label {
 }
 
 body {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-left: 0;
   margin-right: 0;
   margin-bottom: 0;
@@ -162,10 +162,6 @@ body {
   flex: 50%;
 }
 
-
-/*#quiz-body {
-  background-color: #f5f2e1;
-}*/
 
 button {
   background-color: #f5f2e1;
@@ -237,7 +233,6 @@ button:hover {
   width: 70%;
   justify-self: center;
   
-
 }
 
 /* Footer formatting */
