@@ -124,10 +124,17 @@ function storeAnswer(answerId, correctAnswerId) {
         questionScores[correctAnswerId] = true; // Mark the question as answered correctly
         score += 1; // Increment score by 1
     }
+     // Remove selected color from all buttons in the same question group
+    const questionButtons = document.querySelectorAll("button");
+    questionButtons.forEach(button => {
+        if (button.id != answerId) {
+            button.classList.remove("selected");
+        }
+    });
     
 }
 
-/* Removes "selected" colour from a preciously selected button once a different one is clicked */
+/* Removes "selected" colour from a preciously selected button once a different one is clicked 
 function removeFocus(questionId) {
     const questionButtons = document.querySelectorAll(`#${questionId} .button`);
     questionButtons.forEach(button => {
@@ -136,4 +143,4 @@ function removeFocus(questionId) {
             button.classList.add('not-selected');
         }
     });
-}
+}*/
