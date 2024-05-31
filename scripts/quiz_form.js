@@ -113,7 +113,7 @@ let storedAnswer = "";
     if (answerId == correctAnswerId) { // Check if correct answer is selected
         score += 1; // Increment score by 1
     }
-}*/
+}
 
 function storeAnswer(answerId, correctAnswerId) {
     storedAnswer = answerId;
@@ -123,11 +123,27 @@ function storeAnswer(answerId, correctAnswerId) {
     if (answerId == correctAnswerId) { // Check if correct answer is selected
        point += 1;
     }
-    /* Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
-    This ensures that the user cannot gain extra points by simply pressing the right answer button multiple times. */
+    //Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
+    This ensures that the user cannot gain extra points by simply pressing the right answer button multiple times.
     if (point<=1) {
      score += point; 
     }
+}*/
+
+let questionScores = {
+    q4: false,
+    q5: false,
+    q7: false
+};
+
+function storeAnswer(answerId, correctAnswerId) {
+    if (!questionScores[correctAnswerId]) {
+        questionScores[correctAnswerId] = true; // Mark the question as answered correctly
+        score += 1; // Increment score by 1
+    }
+    storedAnswer = answerId;
+    let button = document.getElementById(answerId);
+    button.classList.add("selected");
 }
 
 /* Removes "selected" colour from a preciously selected button once a different one is clicked */
