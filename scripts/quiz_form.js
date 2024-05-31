@@ -115,7 +115,7 @@ let questionScores = {
     q7: false
 };
 
-/*function storeAnswer(answerId, correctAnswerId) {
+function storeAnswer(answerId, correctAnswerId, questionId) {
     storedAnswer = answerId;
     let button = document.getElementById(answerId);
     button.classList.add("selected");
@@ -126,11 +126,9 @@ let questionScores = {
         // Increment score by 1
         score += 1; 
     }
-
-   
     
-     // Remove selected color from all buttons in the same question group
-    const questionButtons = document.querySelectorAll("button");
+    // Remove selected color from all buttons in the same question group
+    const questionButtons = document.querySelectorAll("#" + questionId + " button");
     questionButtons.forEach(button => {
         if (button.id != answerId) {
             button.classList.remove("selected");
@@ -144,7 +142,9 @@ let questionScores = {
     }
 
     
-} */
+} 
+
+/*
 
 function storeAnswer(answerId, correctAnswerId) {
     let button = document.getElementById(answerId);
@@ -174,6 +174,6 @@ function storeAnswer(answerId, correctAnswerId) {
         }
     });
 }
-
+*/
 
 
