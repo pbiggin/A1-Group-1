@@ -164,13 +164,13 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
             questionScores[correctAnswerId] = true;
             // Increment score by 1
             score += 1;
-        } else {
+        } /*else {
             // If the answer is incorrect, remove the score
             if (answerId != correctAnswerId && button.classList.contains("selected")) {
                 score -= 1;
                 questionScores[correctAnswerId] = false;
             }
-        }
+        }*/
     }
 
      // Remove selected color from all buttons in the same question group
