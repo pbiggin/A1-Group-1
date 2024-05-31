@@ -127,12 +127,7 @@ function storeAnswer(answerId, correctAnswerId) {
         score += 1; 
     }
 
-    //Decrease score by 1 if the user clicks another option after having previously selected the correct answer
-    if ((questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (!button.classList.contains("selected"))) {
-        questionScores[correctAnswerId] = true; 
-        score -= 1; 
-    }
-
+   
     
      // Remove selected color from all buttons in the same question group
     const questionButtons = document.querySelectorAll("button");
@@ -141,6 +136,13 @@ function storeAnswer(answerId, correctAnswerId) {
             button.classList.remove("selected");
         }
     });
+
+     //Decrease score by 1 if the user clicks another option after having previously selected the correct answer
+    if ((questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (!button.classList.contains("selected"))) {
+        questionScores[correctAnswerId] = true; 
+        score -= 1; 
+    }
+
     
 }
 
