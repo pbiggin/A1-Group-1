@@ -137,13 +137,15 @@ let questionScores = {
 };
 
 function storeAnswer(answerId, correctAnswerId) {
+    storedAnswer = answerId;
+    let button = document.getElementById(answerId);
+    button.classList.add("selected");
+    
     if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId)) {
         questionScores[correctAnswerId] = true; // Mark the question as answered correctly
         score += 1; // Increment score by 1
     }
-    storedAnswer = answerId;
-    let button = document.getElementById(answerId);
-    button.classList.add("selected");
+    
 }
 
 /* Removes "selected" colour from a preciously selected button once a different one is clicked */
