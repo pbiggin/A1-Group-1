@@ -216,18 +216,6 @@ button:hover {
   color: white; /* Change text color to improve visibility */
 }
 
-input:hover {
-   background-color: #0f7d3d;
-}
-
-.manoeuvreButton:hover {
-  background-color: #0f7d3d;
-}
-
-.manoeuvreButton:focus {
-  background-color: #0f7d3d;
-}
-
 #ans:focus {
   background-color: #0f7d3d;
 }
