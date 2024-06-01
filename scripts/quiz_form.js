@@ -157,6 +157,14 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
     let button = document.getElementById(answerId);
     button.classList.add("selected");
 
+    // Remove selected color from all buttons in the same question group
+    const questionButtons = document.querySelectorAll("#" + questionId + " button");
+    questionButtons.forEach(button => {
+        if (button.id != answerId) {
+            button.classList.remove("selected");
+        }
+    });
+
     // Check if the question has already been answered correctly
     if (!questionScores[correctAnswerId]) {
         // Mark the question as answered correctly
@@ -164,22 +172,22 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
             questionScores[correctAnswerId] = true;
             // Increment score by 1
             score += 1;
-        } /*else {
-            // If the answer is incorrect, remove the score
-            if (answerId != correctAnswerId && button.classList.contains("selected")) {
+        } 
+        if (answerId != correctAnswerId && button.classList.contains("selected")) {
+            questionScores[correctAnswerId] = false;
+            // Increment score by 1
+            score += 0;
+        } 
+    }
+    
+    if (questionScores[correctAnswerId]) {
+    // If the current answer is incorrect and point has already been awarded, remove the point
+    if (answerId != correctAnswerId && button.classList.contains("selected")) {
                 score -= 1;
                 questionScores[correctAnswerId] = false;
             }
-        }*/
     }
-
-     // Remove selected color from all buttons in the same question group
-    const questionButtons = document.querySelectorAll("#" + questionId + " button");
-    questionButtons.forEach(button => {
-        if (button.id != answerId) {
-            button.classList.remove("selected");
-        }
-    });
+     
 }
 
 
