@@ -11,7 +11,23 @@ function toggleMenu(){
     }
 }
 
+//Scroll function for learn nav bar placement. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
+let pastScroll = window.scrollY;
+// sets user positon upon page load & after every movement
+window.onscroll = function () {
+  let userScroll = window.scrollY;
 
+  if (pastScroll > userScroll) {
+    // checks if the user has scrolled down, if so, closes nav
+    document.getElementById("learnNav").style.top = "0";
+    document.getElementById("nav-side").style.top = "0";
+  } else {
+    //checks if the user has scrolled up, if so, opens nav
+    document.getElementById("nav-side").style.top = "-100px";
+    document.getElementById("learnNav").style.top = "-100px";
+  }
+  pastScroll = userScroll;
+};
 
 // Form function used to process the user's selected answers and add points for correct answers 
 

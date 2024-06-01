@@ -58,7 +58,7 @@ const animateStart = new IntersectionObserver(function (entries, animateStart) {
 animateStart.observe(modTick);
 
 // FEATURE: Navigation bar slide
-// TEAM!!!! - COPY THIS IF YOU ARE COPYING THE NAV BAR CODE. CHARLENE IGNORE SINCE YOUR PAGE DOESN'T SCROLL tysm
+// TEAM!!!! - COPY THIS IF YOU ARE COPYING THE NAV BAR CODE.
 //Scroll function for learn nav bar placemend. Resets recorded scroll postion (up -> shows bar, down -> hides bar)
 let pastScroll = window.scrollY;
 // sets user positon upon page load & after every movement
