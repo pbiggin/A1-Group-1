@@ -132,12 +132,12 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
     // Check if the question has already been answered correctly
     if (!questionScores[correctAnswerId]) {
         // Mark the question as answered correctly
-        if (answerId == correctAnswerId /*&& button.classList.contains("selected")*/) {
+        if (answerId == correctAnswerId) {
             questionScores[correctAnswerId] = true;
             // Increment score by 1
             score += 1;
         } 
-        if (answerId != correctAnswerId /*&& button.classList.contains("selected")*/) {
+        if (answerId != correctAnswerId) {
             questionScores[correctAnswerId] = false;
             // Increment score by 1
             score += 0;
@@ -146,7 +146,7 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
 
     // If the current answer is incorrect and point has already been awarded, remove the point
     if (questionScores[correctAnswerId]) {
-    if (answerId != correctAnswerId && button.classList.contains("selected")) {
+    if (answerId != correctAnswerId) {
                 score -= 1;
                 questionScores[correctAnswerId] = false;
             }
