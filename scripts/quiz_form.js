@@ -48,35 +48,14 @@ function process() {
     // question 3
     score += shortAnswer(document.querySelector('select#q3').value, "answer_2");
 
-    // question 4
-    const q4Answers = document.getElementsByName('question_4');
-    q4Answers.forEach(answer => {
-        if (answer.checked && answer.value == "q4_answer_3") {
-            score++;
-        }
-    });
-
-
-    // question 5
-    const q5Answers = document.getElementsByName('question_5');
-    q5Answers.forEach(answer => {
-        if (answer.checked && answer.value == "answer_2") {
-            score++;
-        }
-    });
-
+    // question 4 is handled within storeAnswer() function
+   
+    // question 5 is handled within storeAnswer() function
 
     // question 6
     score += shortAnswer(document.querySelector('input#q6').value, "batsman");
 
-    // question 7
-    const q7Answers = document.getElementsByName('question_7');
-    q7Answers.forEach(answer => {
-        if (answer.checked && answer.value == "answer_1") {
-            score++;
-        }
-    });
-
+    // question 7 is handled within storeAnswer() function
 
     //question 8
     score += shortAnswer(document.querySelector('select#q8').value, "answer_6");
