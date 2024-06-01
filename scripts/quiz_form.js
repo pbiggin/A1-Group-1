@@ -1,4 +1,4 @@
-// Nav Bar 
+// Nav bar
 
 const HamburgerMenu = document.getElementById("nav-side")
 let menuCounter = 0
@@ -10,9 +10,10 @@ function toggleMenu(){
         HamburgerMenu.style.width = '100vw'
     }
 }
-// End nav bar
 
-/* Form function used to process the user's selected answers and add points for correct answers */
+
+
+// Form function used to process the user's selected answers and add points for correct answers 
 
 let score = 0;
 
@@ -92,7 +93,7 @@ function process() {
 
 }
 
-/* Determines the score awarded for each input answer */
+// Determines the score awarded for each input answer 
 
 function shortAnswer(response, answer) {
     if (response.toLowerCase() == answer) {
@@ -103,49 +104,12 @@ function shortAnswer(response, answer) {
     }
 }
 
-/* Determines if correct answer button was pressed and awards point if so */
+// Determines if correct answer button was pressed and awards point if so 
 let storedAnswer = "";
 
 /* Increment score by 1, only if the point does not exceed the maximum value awarded for question. 
 Ensures that the user cannot gain extra points by simply pressing the right answer button multiple times. */
 
-/* BEST ONE SO FAR DON'T TOUCH ----------------------------
-
-let questionScores = {
-    q4: false,
-    q5: false,
-    q7: false
-};
-
-function storeAnswer(answerId, correctAnswerId, questionId) {
-    storedAnswer = answerId;
-    let button = document.getElementById(answerId);
-    button.classList.add("selected");
-
-    // Mark the question as answered correctly
-    if ((!questionScores[correctAnswerId]) && (answerId == correctAnswerId) && (button.classList.contains("selected"))) {
-        questionScores[correctAnswerId] = true; 
-        // Increment score by 1
-        score += 1; 
-    }
-    
-    // Remove selected color from all buttons in the same question group
-    const questionButtons = document.querySelectorAll("#" + questionId + " button");
-    questionButtons.forEach(button => {
-        if (button.id != answerId) {
-            button.classList.remove("selected");
-        }
-    });
-
-     //Decrease score by 1 if the user clicks another option after having previously selected the correct answer
-    if ((questionScores[correctAnswerId]) && (!button.classList.contains("selected"))) {
-        questionScores[correctAnswerId] = false; 
-        score -= 1; 
-    }
-
-    
-} 
----------------------------------------------- */
 let questionScores = {
     q4: false,
     q5: false,
@@ -157,7 +121,7 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
     let button = document.getElementById(answerId);
     button.classList.add("selected");
 
-    // Remove selected color from all buttons in the same question group
+    // Remove selected color from all other buttons in the same question group
     const questionButtons = document.querySelectorAll("#" + questionId + " button");
     questionButtons.forEach(button => {
         if (button.id != answerId) {
@@ -168,20 +132,20 @@ function storeAnswer(answerId, correctAnswerId, questionId) {
     // Check if the question has already been answered correctly
     if (!questionScores[correctAnswerId]) {
         // Mark the question as answered correctly
-        if (answerId == correctAnswerId && button.classList.contains("selected")) {
+        if (answerId == correctAnswerId /*&& button.classList.contains("selected")*/) {
             questionScores[correctAnswerId] = true;
             // Increment score by 1
             score += 1;
         } 
-        if (answerId != correctAnswerId && button.classList.contains("selected")) {
+        if (answerId != correctAnswerId /*&& button.classList.contains("selected")*/) {
             questionScores[correctAnswerId] = false;
             // Increment score by 1
             score += 0;
         } 
     }
-    
-    if (questionScores[correctAnswerId]) {
+
     // If the current answer is incorrect and point has already been awarded, remove the point
+    if (questionScores[correctAnswerId]) {
     if (answerId != correctAnswerId && button.classList.contains("selected")) {
                 score -= 1;
                 questionScores[correctAnswerId] = false;
